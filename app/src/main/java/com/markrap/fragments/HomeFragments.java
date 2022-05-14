@@ -151,7 +151,7 @@ public class HomeFragments extends Fragment {
                             }
                             if(!NumberOfStockistBilled.equalsIgnoreCase("null"))
                             {
-                                txtNumberOfStockistBilled.setText("Coming Soon");
+                                txtNumberOfStockistBilled.setText(NumberOfStockistBilled);
                             }
 
 

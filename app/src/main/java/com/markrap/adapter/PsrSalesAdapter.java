@@ -27,7 +27,7 @@ public class PsrSalesAdapter extends RecyclerView.Adapter<PsrSalesAdapter.MyView
     Context mContext;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView txtPsrSales,txtPsrName,txtPasStockist;
+        TextView txtPsrSales,txtPsrName,txtPasStockist,txtRoc;
 
         public MyViewHolder(View view) {
             super(view);
