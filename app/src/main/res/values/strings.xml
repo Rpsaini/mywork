@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Market Sarathi</string>
+    <string name="donthaveaaccount">Don\'t have an account? </string>
+    <string name="signup">Sign up</string>
+    <string name="some_error">Error</string>
+    <string name="ifyohaveanaccount">If you have an account? </string>
+    <string name="login">Login</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="markettingteam">Marketting Team</string>
+    <string name="home">Home</string>
+    <string name="attendance">Attendance</string>
+    <string name="tasklist">Task List</string>
+    <string name="manageorder">Manage Stockist</string>
+    <string name="mypoints">My Points</string>
+    <string name="notification">Notification</string>
+    <string name="setting">Settings</string>
+    <string name="allStores">All Stores</string>
+
+    <string name="welcome">Welcome!</string>
+    <string name="orderconfirm">OrderConfirm</string>
+    <string name="productlist">ProductList</string>
+    <string name="changePassword">Change Password</string>
+
+    <string name="pleaseselectyourpreferredlocation">Please select your preferred location</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    <string name="googlemapkey">AIzaSyDx4bX2PBXd7Aj3q4cgTnl2ZTE41Ta-SxQ</string>-->
+    <string name="googlemapkey">AIzaSyD0yVCzUZZw-LA3C_Bp4gYaAZOfc7HtVV0</string>
+    <string name="str_attendenace_user_image">Browse Image</string>
+
+</resources>

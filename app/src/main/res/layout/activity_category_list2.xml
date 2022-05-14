@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".dashboard.outlet.ProductList">
+
+    <include layout="@layout/custom_tool_bar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight=".93"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/recyclerlistview"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/llshowCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/maincolor"
+        android:layout_weight=".07"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+        <fontspackageForTextView.Regular
+            android:id="@+id/txtCateName"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:text="Total Items"
+            android:textColor="@color/colorWhite" />
+
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/itemCount"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_weight=".6"
+            android:gravity="center"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/colorWhite" />
+
+
+
+        <fontspackageForTextView.Regular
+            android:layout_margin="7dp"
+            android:id="@+id/placeOrder"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textSize="13dp"
+            android:singleLine="true"
+            android:text="Place Order"
+            android:background="@drawable/roundcornerrawable" />
+
+    </LinearLayout>
+</LinearLayout>

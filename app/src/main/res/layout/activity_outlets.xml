@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="15dp"
+        android:src="@drawable/searchbackicon" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_btn"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:elevation="3dp">
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/txtwWelocome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:padding="15dp"
+            android:text="Add New Outlet"
+            android:textColor="@color/colorLightBlack"
+            android:textScaleX="1.1"
+            android:textSize="@dimen/text_size_large" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeMain"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:visibility="visible">
+        <EditText
+            android:id="@+id/searchEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/city_search"
+            android:drawablePadding="10dp"
+            android:elevation="5dp"
+            android:hint="Type store Name"
+            android:textSize="@dimen/text_size_normal"
+            android:imeOptions="actionSearch"
+            android:padding="8dp"
+            android:singleLine="true" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:background="@drawable/bottom_line"
+            android:id="@+id/textinputOutletName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Outlet Name"
+            android:imeOptions="actionNext"
+            app:boxBackgroundMode="none">
+
+            <fontpackageforEdittext.Regular
+
+                android:singleLine="true"
+                style="@style/EditText.Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditText.Login" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:background="@drawable/bottom_line"
+            android:id="@+id/inputOutletOwner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Outlet Owner Name"
+            android:imeOptions="actionNext"
+            app:boxBackgroundMode="none">
+
+            <fontpackageforEdittext.Regular
+
+                android:singleLine="true"
+                style="@style/EditText.Login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:theme="@style/EditText.Login" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:background="@drawable/bottom_line"
+            android:id="@+id/inputOutletMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Mobile Number"
+            android:imeOptions="actionNext"
+            app:boxBackgroundMode="none">
+
+            <fontpackageforEdittext.Regular
+
+                android:singleLine="true"
+                style="@style/EditText.Login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:theme="@style/EditText.Login" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/reletivelatlng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputOutletMobileNumber"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <com.google.android.material.textfield.TextInputLayout
+                android:background="@drawable/bottom_line"
+                android:id="@+id/inputOutletLatitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Latitude"
+                android:imeOptions="actionNext"
+                app:boxBackgroundMode="none">
+
+            <fontpackageforEdittext.Regular
+
+                android:singleLine="true"
+                style="@style/EditText.Login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:theme="@style/EditText.Login" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:background="@drawable/bottom_line"
+                android:id="@+id/inputOuletLongitude"
+android:layout_below="@+id/inputOutletLatitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Longitude"
+                android:imeOptions="actionNext"
+                app:boxBackgroundMode="none">
+
+                <fontpackageforEdittext.Regular
+
+                    android:singleLine="true"
+                    style="@style/EditText.Login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:theme="@style/EditText.Login" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </RelativeLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:background="@drawable/bottom_line"
+            android:id="@+id/inputAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:hint="Address"
+            android:imeOptions="actionNext"
+            app:boxBackgroundMode="none">
+
+            <fontpackageforEdittext.Regular
+
+                android:singleLine="true"
+                style="@style/EditText.Login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:theme="@style/EditText.Login" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <fontspackageForTextView.Regular
+            android:gravity="center"
+            android:id="@+id/txtSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/inputOuletLatitude"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription=""
+            android:minHeight="10dp"
+            android:padding="10dp"
+            android:text="Submit"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_normal"
+            android:visibility="visible" />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

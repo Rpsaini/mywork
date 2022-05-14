@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/llErrorDialog"
+    android:background="@drawable/dialog_with_round_corner"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_gravity="left|center"
+            android:id="@+id/imgCross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="15dp"
+            android:src="@drawable/cross" />
+
+    </LinearLayout>
+
+
+    <fontspackageForTextView.BoldMedium
+        android:singleLine="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textColor="@color/color_black"
+        ></fontspackageForTextView.BoldMedium>
+
+
+
+    <fontspackageForTextView.Regular
+        android:id="@+id/txtOutletname"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:textColor="@color/color_black"
+
+        ></fontspackageForTextView.Regular>
+
+
+    <fontspackageForTextView.Regular
+        android:id="@+id/txtlat"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:textColor="@color/color_black"
+
+        ></fontspackageForTextView.Regular>
+
+    <fontspackageForTextView.Regular
+        android:id="@+id/txtlng"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:textColor="@color/color_black"
+        ></fontspackageForTextView.Regular>
+
+
+    <fontspackageForTextView.Regular
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+
+        android:layout_gravity="center"
+        android:id="@+id/txtMarkVisit"
+        android:background="@color/redcolor"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="MArk Visit"
+        android:layout_marginLeft="30dp"
+        android:gravity="center"
+        android:padding="10dp"
+
+        android:textAllCaps="true"></fontspackageForTextView.Regular>
+
+
+    <fontspackageForTextView.BoldMedium
+
+        android:singleLine="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="More Info"
+        android:gravity="left"
+        android:textColor="@color/color_black"
+
+        ></fontspackageForTextView.BoldMedium>
+
+
+        <EditText
+            android:id="@+id/edNumberOfProductsAvailOutlet"
+            android:hint="Number of ITC Lines available in Outlet"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            ></EditText>
+
+
+    <EditText
+        android:id="@+id/edTotalOrderValue"
+        android:hint="Today's Order Value in Rs."
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textSize="14dp"
+        ></EditText>
+
+
+
+        <fontspackageForTextView.Regular
+            android:alpha="2"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/submit"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Submit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+
+            android:textAllCaps="true"></fontspackageForTextView.Regular>
+
+
+
+
+
+</LinearLayout>

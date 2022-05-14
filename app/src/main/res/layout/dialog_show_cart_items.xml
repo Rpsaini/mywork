@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/custom_tool_bar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+    <fontspackageForTextView.Regular
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorLightBlack"
+        android:text="Total Products Selected"
+        ></fontspackageForTextView.Regular>
+
+    <View
+        android:layout_height=".5dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/quantum_grey"
+        ></View>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartItemRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+
+    <View
+        android:layout_height=".5dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/quantum_grey"
+        ></View>
+
+    <fontspackageForTextView.BoldMedium
+
+        android:id="@+id/txtTotalPrice"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:textColor="@color/color_black"
+        android:text="Total "
+        ></fontspackageForTextView.BoldMedium>
+
+
+
+    <fontspackageForTextView.BoldMedium
+
+android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Comments"
+        android:gravity="left" android:textColor="@color/color_black"
+
+        ></fontspackageForTextView.BoldMedium>
+
+
+
+    <fontpackageforEdittext.Regular
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/edmytask"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:padding="7dp"
+        android:hint="Enter Your Comment"
+        android:layout_marginTop="20dp"
+        android:layout_height="156dp"
+        android:layout_width="match_parent"
+        android:textSize="14dp"
+        android:background="@drawable/edittextdrawable"
+        android:textColor="@color/color_black"
+
+        ></fontpackageforEdittext.Regular>
+
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:id="@+id/verify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ll_sign_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription=""
+        android:minHeight="10dp"
+        android:text="Place Order"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:visibility="visible" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

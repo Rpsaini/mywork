@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.markrap">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" /> <!-- <uses-feature android:name="android.hardware.camera" /> -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <queries>
+        <intent>
+            <action android:name="android.media.action.TVHomeActivityIMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <service
+            android:name=".services.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name=".dashboard.outlet.SearchStockist"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard.outlet.CategoryList"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".dashboard.outlet.CategoryActivity"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".dashboard.outlet.AddOutlet"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".gpstracter.GpsTracker"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".dashboard.outlet.ViewOutLets"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.outlet.ProductList"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".placepicker.LocationPickerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.yalantis.ucrop.UCropActivity" />
+        <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.Signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.StoreSelection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.OrderConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.ManageStoreProductCart"
+            android:screenOrientation="portrait" />
+        <activity android:name=".dashboard.myorders.MyOrdersDetailActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

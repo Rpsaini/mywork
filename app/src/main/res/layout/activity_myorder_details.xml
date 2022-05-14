@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/custom_tool_bar"/>
+
+
+
+    <fontspackageForTextView.Regular
+        android:id="@+id/order_date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:textColor="@color/color_black"
+        android:text="Order Date : "
+        ></fontspackageForTextView.Regular>
+
+    <fontspackageForTextView.Regular
+        android:id="@+id/order_id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/color_black"
+        android:text="Order Date : "
+        ></fontspackageForTextView.Regular>
+    <fontspackageForTextView.Regular
+        android:id="@+id/order_comment"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+
+        android:textColor="@color/color_black"
+        android:text="Comment "
+        ></fontspackageForTextView.Regular>
+
+
+
+    <View
+        android:layout_height=".5dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/quantum_grey"
+        ></View>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartItemRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+    <View
+        android:layout_height=".5dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/quantum_grey"
+        ></View>
+
+    <fontspackageForTextView.BoldMedium
+
+        android:id="@+id/txtTotalPrice"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:textColor="@color/color_black"
+        android:text="Total "
+        ></fontspackageForTextView.BoldMedium>
+
+
+    <TextView
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:id="@+id/verify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ll_sign_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:background="@color/colorPrimary"
+        android:contentDescription=""
+        android:minHeight="10dp"
+        android:text="Place Order"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+
+
+</LinearLayout>

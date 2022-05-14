@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:id="@+id/mainLinear"
+    android:padding="10dp"
+
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    >
+    <ImageView
+        android:layout_gravity="top"
+        android:id="@+id/taskImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/defaultimage" />
+
+    <LinearLayout
+
+        android:id="@+id/linear1view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <fontspackageForTextView.BoldMedium
+            android:singleLine="true"
+            android:gravity="center|left"
+            android:id="@+id/txtTaskName"
+            style="@style/AppTheme.TextView.MediumBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Task Name"
+            android:textColor="@color/color_black" />
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="top"
+                android:src="@drawable/edit" />
+        </RelativeLayout>
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="5dp"
+            android:gravity="center|left"
+
+            android:id="@+id/taskDescription"
+            style="@style/AppTheme.TextView.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Store Description"
+            android:textSize="14sp"
+            android:textColor="@color/color_black" />
+
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="5dp"
+            android:gravity="center|left"
+
+            android:id="@+id/taskPriority"
+            style="@style/AppTheme.TextView.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="@color/color_black" />
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="5dp"
+            android:gravity="center|left"
+
+            android:id="@+id/taskstatus"
+            style="@style/AppTheme.TextView.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="@color/color_black" />
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="5dp"
+            android:gravity="center|left"
+
+            android:id="@+id/taskDate"
+            style="@style/AppTheme.TextView.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="@color/color_black" />
+
+
+
+        <fontspackageForTextView.Regular
+            android:layout_marginTop="5dp"
+            android:gravity="center|left"
+
+            android:id="@+id/taskCommnet"
+            style="@style/AppTheme.TextView.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="@color/color_black" />
+
+    </LinearLayout>
+</LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/linecolor"
+        ></View>
+
+</LinearLayout>

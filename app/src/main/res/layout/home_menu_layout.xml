@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <LinearLayout
+        android:id="@+id/menu_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <com.markrap.view.RoundedImageView
+            android:id="@+id/user_profile_nav"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/side_image"
+            android:paddingLeft="30dp" />
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtUsernavname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_profile"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/markettingteam"
+
+            android:textSize="@dimen/text_size_large" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MainLinearView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_linearlayout"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/linearHome_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_linearlayout"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <fontspackageForTextView.Regular
+
+                android:id="@+id/home_btn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:paddingLeft="30dp"
+                android:text="@string/home"
+                android:textAllCaps="false"
+                android:textColor="@color/color_black"
+
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/linecolor"
+
+            ></View>
+
+        <LinearLayout
+            android:id="@+id/linearAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearHome_btn"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/btn_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center|left"
+                android:paddingLeft="30dp"
+                android:text="@string/attendance"
+                android:textAllCaps="false"
+                android:textColor="@color/color_black"
+
+                android:textSize="@dimen/text_size_normal" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/linecolor"
+
+            ></View>
+
+        <LinearLayout
+
+            android:id="@+id/linearTaskList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearAttendance"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/btn_taskList"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/linearAttendance"
+                android:gravity="center|left"
+                android:paddingLeft="30dp"
+                android:text="@string/tasklist"
+                android:textAllCaps="false"
+                android:textColor="@color/color_black"
+
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/linecolor"
+
+            ></View>
+
+        <LinearLayout
+
+            android:id="@+id/linearMAnageOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearTaskList"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/btn_manageOrder"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/linearTaskList"
+                android:gravity="center|left"
+                android:paddingLeft="30dp"
+                android:text="@string/manageorder"
+                android:textAllCaps="false"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/linecolor"
+
+            ></View>
+
+        <LinearLayout
+            android:id="@+id/linearMyPoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearMAnageOrder"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/btnMyPoints"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center|left"
+                android:paddingLeft="30dp"
+                android:text="@string/mypoints"
+                android:textAllCaps="false"
+                android:textColor="@color/color_black"
+
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/linecolor"
+            android:visibility="gone"
+
+            ></View>
+
+        <LinearLayout
+            android:id="@+id/linearNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearMyPoints"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/btnNotification"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center|left"
+                android:paddingLeft="30dp"
+                android:text="@string/notification"
+                android:textAllCaps="false"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_normal"
+
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/linecolor"
+
+            ></View>
+
+        <LinearLayout
+            android:id="@+id/llmyOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearMyPoints"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/btnMyOrders"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center|left"
+                android:paddingLeft="30dp"
+                android:text="My Orders"
+                android:textAllCaps="false"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/linecolor"
+
+            ></View>
+
+        <LinearLayout
+
+            android:id="@+id/linearChangePasswords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearSettings"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/btnChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center|left"
+                android:paddingLeft="30dp"
+                android:text="@string/changePassword"
+                android:textAllCaps="false"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/linecolor"
+
+            ></View>
+
+        <LinearLayout
+
+            android:id="@+id/llLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearMyPoints"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center|left"
+                android:paddingLeft="30dp"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

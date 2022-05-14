@@ -1,0 +1,128 @@
+{
+    "Providers": [
+        {
+            "ProviderName": "TOPUP",
+            "ProviderTypeId": "1",
+            "ValidAmount": "",
+            "Title": "TOPUP"
+        },
+        {
+            "ProviderName": "NTC",
+            "ProviderTypeId": "2",
+            "ValidAmount": "10 - 25000",
+            "Title": "Recharge Card"
+        },
+        {
+            "ProviderName": "NCELL",
+            "ProviderTypeId": "3",
+            "ValidAmount": "10 - 5000",
+            "Title": "Recharge Card"
+        },
+        {
+            "ProviderName": "SMARTCELL",
+            "ProviderTypeId": "4",
+            "ValidAmount": "20,50,100,200,500,1000",
+            "Title": "Recharge Card"
+        },
+        {
+            "ProviderName": "DISHHOME ERC",
+            "ProviderTypeId": "5",
+            "ValidAmount": "1000,2000,3000,4000,5000,6000,7000,9000,10000",
+            "Title": "Recharge Card"
+        },
+        {
+            "ProviderName": "NTC ERC",
+            "ProviderTypeId": "6",
+            "ValidAmount": "100,200,500,1000",
+            "Title": "Recharge Card"
+        },
+        {
+            "ProviderName": "UTL ERC",
+            "ProviderTypeId": "7",
+            "ValidAmount": "100,250,500",
+            "Title": "Recharge Card"
+        },
+        {
+            "ProviderName": "SMART ERC",
+            "ProviderTypeId": "8",
+            "ValidAmount": "50,100,200",
+            "Title": "Recharge Card"
+        },
+        {
+            "ProviderName": "BROADLINK ERC",
+            "ProviderTypeId": "9",
+            "ValidAmount": "570,1300,2600,2260",
+            "Title": "Recharge Card"
+        },
+        {
+            "ProviderName": "NETTV ERC",
+            "ProviderTypeId": "10",
+            "ValidAmount": "50,100,200,500,1000",
+            "Title": "Recharge Card"
+        },
+        {
+            "ProviderName": "PSTN LANDLINE",
+            "ProviderTypeId": "11",
+            "ValidAmount": "100,150,200,300,500,1000,1500,2000,2500,3000,4000,5000",
+            "Title": "Landline"
+        },
+        {
+            "ProviderName": "NEA",
+            "ProviderTypeId": "12",
+            "ValidAmount": "",
+            "Title": "Electricity"
+        },
+        {
+            "ProviderName": "KHANEPANI",
+            "ProviderTypeId": "13",
+            "ValidAmount": "",
+            "Title": "Khanepani"
+        },
+        {
+            "ProviderName": "TV DISHHOME",
+            "ProviderTypeId": "14",
+            "ValidAmount": "500,1000,2000,3000,4000,5000,6000,7000,9000,10000",
+            "Title": "TV"
+        },
+        {
+            "ProviderName": "TV SIMTV",
+            "ProviderTypeId": "15",
+            "ValidAmount": "",
+            "Title": "TV"
+        },
+        {
+            "ProviderName": "TV MERO",
+            "ProviderTypeId": "16",
+            "ValidAmount": "",
+            "Title": "TV MERO"
+        },
+        {
+            "ProviderName": "REGISTER CASHBACK",
+            "ProviderTypeId": "17",
+            "ValidAmount": "",
+            "Title": "REGISTER CASHBACK"
+        },
+        {
+            "ProviderName": "KYC CASHBACK",
+            "ProviderTypeId": "18",
+            "ValidAmount": "",
+            "Title": "KYC CASHBACK"
+        },
+        {
+            "ProviderName": "CONNECTIPS DEPOSIT",
+            "ProviderTypeId": "19",
+            "ValidAmount": "",
+            "Title": "CONNECTIPS DEPOSIT"
+        },
+        {
+            "ProviderName": "TRANSACTION COMMISSION",
+            "ProviderTypeId": "20",
+            "ValidAmount": "",
+            "Title": "TRANSACTION COMMISSION"
+        }
+    ],
+    "Message": "success",
+    "ReponseCode": 1,
+    "status": true,
+    "state": false
+}

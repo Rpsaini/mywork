@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="15dp"
+        android:src="@drawable/searchbackicon" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_btn"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:elevation="3dp">
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/txtwWelocome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:padding="15dp"
+            android:text="Welcome Login"
+            android:textColor="@color/colorLightBlack"
+            android:textScaleX="1.1"
+            android:textSize="@dimen/text_size_large" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeMain"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="visible">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:background="@drawable/bottom_line"
+            android:id="@+id/textinputUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:imeOptions="actionNext"
+            app:boxBackgroundMode="none">
+
+            <fontpackageforEdittext.Regular
+
+                android:singleLine="true"
+                style="@style/EditText.Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditText.Login" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:background="@drawable/bottom_line"
+            android:id="@+id/textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            android:imeOptions="actionNext"
+            app:boxBackgroundMode="none">
+
+            <fontpackageforEdittext.Regular
+
+                android:singleLine="true"
+                style="@style/EditText.Login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:theme="@style/EditText.Login" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_sign_in"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:visibility="gone"
+                android:id="@+id/radioButtonRememberMe"
+
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:checked="false"
+                android:text="Remember me"
+                android:textColor="@color/color_dark_gray"
+                android:textSize="15dp" />
+
+            <fontspackageForTextView.Regular
+                android:textSize="15dp"
+                android:id="@+id/tv_forgot_password"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center|right"
+                android:gravity="center"
+                android:text="Forgot Password?"
+                android:textColor="@color/colorAccent" />
+
+
+        </RelativeLayout>
+        <fontspackageForTextView.Regular
+            android:gravity="center"
+            android:id="@+id/verify_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ll_sign_in"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription=""
+            android:minHeight="10dp"
+            android:padding="10dp"
+            android:text="Login"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_normal"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verify_btn"
+            android:layout_marginTop="20dp"
+
+
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <fontspackageForTextView.Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="@string/donthaveaaccount"
+                android:textColor="@color/color_dark_gray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:orientation="vertical">
+
+                <fontspackageForTextView.Regular
+
+                    android:id="@+id/txtSignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signup"
+                    android:textColor="@color/colorLightBlack" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorWhite" />
+
+            </LinearLayout>
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

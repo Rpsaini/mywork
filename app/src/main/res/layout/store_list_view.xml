@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLinear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageStoreLogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/defaultimage"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linear1view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginLeft="2dp"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <fontspackageForTextView.BoldMedium
+                android:id="@+id/txtStoreNAme"
+                style="@style/AppTheme.TextView.MediumBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Store Name"
+                android:textColor="@color/color_black" />
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/txtStoreDescription"
+                style="@style/AppTheme.TextView.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|left"
+                android:text="Store Description"
+                android:textColor="@color/color_black"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/txtMaketNAme"
+                style="@style/AppTheme.TextView.Medium"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|left"
+                android:text="Market Name"
+                android:textColor="@color/color_black"
+                android:textSize="14sp" />
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/txtDistance"
+                style="@style/AppTheme.TextView.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|left"
+                android:text="Distance: "
+                android:textColor="@color/color_black"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <fontspackageForTextView.Regular
+
+                    android:id="@+id/txtMobileNumber"
+                    style="@style/AppTheme.TextView.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center|left"
+                    android:text="Mobile Number"
+                    android:textColor="@color/color_black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imagCall"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/txtMobileNumber"
+                    android:src="@drawable/callicon_phone"></ImageView>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:id="@+id/llLatLng"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="2dp"
+                    android:orientation="vertical"
+                    android:layout_weight="2.5">
+
+                    <fontspackageForTextView.Regular
+                        android:id="@+id/txtLatitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/color_black"
+                        android:textSize="14sp" />
+
+                    <fontspackageForTextView.Regular
+                        android:id="@+id/txtLongitude"
+                        style="@style/AppTheme.TextView.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/color_black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="right|center"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="2dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:id="@+id/imagMAp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/txtMobileNumber"
+                        android:src="@drawable/directions"></de.hdodenhof.circleimageview.CircleImageView>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/txtno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="Visit Secondry Outlet"
+                    android:textColor="@color/colorWhite"></fontspackageForTextView.Regular>
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/btnupdatelocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="Stockist Visit"
+                    android:textColor="@color/colorWhite"></fontspackageForTextView.Regular>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tvIncent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:rotation="270"
+            android:src="@drawable/ic_down_arrow"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/maincolor"></View>
+
+
+</LinearLayout>

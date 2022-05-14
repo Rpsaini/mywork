@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:id="@+id/mainLinear"
+    android:padding="10dp"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <ImageView
+
+            android:layout_gravity="top"
+            android:id="@+id/orderImg"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/defaultimage" />
+
+        <LinearLayout
+
+            android:id="@+id/linear1view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:orientation="vertical">
+
+
+
+            <fontspackageForTextView.BoldMedium
+                android:singleLine="true"
+                android:gravity="center|left"
+                android:id="@+id/outlatname"
+                style="@style/AppTheme.TextView.MediumBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Task Name"
+                android:textColor="@color/color_black" />
+
+
+            <fontspackageForTextView.Regular
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:gravity="center|left"
+                android:id="@+id/productname"
+                style="@style/AppTheme.TextView.MediumBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/color_black" />
+
+
+            <fontspackageForTextView.Regular
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:gravity="center|left"
+                android:id="@+id/txtOrdername"
+                style="@style/AppTheme.TextView.MediumBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/color_black" />
+
+            <fontspackageForTextView.Regular
+                android:layout_marginTop="5dp"
+                android:gravity="center|left"
+
+                android:id="@+id/txtOrderAmount"
+                style="@style/AppTheme.TextView.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store Description"
+                android:textSize="14sp"
+                android:textColor="@color/color_black" />
+
+
+
+            <fontspackageForTextView.Regular
+                android:layout_marginTop="5dp"
+                android:gravity="center|left"
+
+                android:id="@+id/txtOrderQty"
+                style="@style/AppTheme.TextView.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="@color/color_black" />
+
+
+            <fontspackageForTextView.Regular
+                android:layout_marginTop="5dp"
+                android:gravity="center|left"
+
+                android:id="@+id/txtOrderstatus"
+                style="@style/AppTheme.TextView.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="@color/color_black" />
+
+
+            <fontspackageForTextView.Regular
+                android:layout_marginTop="5dp"
+                android:gravity="center|left"
+
+                android:id="@+id/txtOrderdate"
+                style="@style/AppTheme.TextView.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="@color/color_black" />
+
+
+
+            <fontspackageForTextView.Regular
+                android:layout_marginTop="5dp"
+                android:gravity="center|left"
+
+                android:id="@+id/txtOderBy"
+                style="@style/AppTheme.TextView.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="@color/color_black" />
+
+
+            <fontspackageForTextView.Regular
+                android:layout_marginTop="5dp"
+                android:gravity="center|left"
+
+                android:id="@+id/txtOderComment"
+                style="@style/AppTheme.TextView.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="@color/color_black" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/linecolor"
+        ></View>
+
+</LinearLayout>

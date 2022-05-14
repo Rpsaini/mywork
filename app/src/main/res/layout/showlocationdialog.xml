@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:id="@+id/llErrorDialog"
+    android:background="@drawable/roundcornerrawable"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_gravity="center"
+
+    android:layout_height="wrap_content">
+
+
+    <fontspackageForTextView.BoldMedium
+
+        android:singleLine="true"
+
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GPS is settings"
+        android:gravity="center"
+        android:textColor="@color/color_black"
+
+        ></fontspackageForTextView.BoldMedium>
+
+
+    <fontspackageForTextView.Regular
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GPS is not enabled.  go to settings and enable device GPS?"
+        android:gravity="center"
+        android:textColor="@color/color_black"
+
+        ></fontspackageForTextView.Regular>
+
+
+
+
+
+
+
+    <fontspackageForTextView.Regular
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/txtNext"
+        android:background="@color/colorPrimary"
+        android:layout_width="180dp"
+
+        android:textColor="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="Enable GPS"
+        android:gravity="center"
+        android:padding="10dp"
+
+        android:textAllCaps="true"></fontspackageForTextView.Regular>
+
+
+
+</LinearLayout>

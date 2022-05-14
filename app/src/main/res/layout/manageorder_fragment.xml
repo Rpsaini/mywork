@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorLightBlack"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <Spinner
+                android:id="@+id/spinnerWdcode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittextdrawable"></Spinner>
+
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_down_arrow"
+                android:layout_alignParentEnd="true"
+                ></ImageView>
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextdrawable"
+                android:hint="Search by stockist"
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+           />
+
+            <!--            <Spinner-->
+<!--                android:id="@+id/spinnerByName"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+
+<!--                android:background="@drawable/edittextdrawable"></Spinner>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:src="@drawable/ic_down_arrow"></ImageView>-->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/recyclerlistview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/maincolor"
+    android:layout_height="60dp">
+
+
+        <ImageView
+            android:id="@+id/goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/colorWhite"
+            android:visibility="visible" />
+
+        <fontspackageForTextView.Regular
+            android:id="@+id/customeToolbartext"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:text="@string/orderconfirm"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:tint="@color/colorWhite"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:text="Add New Outlet"
+            android:id="@+id/ttolbarplus"
+            android:layout_width="140dp"
+            android:gravity="center"
+            android:background="@color/redcolor"
+            android:layout_height="30dp"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_centerVertical="true"
+            android:src="@drawable/addoutlets" />
+
+
+
+</RelativeLayout>
