@@ -267,7 +267,7 @@
                             android:padding="6dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="PSR Mapping &amp; Sales Button"
+                            android:text="PSR Wise Billing"
                             android:textSize="14dp"
                             android:gravity="center"
                             ></fontspackageForTextView.BoldMedium>

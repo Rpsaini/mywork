@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Rpsaini:DrawableNAnimationNFonts:V1.7@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16a1459ca70fe3c3888651399cdc6028/jetified-DrawableNAnimationNFonts-V1.7/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16a1459ca70fe3c3888651399cdc6028/jetified-DrawableNAnimationNFonts-V1.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16a1459ca70fe3c3888651399cdc6028/jetified-DrawableNAnimationNFonts-V1.7/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Rpsaini/DrawableNAnimationNFonts/V1.7/b9c3803a42624e9edbea7b288b439537a66c2c23/DrawableNAnimationNFonts-V1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

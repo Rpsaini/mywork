@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Rpsaini:DialogsNPickers:V2.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cf6013cb40387f5f976503afc0973121/jetified-DialogsNPickers-V2.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cf6013cb40387f5f976503afc0973121/jetified-DialogsNPickers-V2.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cf6013cb40387f5f976503afc0973121/jetified-DialogsNPickers-V2.4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Rpsaini/DialogsNPickers/V2.4/32ba53fd26660046c3f119312da5b153570a37d9/DialogsNPickers-V2.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
