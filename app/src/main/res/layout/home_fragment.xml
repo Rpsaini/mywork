@@ -6,6 +6,12 @@
     android:orientation="horizontal">
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
     <LinearLayout
         android:layout_height="match_parent"
         android:layout_width="match_parent"
@@ -136,8 +142,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp">
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
 
 
 
@@ -272,19 +278,31 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:weightSum="3"
+                            android:weightSum="4.4"
                             >
 
                             <fontspackageForTextView.BoldMedium
                                 android:textColor="@color/color_black"
-                                android:padding="6dp"
-                                android:layout_weight="1"
+                                android:layout_weight="1.2"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:text="PSR"
-                                android:textSize="14dp"
+                                android:text="#PSR"
+                                android:textSize="12dp"
                                 android:gravity="center"
                                 ></fontspackageForTextView.BoldMedium>
+
+
+                            <fontspackageForTextView.BoldMedium
+                                android:textColor="@color/color_black"
+
+                                android:layout_weight="1.2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="#ROC"
+                                android:textSize="12dp"
+                                android:gravity="center"
+                                ></fontspackageForTextView.BoldMedium>
+
 
                             <fontspackageForTextView.BoldMedium
                                 android:textColor="@color/color_black"
@@ -293,7 +311,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:text="#Stockist"
-                                android:textSize="14dp"
+                                android:textSize="12dp"
                                 android:gravity="center"
                                 ></fontspackageForTextView.BoldMedium>
 
@@ -305,7 +323,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:text="#Sales"
-                                android:textSize="14dp"
+                                android:textSize="12dp"
                                 android:gravity="center"
                                 ></fontspackageForTextView.BoldMedium>
                         </LinearLayout>
@@ -319,8 +337,8 @@
                         <androidx.recyclerview.widget.RecyclerView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
                             android:id="@+id/psrRecyclerView"
                             ></androidx.recyclerview.widget.RecyclerView>
 
@@ -331,8 +349,12 @@
 
 </LinearLayout>
 
+    </ScrollView>
+
+
+</LinearLayout>
 
 
 
-    </LinearLayout>
+
 

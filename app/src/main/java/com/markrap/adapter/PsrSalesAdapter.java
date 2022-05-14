@@ -36,6 +36,7 @@ public class PsrSalesAdapter extends RecyclerView.Adapter<PsrSalesAdapter.MyView
             txtPsrSales=view.findViewById(R.id.txtPsrSales);
             txtPsrName=view.findViewById(R.id.txtPsrName);
             txtPasStockist=view.findViewById(R.id.txtPasStockist);
+            txtRoc=view.findViewById(R.id.txtRoc);
 
 
 
@@ -69,6 +70,7 @@ public class PsrSalesAdapter extends RecyclerView.Adapter<PsrSalesAdapter.MyView
              holder.txtPsrSales.setText(jsonObject.getString("mtd_value"));
              holder.txtPsrName.setText(jsonObject.getString("name"));
              holder.txtPasStockist.setText(jsonObject.getString("stockiest"));
+             
 
 
         } catch (Exception e)

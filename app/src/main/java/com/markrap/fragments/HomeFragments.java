@@ -247,6 +247,7 @@ public class HomeFragments extends Fragment {
             PsrSalesAdapter mAdapter = new PsrSalesAdapter(dataAr, mainActivity);
             LinearLayoutManager horizontalLayoutManagaer = new LinearLayoutManager(mainActivity, LinearLayoutManager.VERTICAL, false);
             recyclerlistview.setLayoutManager(horizontalLayoutManagaer);
+            recyclerlistview.setNestedScrollingEnabled(false);
             recyclerlistview.setItemAnimator(new DefaultItemAnimator());
             recyclerlistview.setAdapter(mAdapter);
         }
