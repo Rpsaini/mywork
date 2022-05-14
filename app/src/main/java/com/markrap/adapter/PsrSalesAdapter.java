@@ -68,7 +68,7 @@ public class PsrSalesAdapter extends RecyclerView.Adapter<PsrSalesAdapter.MyView
 
 
              holder.txtPsrSales.setText(jsonObject.getString("mtd_value"));
-             holder.txtPsrName.setText(jsonObject.getString("name"));
+             holder.txtPsrName.setText(jsonObject.getString("psr_name"));
              holder.txtPasStockist.setText(jsonObject.getString("stockiest"));
              
 

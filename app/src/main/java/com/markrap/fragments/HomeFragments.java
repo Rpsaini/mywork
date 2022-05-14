@@ -131,11 +131,17 @@ public class HomeFragments extends Fragment {
                             String MappedStockist =dataObj.getString("my_stockist");
                             System.out.println("NumberOfStockistBilled====" + NumberOfStockistBilled);
                             System.out.println("MappedStockist====" + MappedStockist);
+                            String monthly_target =dataObj.getString("monthly_target");
+                            System.out.println("monthly_target====" + monthly_target);
+                            TextView txtMonthlyTarget=rootView.findViewById(R.id.txtMonthlyTarget);
                             TextView numberofMAppedStockist=rootView.findViewById(R.id.numberofMAppedStockist);
                             TextView txtNumberOfStockistBilled= rootView.findViewById(R.id.txtNumberOfStockistBilled);
                             TextView totalAttendance= rootView.findViewById(R.id.totalAttendance);
 //                            TextView totalsaleText= rootView.findViewById(R.id.totalsale);
-
+                            if(!monthly_target.equalsIgnoreCase(""))
+                            {
+                                txtMonthlyTarget.setText(monthly_target);
+                            }
                             if(!MappedStockist.equalsIgnoreCase("null"))
                             {
                                 numberofMAppedStockist.setText(MappedStockist);
