@@ -137,11 +137,11 @@
 
         <LinearLayout
 
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp"
+            android:padding="8dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp">
 
@@ -157,7 +157,7 @@
                 <fontspackageForTextView.BoldMedium
                     android:layout_margin="5dp"
                     android:textColor="@color/color_black"
-                    android:padding="6dp"
+                    android:padding="4dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Number Of Mapped Stockists"
@@ -172,7 +172,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:padding="6dp"
+                        android:padding="4dp"
                         android:text="--"
                         android:textColor="@color/color_black"
                         android:textSize="20dp"
@@ -194,7 +194,7 @@
                     >
                     <fontspackageForTextView.BoldMedium
                         android:textColor="@color/color_black"
-                        android:padding="6dp"
+                        android:padding="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Number of stockists billed "
@@ -205,7 +205,7 @@
 
                     <fontspackageForTextView.BoldMedium
                         android:id="@+id/txtNumberOfStockistBilled"
-                        android:padding="6dp"
+                        android:padding="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -228,7 +228,7 @@
                 >
                 <fontspackageForTextView.BoldMedium
                     android:textColor="@color/color_black"
-                    android:padding="6dp"
+                    android:padding="4dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Month Target "
@@ -239,7 +239,7 @@
 
                 <fontspackageForTextView.BoldMedium
                     android:id="@+id/txtMonthlyTarget"
-                    android:padding="6dp"
+                    android:padding="4dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
@@ -260,7 +260,7 @@
                 >
                         <fontspackageForTextView.BoldMedium
                             android:textColor="@color/color_black"
-                            android:padding="6dp"
+                            android:padding="4dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="MTD Billed Value"
@@ -272,7 +272,7 @@
                         <fontspackageForTextView.BoldMedium
                             android:id="@+id/totalAttendance"
                             android:textColor="@color/color_black"
-                            android:padding="6dp"
+                            android:padding="4dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="--"
@@ -287,7 +287,7 @@
 
 
                     <LinearLayout
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:layout_gravity="center"

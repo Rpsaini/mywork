@@ -159,12 +159,85 @@ public class HomeFragments extends Fragment {
                             {
                                 txtNumberOfStockistBilled.setText(NumberOfStockistBilled);
                             }
+                             JSONArray result_array = dataObj.getJSONArray("psr_sales");
+                            System.out.println("@@@result_array"+result_array.length());
+                            showPSrData(result_array);
+                        /*    for (int i = 0; i < result_array.length(); i++) {
+                                JSONArray jDataAr=new JSONArray();
+                                JSONObject jsonObject=new JSONObject();
+
+                                JSONObject joObject = result_array.getJSONObject(i);
+                                System.out.println("@@@"+joObject.length());
+                             //   String jName = joObject.get("referral_fullname").toString();
+                               // String jbalance = joObject.get("referral_balance").toString();
+                               // joObject.put("psr_name",joObject.getString("psr_name"));
+                            *//*    if(joObject.has("psr_name"))
+                                {
+                                    jsonObject.put("psr_name", joObject.getString("psr_name"));
+                                }
+                                else
+                                {
+                                    jsonObject.put("psr_name", "");
+                                }
+                                if(joObject.has("stockiest"))
+                                {
+                                    jsonObject.put("stockiest", joObject.getString("stockiest"));
+                                }
+                                else
+                                {
+                                    jsonObject.put("stockiest", "");
+                                }
+                                if(joObject.has("mtd_value")) {
+
+                                    jsonObject.put("mtd_value", joObject.getString("mtd_value"));
+                                }
+                                else
+                                {
+                                    jsonObject.put("mtd_value", "");
+                                }*//*
+                                jDataAr.put(jsonObject);
+                                showPSrData(jDataAr);
+                            }*/
+
+                     //       JSONArray data=dataObj.getJSONArray("psr_sales");
+                       //     System.out.println("Psr sales==="+data);
 
 
-                            JSONObject data=dataObj.getJSONObject("psr_sales");
-                            System.out.println("Psr sales==="+data);
-                            JSONArray jDataAr=new JSONArray();
-                            if(data!=null)
+                          /*  for(int i=0;i<data.length();i++){
+                                JSONArray jDataAr=new JSONArray();
+                                JSONObject jsonObject=new JSONObject();
+                                JSONObject nameData=data.getJSONObject(i);
+                                System.out.println("Psr jsonObject==="+jsonObject);
+
+
+
+
+
+                                  //  JSONObject nameData=data.getJSONObject(key);
+                                    System.out.println("Name data==="+nameData);
+                                    jsonObject.put("psr_name",nameData.getString("psr_name"));
+                                    if(nameData.has("stockiest"))
+                                    {
+                                        jsonObject.put("stockiest", nameData.getString("stockiest"));
+                                    }
+                                    else
+                                    {
+                                        jsonObject.put("stockiest", "");
+                                    }
+                                    if(nameData.has("mtd_value")) {
+
+                                        jsonObject.put("mtd_value", nameData.getString("mtd_value"));
+                                    }
+                                    else
+                                    {
+                                        jsonObject.put("mtd_value", "");
+                                    }
+                                    jDataAr.put(jsonObject);
+
+                                showPSrData(jDataAr);
+
+                            }*/
+                          /*  if(data!=null)
                             {
 
                                 Iterator<String> dataStr =data.keys();
@@ -198,7 +271,7 @@ public class HomeFragments extends Fragment {
 
                                 showPSrData(jDataAr);
 
-                            }
+                            }*/
 
 
 
@@ -249,11 +322,12 @@ public class HomeFragments extends Fragment {
 
         private void showPSrData(JSONArray dataAr)
         {
+
             RecyclerView recyclerlistview = rootView.findViewById(R.id.psrRecyclerView);
             PsrSalesAdapter mAdapter = new PsrSalesAdapter(dataAr, mainActivity);
             LinearLayoutManager horizontalLayoutManagaer = new LinearLayoutManager(mainActivity, LinearLayoutManager.VERTICAL, false);
             recyclerlistview.setLayoutManager(horizontalLayoutManagaer);
-            recyclerlistview.setNestedScrollingEnabled(false);
+      //      recyclerlistview.setNestedScrollingEnabled(false);
             recyclerlistview.setItemAnimator(new DefaultItemAnimator());
             recyclerlistview.setAdapter(mAdapter);
         }

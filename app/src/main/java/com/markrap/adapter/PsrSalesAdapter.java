@@ -2,6 +2,7 @@ package com.markrap.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,10 +62,11 @@ public class PsrSalesAdapter extends RecyclerView.Adapter<PsrSalesAdapter.MyView
     }
 
     @Override
-    public void onBindViewHolder(final PsrSalesAdapter.MyViewHolder holder, final int position) {
+    public void onBindViewHolder( PsrSalesAdapter.MyViewHolder holder,  int position) {
         try {
-
+            Log.i("---@@position",""+position);
             JSONObject jsonObject = moviesList.getJSONObject(position);
+            Log.i("---@@jsonObject",""+jsonObject.toString());
 
 
              holder.txtPsrSales.setText(jsonObject.getString("mtd_value"));
