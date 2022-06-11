@@ -124,6 +124,8 @@ public class HomeFragments extends Fragment {
 
                             JSONObject dataObj=obj.getJSONObject("data");
                             String monthly_attend= dataObj.getString("mtd_billed_value");
+                            System.out.println("@@@monthly_attend"+monthly_attend.toString());
+
                             String attendance_days= dataObj.getString("attendance_days");
                             System.out.println("attendance_days====" + attendance_days);
                             String NumberOfStockistBilled= dataObj.getString("stockist_billed");
@@ -151,9 +153,11 @@ public class HomeFragments extends Fragment {
 //                                totalsaleText.setText(total_sales);
 //                            }
 
-                            if(!attendance_days.equalsIgnoreCase("null"))
+                            if(!monthly_attend.equalsIgnoreCase("null"))
                             {
                                 totalAttendance.setText(monthly_attend);
+                                System.out.println("@@@monthly_attend"+monthly_attend.toString());
+
                             }
                             if(!NumberOfStockistBilled.equalsIgnoreCase("null"))
                             {
