@@ -8,8 +8,8 @@ android {
         applicationId "com.markrap"
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 13
-        versionName "13.0"
+        versionCode 14
+        versionName "14.0"
         multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
