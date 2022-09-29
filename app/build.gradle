@@ -2,14 +2,14 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
 
     defaultConfig {
         applicationId "com.markrap"
         minSdkVersion 19
-        targetSdkVersion 30
-        versionCode 14
-        versionName "14.0"
+        targetSdkVersion 31
+        versionCode 15
+        versionName "15.0"
         multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
