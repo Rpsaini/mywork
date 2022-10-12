@@ -114,7 +114,7 @@
                 android:textSize="15dp" />
 
             <fontspackageForTextView.Regular
-                android:textSize="15dp"
+                android:visibility="gone"
                 android:id="@+id/tv_forgot_password"
                 style="@style/TextAppearance.AppCompat.Small"
                 android:layout_width="wrap_content"
@@ -123,7 +123,8 @@
                 android:layout_gravity="center|right"
                 android:gravity="center"
                 android:text="Forgot Password?"
-                android:textColor="@color/colorAccent" />
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp" />
 
 
         </RelativeLayout>
