@@ -2,12 +2,14 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 31
-
+    compileSdkVersion 32
+    lintOptions {
+        disable 'InvalidPackage'
+    }
     defaultConfig {
         applicationId "com.markrap"
-        minSdkVersion 19
-        targetSdkVersion 31
+        minSdkVersion 21
+        targetSdkVersion 32
         versionCode 15
         versionName "15.0"
         multiDexEnabled true
@@ -65,7 +67,8 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
 
     //for place picker
-    implementation 'com.google.android.libraries.places:places:2.2.0'
+   // implementation 'com.google.android.libraries.places:places:2.2.0'
+    implementation 'com.google.android.libraries.places:places:2.6.0'
     implementation 'com.github.yalantis:ucrop:2.2.4'
 
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
