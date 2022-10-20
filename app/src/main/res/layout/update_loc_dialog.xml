@@ -26,7 +26,7 @@
 
 
     <fontspackageForTextView.BoldMedium
-
+android:visibility="gone"
         android:singleLine="true"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"

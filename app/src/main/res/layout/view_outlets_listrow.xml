@@ -112,7 +112,7 @@
                 android:gravity="center"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="Update Vist status"
+                android:text="Mark Visit"
                 android:background="@drawable/round_button"
                 ></fontspackageForTextView.Regular>
         </LinearLayout>

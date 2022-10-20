@@ -131,7 +131,9 @@ public class Signup extends BaseActivity implements View.OnClickListener {
                     {
                         new SavePreferences().savePreferencesData(Signup.this,obj.getString("data"),AppConstants.logindata);
 
-                        startActivity(new Intent(Signup.this, MainActivity.class));
+                     //   startActivity(new Intent(Signup.this, MainActivity.class));
+                        startActivity(LoginActivity.getIntent(Signup.this));
+
                         finish();
 //                   //"result":1,"msg":"Registration successfull, User will approve by Administrator!",
 //        //"data":{"id":"17","first_name":"Ram","last_name":"test","email":"tespppp@gmail.com",

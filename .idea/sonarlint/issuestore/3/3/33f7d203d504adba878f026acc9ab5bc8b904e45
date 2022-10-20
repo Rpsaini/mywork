@@ -1,0 +1,8 @@
+
+y	java:S116"_Rename this field "edit_forgot_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Ð‘Áûÿÿÿÿ
+m	java:S116"SRename this field "back_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú÷Âëøÿÿÿÿ
+E	java:S1085")Either remove or fill this block of code.(È¡ª¬8‘ï¹è¼0
+V	java:S125:"<This block of commented-out lines of code should be removed.(Ú´ÈÜýÿÿÿÿ
+S	java:S106L"9Replace this use of System.out or System.err by a logger.(»¹ùÿÿÿÿ
+N	java:S106M"9Replace this use of System.out or System.err by a logger.(Èˆß
+J	java:S108P")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ8â¤Àè¼0

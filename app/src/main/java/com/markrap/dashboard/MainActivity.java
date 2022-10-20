@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -55,6 +56,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private DrawerLayout drawerLayout;
     private ImageButton menuBtn;
     TextView txtToolbartext;
+    ImageView imgICBack;
     private LinearLayout linearHome_btn,linearAttendance,linearTaskList,linearMAnageOrder,linearMyPoints,linearNotification,linearChangePasswords,llLogout;
     TextView home_btn,btn_attendance,btn_taskList,btn_manageOrder,btnMyPoints,btnNotification,btnChangePassword,btnMyOrders,btnLogout;
     private boolean doubleBackToExitPressedOnce;
@@ -83,6 +85,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private void initView() {
 //        imgNotification=(ImageButton)findViewById(R.id.imgNotification);
          txtToolbartext =findViewById(R.id.txtToolbartext);
+        imgICBack=(ImageView)findViewById(R.id.imgICBack);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         menuBtn = (ImageButton) findViewById(R.id.menu_btn);
         linearHome_btn = (LinearLayout) findViewById(R.id.linearHome_btn);
@@ -143,6 +146,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         btnMyOrders.setOnClickListener(this);
         llLogout.setOnClickListener(this);
         btnLogout.setOnClickListener(this);
+        imgICBack.setOnClickListener(this);
     }
 
 
@@ -417,33 +421,48 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
     public void setupHomeFragment() {
         txtToolbartext.setText("Home");
+        imgICBack.setVisibility(View.GONE);
+
         showFragment(HomeFragments.newInstance(this), HomeFragments.TAG);
 
     }
     private void setupAttendanceFragment() {
         txtToolbartext.setText("Attendance");
-        showFragment(new AttendanceFragments(), AttendanceFragments.TAG);
+        imgICBack.setVisibility(View.VISIBLE);
+       showFragment(new AttendanceFragments(), AttendanceFragments.TAG);
+
+
+
+        /*Intent in =new Intent(getApplicationContext(), AttendanceActivity.class);
+        startActivity(in);*/
 
     }
     private void setupTaskListFragment() {
         txtToolbartext.setText("Task");
+        imgICBack.setVisibility(View.GONE);
+
         showFragment(TaskListFragments.newInstance(this), TaskListFragments.TAG);
 
     }
     private void setupTManageOrdersFragment() {
 //        imgNotification.setVisibility(View.VISIBLE);
+        imgICBack.setVisibility(View.GONE);
+
         txtToolbartext.setText(getResources().getString(R.string.manageorder));
         showFragment(AllStoresFrg.newInstance(this), AllStoresFrg.TAG);
 
     }
     private void setupTMyPointsFragment() {
         txtToolbartext.setText("My Points");
+        imgICBack.setVisibility(View.GONE);
+
         showFragment(MyPointsFragments.newInstance(this), MyPointsFragments.TAG);
 
     }
 
     private void showNotificationonManageStore() {
 //        imgNotification.setVisibility(View.VISIBLE);
+        imgICBack.setVisibility(View.GONE);
 
         txtToolbartext.setText("Notifcations ");
         showFragment(NotificationFrgmenst.newInstance(this), NotificationFrgmenst.TAG);
@@ -451,18 +470,21 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
     private void showNotificationonNavMenu() {
 //        imgNotification.setVisibility(View.VISIBLE);
+        imgICBack.setVisibility(View.GONE);
 
         txtToolbartext.setText("Notifcations ");
         showFragment(NotificationFrgmenst.newInstance(this), NotificationFrgmenst.TAG);
 
     }
     private void showChangePassword() {
+        imgICBack.setVisibility(View.GONE);
 
         txtToolbartext.setText("Change Password ");
         showFragment(ChangePassword.newInstance(this), ChangePassword.TAG);
 
     }
     private void showMyOrderFrg() {
+        imgICBack.setVisibility(View.GONE);
 
         txtToolbartext.setText("My Orders");
         showFragment(new MyOrderFrg(), MyOrderFrg.TAG);

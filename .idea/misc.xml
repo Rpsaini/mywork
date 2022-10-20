@@ -5,10 +5,20 @@
       <map>
         <entry key="..\:/RND/AndroidLIveData2/LiveData/app/src/main/res/layout/home_fragment.xml" value="0.10643115942028986" />
         <entry key="..\:/RND/AndroidLIveData2/LiveData/app/src/main/res/layout/psr_list_row.xml" value="0.17" />
+        <entry key="app/src/main/res/layout/activity_attendance.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_attendance_new.xml" value="0.11770833333333333" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16510416666666666" />
+        <entry key="app/src/main/res/layout/activity_view_out_lets.xml" value="0.16510416666666666" />
+        <entry key="app/src/main/res/layout/attendance_fragment.xml" value="0.11770833333333333" />
         <entry key="app/src/main/res/layout/forgot_password.xml" value="0.16510416666666666" />
-        <entry key="app/src/main/res/layout/home_fragment.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/home_fragment.xml" value="0.2" />
         <entry key="app/src/main/res/layout/home_menu_layout.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/manageorder_fragment.xml" value="0.13541666666666666" />
+        <entry key="app/src/main/res/layout/outlet_markvisit_layout.xml" value="0.13541666666666666" />
+        <entry key="app/src/main/res/layout/tool_bar_layout.xml" value="0.17" />
+        <entry key="app/src/main/res/layout/update_loc_dialog.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/view_outlets_listrow.xml" value="0.16510416666666666" />
       </map>
     </option>
   </component>

@@ -115,6 +115,9 @@
 
 
         <EditText
+            android:textColor="@color/redcolor"
+
+            android:inputType="number"
             android:id="@+id/edNumberOfProductsAvailOutlet"
             android:hint="Number of ITC Lines available in Outlet"
             android:layout_marginLeft="30dp"
@@ -127,6 +130,9 @@
 
 
     <EditText
+        android:inputType="number"
+        android:textColor="@color/redcolor"
+
         android:id="@+id/edTotalOrderValue"
         android:hint="Today's Order Value in Rs."
         android:layout_marginLeft="30dp"

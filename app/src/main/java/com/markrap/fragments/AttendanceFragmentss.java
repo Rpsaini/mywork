@@ -1,83 +1,58 @@
 package com.markrap.fragments;
 
 import android.Manifest;
-import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.FileUtils;
 import android.os.Handler;
-import android.os.Looper;
-import android.provider.MediaStore;
 import android.util.Base64;
-import android.util.Log;
-import android.util.Printer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.app.preferences.SavePreferences;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.markrap.BaseActivity;
 import com.markrap.R;
 import com.markrap.communication.ApiProductionS;
 import com.markrap.communication.CallBack;
 import com.markrap.communication.ImageAttendanceCallBack;
-import com.markrap.communication.ServerHandler;
 import com.markrap.dashboard.MainActivity;
 import com.markrap.gpstracter.GpsTracker;
-import com.markrap.login.LoginActivity;
-import com.markrap.login.Signup;
 import com.markrap.utility.AppConstants;
 import com.wallet.retrofitapi.api.RxAPICallHelper;
 import com.wallet.retrofitapi.api.RxAPICallback;
-
 
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Locale;
-import java.util.Map;
-
-import static android.app.Activity.RESULT_OK;
 
 import Communication.BuildRequestParms;
 import io.reactivex.Observable;
 import io.reactivex.disposables.Disposable;
 import okhttp3.MultipartBody;
-import okhttp3.ResponseBody;
 
 
-public class AttendanceFragments extends Fragment {
+public class AttendanceFragmentss extends BaseActivity {
     public static final String TAG = "HomeFragments";
-    View rootView;
+   // View rootView;
     Uri imageUrli;
     private String dataCheckIn = "";
     private MainActivity mainActivity;
@@ -89,25 +64,25 @@ public class AttendanceFragments extends Fragment {
     File file;
     private Uri cameraImageUri;
 
-    public static Fragment newInstance(Context context) {
+  /*  public static Fragment newInstance(Context context) {
         return Fragment.instantiate(context,
-                AttendanceFragments.class.getName());
-    }
+                AttendanceFragmentss.class.getName());
+    }*/
 
-    @Override
+ /*   @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+    }*/
+    protected int setLayout() {
+        return R.layout.attendance_fragment;
     }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        rootView = inflater.inflate(R.layout.attendance_fragment, container, false);
-
-        mainActivity = (MainActivity) getActivity();
+    protected void setUp() {
+        init();
+    }
+    private void init() {
         setUserData();
-
-        rootView.findViewById(R.id.rr_checkIn).setOnClickListener(new OnClickListener() {
+        findViewById(R.id.rr_checkIn).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v)
             {
@@ -141,7 +116,69 @@ public class AttendanceFragments extends Fragment {
         });
 
 
-        rootView.findViewById(R.id.imageChekdOut).setOnClickListener(new OnClickListener() {
+        findViewById(R.id.imageChekdOut).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainActivity.confirmBox("Do you want to CheckOut ?","attendance", new CallBack() {
+                    @Override
+                    public void getRespone(String dta, ArrayList<Object> respons) {
+                        if (dta.equalsIgnoreCase("true")) {
+                            dataCheckIn = "out";
+                            checkPermissionGranted();
+                        }
+                    }
+                }, new ImageAttendanceCallBack() {
+                    @Override
+                    public void getImageUri(Uri uri) {
+                        imageUrli=uri;
+                    }
+                });
+
+            }
+        });
+
+    }
+  /*  @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        rootView = inflater.inflate(R.layout.attendance_fragment, container, false);
+
+        //mainActivity = (MainActivity) getActivity();
+        setUserData();
+        findViewById(R.id.rr_checkIn).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                mainActivity.confirmBox("Do you want to CheckIn ?","attendance", new CallBack() {
+                    @Override
+                    public void getRespone(String dta, ArrayList<Object> respons) {
+                        if (dta.equalsIgnoreCase("true")) {
+                            dataCheckIn = "in";
+                            checkPermissionGranted();
+                        }
+                    }
+                }, new ImageAttendanceCallBack() {
+                    @Override
+                    public void getImageUri(Uri uri) {
+
+                        try {
+
+
+                            imageUrli = uri;
+
+
+                        }
+                        catch (Exception e)
+                        {
+                            e.printStackTrace();
+                        }
+                    }
+                });
+
+            }
+        });
+
+
+        findViewById(R.id.imageChekdOut).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 mainActivity.confirmBox("Do you want to CheckOut ?","attendance", new CallBack() {
@@ -166,7 +203,8 @@ public class AttendanceFragments extends Fragment {
     }
 
 
-    private String encodeImage(Bitmap bm)
+*/
+  private String encodeImage(Bitmap bm)
     {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         bm.compress(Bitmap.CompressFormat.JPEG,100,baos);
@@ -186,8 +224,8 @@ public class AttendanceFragments extends Fragment {
 
     private void checkPermissionGranted() {
         try {
-            if (ContextCompat.checkSelfPermission(getActivity(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(getActivity(), new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 101);
+            if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 101);
             } else {
 
                 getLocation();
@@ -200,8 +238,8 @@ public class AttendanceFragments extends Fragment {
     ProgressDialog pd;
 
     public void getLocation() {
-        pd = new ProgressDialog(getActivity());
-        gpsTracker = new GpsTracker(getActivity());
+        pd = new ProgressDialog(this);
+        gpsTracker = new GpsTracker(AttendanceFragmentss.this);
         if (gpsTracker.canGetLocation()) {
 
             pd.setMessage("Fetching your current location");
@@ -351,28 +389,34 @@ public class AttendanceFragments extends Fragment {
         return myFile.getAbsolutePath();
     }
 
+    public String getLoginData(String dataType) {
+        try {
+            JSONObject data = new JSONObject(new SavePreferences().reterivePreference(this, AppConstants.logindata).toString());
+            return data.getString(dataType);
 
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return  "";
+    }
     private void setUserData()
     {
-        String first_name = mainActivity.getLoginData("first_name");
+       /* String first_name = mainActivity.getLoginData("first_name");
         String last_name = mainActivity.getLoginData("last_name");
-        String image = mainActivity.getLoginData("image");
 
-        TextView user_name_txt =rootView.findViewById(R.id.user_name_txt);
-        user_name_txt.setText("Hi, "+first_name+" "+last_name);
-        TextView txtUsernavname=mainActivity.findViewById(R.id.txtUsernavname);
+        String image = mainActivity.getLoginData("image");*/
 
-        txtUsernavname.setText(first_name+" "+last_name);
-        ImageView imageBack=mainActivity.findViewById(R.id.imgICBack);
-        showImage(image,(ImageView) rootView.findViewById(R.id.user_profile));
-        imageBack.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        String first_name = getLoginData("first_name");
+        String last_name = getLoginData("last_name");
 
-            //    Toast.makeText(getActivity(),"Testing",Toast.LENGTH_SHORT).show();
-                startActivity(MainActivity.getIntent(getActivity()));
-            }
-        });
+        String image = getLoginData("image");
+
+      //  TextView user_name_txt =rootView.findViewById(R.id.user_name_txt);
+        //user_name_txt.setText("Hi, "+first_name+" "+last_name);
+   //     TextView txtUsernavname=mainActivity.findViewById(R.id.txtUsernavname);
+     //   txtUsernavname.setText(first_name+" "+last_name);
+        showImage(image,(ImageView) findViewById(R.id.user_profile));
 
     }
 
@@ -382,16 +426,7 @@ public class AttendanceFragments extends Fragment {
                 .centerCrop()
                 .placeholder(R.drawable.side_image)
                 .error(R.drawable.side_image);
-        Glide.with(mainActivity).load(image_url).apply(requestOptions).into(imageView);
-    }
-    private void showFragment(Fragment fragment, String tag) {
-
-
-        FragmentManager manager = getActivity().getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = manager.beginTransaction();
-        fragmentTransaction.replace(R.id.container, fragment, tag);
-        fragmentTransaction.disallowAddToBackStack();
-        fragmentTransaction.commit();
+        Glide.with(AttendanceFragmentss.this).load(image_url).apply(requestOptions).into(imageView);
     }
 }
 

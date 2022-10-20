@@ -102,6 +102,8 @@ android:exported="true"
             android:name=".dashboard.ManageStoreProductCart"
             android:screenOrientation="portrait" />
         <activity android:name=".dashboard.myorders.MyOrdersDetailActivity" />
+        <activity android:name=".attendance.AttendanceActivity" />
+        <activity android:name=".fragments.AttendanceFragmentss" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

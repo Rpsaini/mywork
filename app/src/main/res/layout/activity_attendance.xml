@@ -51,7 +51,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-
+android:visibility="invisible"
                     android:id="@+id/txtpleaseSelectPrefferedloctaion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

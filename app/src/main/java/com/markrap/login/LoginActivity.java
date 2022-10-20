@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.app.preferences.SavePreferences;
 import com.google.android.material.textfield.TextInputLayout;
@@ -79,7 +80,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             startActivity(Signup.getIntent(LoginActivity.this));
         }
         if (v == tv_forgot_password) {
-            startActivity(ForgotPassword.getIntent(LoginActivity.this));
+            //startActivity(ForgotPassword.getIntent(LoginActivity.this));
+            Toast.makeText(getApplicationContext(),"To be reset by Area manager",Toast.LENGTH_SHORT).show();
         }
     }
 
