@@ -321,7 +321,7 @@ public class StockistAdapter extends RecyclerView.Adapter<StockistAdapter.MyView
 
 
                 if (imageUrli == null) {
-                    ira1.showErrorDialog("Please Take Stocking image");
+                    ira1.showErrorDialog("Please take stockist image");
                 } else
                     {
                        // updateLoc(lat,lng);
@@ -476,11 +476,14 @@ public class StockistAdapter extends RecyclerView.Adapter<StockistAdapter.MyView
 
                     if (uploadFileResponse.has("errors")) {
                         allStoresFrg.getStores();
-                        ira1.showErrorDialog("Captured Stockist location done successfully.");
+                    //    ira1.showErrorDialog("Captured Stockist location done successfully.");
+                        ira1.showErrorDialog("Marked successfully.");
+
                         dialog.dismiss();
                     } else {
                         allStoresFrg.getStores();
-                        ira1.showErrorDialog("Captured Stockist location done successfully.");
+                    //    ira1.showErrorDialog("Captured Stockist location done successfully.");
+                        ira1.showErrorDialog("Marked successfully.");
 
                         dialog.dismiss();
                     }
