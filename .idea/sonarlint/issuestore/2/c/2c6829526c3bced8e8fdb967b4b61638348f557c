@@ -1,0 +1,11 @@
+
+k	java:S117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êàÿ’ùÿÿÿÿ
+j	java:S116"URename this field "verify_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ß­Î
+{	java:S116"aRename this field "text_input_layout_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö–šÕûÿÿÿÿ
+}	java:S116"cRename this field "text_input_layout_mobile" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö–šÕûÿÿÿÿ
+|	java:S116"bRename this field "text_input_layout_email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö–šÕûÿÿÿÿ
+c
+java:S1659"HDeclare "txtPassword" and all following declarations on a separate line.(Ö–šÕûÿÿÿÿ
+T	java:S106€"9Replace this use of System.out or System.err by a logger.(¥ÔÄÆýÿÿÿÿ
+Y	java:S125†"<This block of commented-out lines of code should be removed.(¤ŽÐÊ8Áëúˆ¿0
+W	java:S125Œ"<This block of commented-out lines of code should be removed.(Æà±àÿÿÿÿÿ

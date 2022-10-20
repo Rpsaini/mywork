@@ -1,0 +1,55 @@
+
+K
+java:S1066ë"/Merge this if statement with the enclosing one.(ßíÖşÿÿÿÿ
+k	java:S117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çşàıÿÿÿÿ
+f	java:S117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úì—Ú
+>
+java:S1604l"(Make this anonymous inner class a lambda(ë’˜¼
+C
+java:S1604v"(Make this anonymous inner class a lambda(ëèİ‡ùÿÿÿÿ
+?
+java:S1604"(Make this anonymous inner class a lambda(úÖ¼®
+D
+java:S1604º"(Make this anonymous inner class a lambda(§ú¹Šşÿÿÿÿ
+?
+java:S1604‹"(Make this anonymous inner class a lambda(†£°î
+h	java:S116:"NRename this field "Lng" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€­Úıÿÿÿÿ
+z	java:S116<"eRename this field "text_input_layout_latitude" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤“ÃË
+{	java:S116<"fRename this field "text_input_layout_longitude" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤“ÃË
+x	java:S116G"cRename this field "text_input_layout_mobile" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úïß
+v	java:S116H"aRename this field "text_input_layout_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıŒßœ
+<
+java:S1659:"!Declare "Lng" on a separate line.(€­Úıÿÿÿÿ
+O
+java:S1659<"9Declare "text_input_layout_longitude" on a separate line.(¤“ÃË
+E
+java:S1659>"*Declare "stockistname" on a separate line.(ê´Æàùÿÿÿÿ
+m
+java:S1450:"RRemove the "Lng" field and declare it as a local variable in the relevant methods.(€­Úıÿÿÿÿ
+m
+java:S1450:"RRemove the "lat" field and declare it as a local variable in the relevant methods.(€­Úıÿÿÿÿ
+L
+java:S1874@"6Remove this use of "ProgressDialog"; it is deprecated.(Ó¾õ
+Q	java:S125]"<This block of commented-out lines of code should be removed.(‚¸Úí
+N	java:S106o"9Replace this use of System.out or System.err by a logger.(ëÈöÜ
+S	java:S106~"9Replace this use of System.out or System.err by a logger.(ğğòŒûÿÿÿÿ
+W	java:S125§"<This block of commented-out lines of code should be removed.(Î·ãòùÿÿÿÿ
+R	java:S125Ñ"<This block of commented-out lines of code should be removed.(ÅÔ”¦
+M
+java:S1874û"6Remove this use of "ProgressDialog"; it is deprecated.(¥ÂÁØ
+I
+java:S1874ş"2Remove this use of "setMessage"; it is deprecated.(µâÕ°
+K
+java:S1874ˆ"/Remove this use of "Handler"; it is deprecated.(§çµüÿÿÿÿ
+Z
+java:S1854É">Remove this useless assignment to local variable "disposable".(İÌ˜•úÿÿÿÿ
+T	java:S106²"9Replace this use of System.out or System.err by a logger.(…“ÁÉúÿÿÿÿ
+R
+java:S1874Ã"6Remove this use of "ProgressDialog"; it is deprecated.(–ı¨üÿÿÿÿ
+R
+java:S1874Ã"6Remove this use of "ProgressDialog"; it is deprecated.(–ı¨üÿÿÿÿ
+T	java:S106Ï"9Replace this use of System.out or System.err by a logger.(Š¯äÜÿÿÿÿÿ
+W	java:S125Ô"<This block of commented-out lines of code should be removed.(ÿ³ Íıÿÿÿÿ
+T	java:S106ë"9Replace this use of System.out or System.err by a logger.(öïµâıÿÿÿÿ
+K
+java:S1481É"/Remove this unused "disposable" local variable.(İÌ˜•úÿÿÿÿ

@@ -1,0 +1,114 @@
+
+?
+java:S1604°"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604¼"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604È"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604Ô"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604à"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604ì"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604ø"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604„"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604œ"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604©"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604µ"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604Á"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604Í"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604Ú"(Make this anonymous inner class a lambda(„ÑñŒ
+?
+java:S1604æ"(Make this anonymous inner class a lambda(„ÑñŒ
+D
+java:S1604ñ"(Make this anonymous inner class a lambda(çÄİöøÿÿÿÿ
+D
+java:S1604ö"(Make this anonymous inner class a lambda(éüËµùÿÿÿÿ
+D
+java:S1604"(Make this anonymous inner class a lambda(Á¥…Ğüÿÿÿÿ
+P	java:S125+"<This block of commented-out lines of code should be removed.(Ôæ‹t
+t	java:S1155"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ĞÒà‘şÿÿÿÿ
+s	java:S116<"YRename this field "linearHome_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€…³øûÿÿÿÿ
+m	java:S116="SRename this field "home_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÒ“Âøÿÿÿÿ
+s	java:S116="YRename this field "btn_attendance" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÒ“Âøÿÿÿÿ
+q	java:S116="WRename this field "btn_taskList" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÒ“Âøÿÿÿÿ
+t	java:S116="ZRename this field "btn_manageOrder" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÒ“Âøÿÿÿÿ
+—
+java:S1186v"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™²ü˜
+Š
+java:S4144×"nUpdate this method so that its implementation is not identical to "showNotificationonManageStore" on line 463.(Ôä¿øÿÿÿÿ
+h
+java:S1659<"MDeclare "linearAttendance" and all following declarations on a separate line.(€…³øûÿÿÿÿ
+f
+java:S1659="KDeclare "btn_attendance" and all following declarations on a separate line.(ŒÒ“Âøÿÿÿÿ
+V	java:S125V"<This block of commented-out lines of code should be removed.(›‘í‚ûÿÿÿÿ
+R	java:S125"<This block of commented-out lines of code should be removed.(ºÄüÎ
+e
+java:S1871±"IThis case's code block is the same as the block for the case on line 293.(ïËƒşÿÿÿÿ
+e
+java:S1871€"IThis case's code block is the same as the block for the case on line 244.(•ˆ‚´ùÿÿÿÿ
+e
+java:S1871˜"IThis case's code block is the same as the block for the case on line 268.(û¸¼Ëşÿÿÿÿ
+e
+java:S1871É"IThis case's code block is the same as the block for the case on line 317.(·—áŠùÿÿÿÿ
+`
+java:S1871è"IThis case's code block is the same as the block for the case on line 220.(³¶İç
+e
+java:S1871Ğ"IThis case's code block is the same as the block for the case on line 196.(Â”¤²şÿÿÿÿ
+`
+java:S1871¸"IThis case's code block is the same as the block for the case on line 172.(Ù¿ì
+8	java:S131œ""Add a default case to this switch.(ºÖ
+R	java:S125Ÿ"<This block of commented-out lines of code should be removed.(§ª„Ï
+F
+java:S1874°"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874¼"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874È"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874Ô"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874à"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874ì"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874ø"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874„"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874œ"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874©"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874µ"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874Á"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874Í"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874Ú"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+F
+java:S1874æ"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+W	java:S125´"<This block of commented-out lines of code should be removed.(ñ¼İğøÿÿÿÿ
+W	java:S125À"<This block of commented-out lines of code should be removed.(®‚Ÿ°ûÿÿÿÿ
+W	java:S125Ğ"<This block of commented-out lines of code should be removed.(®‚Ÿ°ûÿÿÿÿ
+W	java:S125Ø"<This block of commented-out lines of code should be removed.(®‚Ÿ°ûÿÿÿÿ
+
+java:S1186ó"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(»ŠÇ¾ıÿÿÿÿ
+U
+java:S1068>"?Remove this unused "doubleBackToExitPressedOnce" private field.(ÉÏ©€
+Y
+java:S1144Ï"BRemove this unused private "showNotificationonManageStore" method.(°©³÷

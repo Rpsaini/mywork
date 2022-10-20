@@ -1,0 +1,52 @@
+
+e
+java:S1192Õ"GDefine a constant instead of duplicating this literal "errors" 4 times.(ô¼®¥8ð®êœ¿0
+s	java:S117š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çžþàýÿÿÿÿ8ò®êœ¿0
+n	java:S117›"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úì—Ú8ò®êœ¿0
+n	java:S117§"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÐÎ’8ò®êœ¿0
+C
+java:S1604U"(Make this anonymous inner class a lambda(ž°ôøÿÿÿÿ
+>
+java:S1604w"(Make this anonymous inner class a lambda(Âù”¿
+F
+java:S1604ƒ"(Make this anonymous inner class a lambda(†£°î8ó®êœ¿0
+ƒ
+java:S1488Ô"`Immediately return this expression instead of assigning it to the temporary variable "encImage".(ÿÚÌ‰ýÿÿÿÿ8ô®êœ¿0
+X	java:S1257"<This block of commented-out lines of code should be removed.(æºÚ“8õŒìœ¿0
+X	java:S125C"<This block of commented-out lines of code should be removed.(´ÑÀ8®ˆÅœ¿0
+Q	java:S125I"<This block of commented-out lines of code should be removed.(ßìê¯
+R	java:S125Ž"<This block of commented-out lines of code should be removed.(«ÃÀ÷
+T
+java:S1874î"6Remove this use of "ProgressDialog"; it is deprecated.(Ó¾õ8µ¯êœ¿0
+T
+java:S1874ñ"6Remove this use of "ProgressDialog"; it is deprecated.(—Àƒ‹8¶¯êœ¿0
+P
+java:S1874õ"2Remove this use of "setMessage"; it is deprecated.(µâÕ°8·¯êœ¿0
+R
+java:S1874ÿ"/Remove this use of "Handler"; it is deprecated.(§çµüÿÿÿÿ8¸¯êœ¿0
+V	java:S106‹"9Replace this use of System.out or System.err by a logger.(–ûå…8º¯êœ¿0
+a
+java:S1854Í">Remove this useless assignment to local variable "disposable".(ÝÌ˜•úÿÿÿÿ8½¯êœ¿0
+[	java:S106¬"9Replace this use of System.out or System.err by a logger.(…“ÁÉúÿÿÿÿ8À¯êœ¿0
+T
+java:S1874Â"6Remove this use of "ProgressDialog"; it is deprecated.(•ØÛ 8Â¯êœ¿0
+V	java:S106ë"9Replace this use of System.out or System.err by a logger.(”§ëó8Å¯êœ¿0
+[	java:S106÷"9Replace this use of System.out or System.err by a logger.(öïµâýÿÿÿÿ8Ç¯êœ¿0
+R
+java:S1481Í"/Remove this unused "disposable" local variable.(ÝÌ˜•úÿÿÿÿ8Ç¯êœ¿0
+[
+java:S1854›"=Remove this useless assignment to local variable "last_name".(úì—Ú8Â íœ¿0
+a
+java:S1854š">Remove this useless assignment to local variable "first_name".(çžþàýÿÿÿÿ8Â íœ¿0
+W	java:S125•"<This block of commented-out lines of code should be removed.(±“Îþÿÿÿÿ
+R
+java:S1481š"/Remove this unused "first_name" local variable.(çžþàýÿÿÿÿ8Ä íœ¿0
+L
+java:S1481›".Remove this unused "last_name" local variable.(úì—Ú8Ä íœ¿0
+Y	java:S125Ÿ"<This block of commented-out lines of code should be removed.(ø‘·Ù8Å íœ¿0
+G
+java:S1068>"1Remove this unused "PROFILE_IMAGE" private field.(Ãåñå
+M
+java:S1068A"2Remove this unused "cameraImageUri" private field.(¼ÂØÛùÿÿÿÿ
+N
+java:S1144Ï"0Remove this unused private "encodeImage" method.(õ‡õ¸8Ð¯êœ¿0

@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/layout/home_menu_layout.xml" value="0.18" />
         <entry key="app/src/main/res/layout/manageorder_fragment.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/layout/outlet_markvisit_layout.xml" value="0.13541666666666666" />
+        <entry key="app/src/main/res/layout/store_list_view.xml" value="0.1" />
         <entry key="app/src/main/res/layout/tool_bar_layout.xml" value="0.17" />
         <entry key="app/src/main/res/layout/update_loc_dialog.xml" value="0.21" />
         <entry key="app/src/main/res/layout/view_outlets_listrow.xml" value="0.16510416666666666" />

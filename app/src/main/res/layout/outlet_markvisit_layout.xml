@@ -79,6 +79,7 @@
 
 
     <fontspackageForTextView.Regular
+        android:visibility="gone"
         android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
 

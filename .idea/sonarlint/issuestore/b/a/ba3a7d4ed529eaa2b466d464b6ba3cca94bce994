@@ -1,0 +1,36 @@
+
+F
+java:S3740Ÿ"/Provide the parametrized type for this generic.(ŒéŸ
+F
+java:S3740Ÿ"/Provide the parametrized type for this generic.(ŒéŸ
+t
+java:S2293U"YReplace the type specification in this constructor call with the diamond operator ("<>").(Í¾Å¶ÿÿÿÿÿ
+h
+java:S1192j"MDefine a constant instead of duplicating this literal "wd_dest_code" 3 times.(²Âÿàúÿÿÿÿ
+y
+java:S1104,"^Make selectedSToreArray a static final constant or non-public and provide accessors if needed.(Ğ‡ıÿÿÿÿ
+S
+java:S1444,"8Make this "public static selectedSToreArray" field final(Ğ‡ıÿÿÿÿ
+B
+java:S16591"'Declare "longitude" on a separate line.(öîƒÆÿÿÿÿÿ
+L
+java:S18740"6Remove this use of "ProgressDialog"; it is deprecated.(Ó¾õ
+N
+java:S18744"3Remove this use of "instantiate"; it is deprecated.(Ì³Ùÿÿÿÿÿ
+>
+java:S11859"(Remove this method to simply inherit it.(ßìê¯
+>
+java:S1185J"(Remove this method to simply inherit it.(öÿÕÅ
+m
+java:S3776O"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(òı¾Üûÿÿÿÿ
+Q	java:S125Q"<This block of commented-out lines of code should be removed.(Ä±’À
+P	java:S125["<This block of commented-out lines of code should be removed.(Œ¸ö"
+œ
+java:S1186{"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×şÿÿÿÿ
+R	java:S125"<This block of commented-out lines of code should be removed.(½Ëº£
+˜
+java:S1186¤"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«û³±
+
+java:S1186©"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ê¥¾àûÿÿÿÿ
+I
+java:S1068/".Remove this unused "gpsTracker" private field.(ñç—úùÿÿÿÿ

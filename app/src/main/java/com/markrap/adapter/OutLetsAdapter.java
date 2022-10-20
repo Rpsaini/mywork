@@ -257,6 +257,7 @@ public class OutLetsAdapter extends RecyclerView.Adapter<OutLetsAdapter.MyViewHo
             @Override
             public void getRespone(String dta, ArrayList<Object> respons) {
                 try {
+                    Log.i("@@@---",AppConstants.apiUlr+"outletvisit"+ m);
                     System.out.println("outletvisit===="+dta);
                     JSONObject obj = new JSONObject(dta);
                     if (obj.getInt("result")>0)
@@ -395,7 +396,7 @@ public class OutLetsAdapter extends RecyclerView.Adapter<OutLetsAdapter.MyViewHo
                 else
                 {
 
-                    outletVistedDataSubmit(mainActivity.getLoginData("id"),outlet_id,edNumberOfProductsAvailOutlet.getText().toString().trim(),edTotalOrderValue.getText().toString().trim(),dialog);               }
+                    outletVistedDataSubmit(mainActivity.getLoginData("id"),outlet_id,edNumberOfProductsAvailOutlet.getText().toString().trim(),edTotalOrderValue.getText().toString().trim(),lat,lng,dialog);               }
 
 
 
@@ -411,7 +412,7 @@ public class OutLetsAdapter extends RecyclerView.Adapter<OutLetsAdapter.MyViewHo
     }
 
 
-    public void outletVistedDataSubmit(String user_id,String outlet_id,String no_product,String total_value,Dialog dialog)
+   /* public void outletVistedDataSubmit(String user_id,String outlet_id,String no_product,String total_value,Dialog dialog)
     {
         LinkedHashMap<String, String> m = new LinkedHashMap<>();
         m.put("user_id", user_id);
@@ -423,12 +424,53 @@ public class OutLetsAdapter extends RecyclerView.Adapter<OutLetsAdapter.MyViewHo
             @Override
             public void getRespone(String dta, ArrayList<Object> respons) {
                 try {
+
                     Log.i("addoutletdetorder",""+AppConstants.apiUlr+"addoutletdetorder"+m);
                     System.out.println("addoutletdetorder===="+dta);
                     JSONObject obj = new JSONObject(dta);
                     if (obj.getInt("result")>0)
                     {
                         ira1.showErrorDialog("Submit done.");
+                        dialog.dismiss();
+
+                    }
+                    else
+                    {
+                        if(obj.has("errors")) {
+                            ira1.showErrorDialog(obj.getString("errors"));
+                        }
+                        else{
+                            ira1.showErrorDialog(obj.getString("msg"));
+                        }
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+    }*/
+    public void outletVistedDataSubmit(String user_id,String outlet_id,String no_product,String total_value,String latitude, String longitude,Dialog dialog)
+    {
+        LinkedHashMap<String, String> m = new LinkedHashMap<>();
+        m.put("user_id", user_id);
+        m.put("outlet_id", outlet_id);
+        m.put("no_product", no_product);
+        m.put("total_value", total_value);
+        m.put("latitude", latitude);
+        m.put("longitude", longitude);
+        Map<String, String> headerMap = new HashMap<>();
+        new ServerHandler().sendToServer(mContext, AppConstants.apiUlr+"addoutletdetorder", m, 0, headerMap, 20000, R.layout.loader_dialog, new CallBack() {
+            @Override
+            public void getRespone(String dta, ArrayList<Object> respons) {
+                try {
+
+                    Log.i("--new Api lgai hai",""+AppConstants.apiUlr+"addoutletdetorder"+m);
+                    System.out.println("addoutletdetorder===="+dta);
+                    JSONObject obj = new JSONObject(dta);
+                    if (obj.getInt("result")>0)
+                    {
+                        ira1.showErrorDialog("Marked successfully.");
                         dialog.dismiss();
 
                     }
