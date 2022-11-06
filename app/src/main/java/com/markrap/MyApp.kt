@@ -8,12 +8,12 @@ import com.android.volley.RequestQueue
 import com.android.volley.toolbox.HurlStack
 import com.android.volley.toolbox.ImageLoader
 import com.android.volley.toolbox.Volley
+import com.google.firebase.FirebaseApp
 import com.markrap.placepicker.VolleySingleton
 
 import fontspackageForTextView.DefineYourAppFont
 
 class MyApp : Application() {
-
     companion object {
         lateinit var volleyQueueInstance: VolleySingleton
 
@@ -28,6 +28,7 @@ class MyApp : Application() {
     override fun onCreate() {
         super.onCreate()
         mInstance = this
+        FirebaseApp.initializeApp(this);
         instantiateVolleyQueue()
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         DefineYourAppFont.fontNameRegular = "fonts/Montserrat-Regular.ttf"

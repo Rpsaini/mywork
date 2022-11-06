@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "514463767058",
+    "project_id": "market-sarathi-6ea07",
+    "storage_bucket": "market-sarathi-6ea07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514463767058:android:3eda5c46c861b515b9d6cb",
+        "android_client_info": {
+          "package_name": "com.markrap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514463767058-6qmdgnuufihuo9ie71g9h2eh0qrjtp6i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2ylr5geNNi0P9zpGRAbPCqmSTF6frI40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514463767058-6qmdgnuufihuo9ie71g9h2eh0qrjtp6i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

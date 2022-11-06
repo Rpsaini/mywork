@@ -1,0 +1,59 @@
+
+f	java:S117~"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óˆåµ
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İÀÏ°
+l	java:S117ƒ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ ÃÊüÿÿÿÿ
+l	java:S117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã›ºÉûÿÿÿÿ
+g	java:S117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹“¢è
+l	java:S117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ¡µŠøÿÿÿÿ
+g	java:S117¦"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï‰ß¤
+g	java:S117ª"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ç­õ
+g	java:S117«"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„Í¨Ó
+g	java:S117±"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ÀË
+g	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÎ’
+U
+java:S1874/"3Remove this use of "instantiate"; it is deprecated.(Ì³Ùÿÿÿÿÿ8¯»¿¿0
+E
+java:S11854"(Remove this method to simply inherit it.(ßìê¯8°»¿¿0
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(¾Œ±šúÿÿÿÿ
+S	java:S106U"9Replace this use of System.out or System.err by a logger.(¥ÔÄÆıÿÿÿÿ
+m
+java:S3776k"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(òËÇ²ûÿÿÿÿ
+[
+java:S1854„"?Remove this useless assignment to local variable "total_sales".(Ã›ºÉûÿÿÿÿ
+V	java:S125s"<This block of commented-out lines of code should be removed.(ıÚÛúÿÿÿÿ
+N	java:S106w"9Replace this use of System.out or System.err by a logger.(³‡·İ
+S	java:S106y"9Replace this use of System.out or System.err by a logger.(ÇËê¶ÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(õÀ¢
+g
+java:S1858"Q"monthly_attend" is already a string, there's no need to call "toString()" on it.(õÀ¢
+O	java:S106‚"9Replace this use of System.out or System.err by a logger.(æŠ
+L
+java:S1481„"0Remove this unused "total_sales" local variable.(Ã›ºÉûÿÿÿÿ
+O	java:S106†"9Replace this use of System.out or System.err by a logger.(ŒŠ
+T	java:S106‡"9Replace this use of System.out or System.err by a logger.(ïºÒªşÿÿÿÿ
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(ÒĞû×úÿÿÿÿ
+R	java:S125"<This block of commented-out lines of code should be removed.(İƒ©
+R	java:S125—"<This block of commented-out lines of code should be removed.(µ¡À®
+O	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.(õÀ¢
+h
+java:S1858Ÿ"Q"monthly_attend" is already a string, there's no need to call "toString()" on it.(õÀ¢
+O	java:S106§"9Replace this use of System.out or System.err by a logger.(ÈóËú
+W	java:S125©"<This block of commented-out lines of code should be removed.(ÊùÖÖûÿÿÿÿ
+Q	java:S125²"<This block of commented-out lines of code should be removed.(„«¡f
+R	java:S125Ê"<This block of commented-out lines of code should be removed.(ªĞé¡
+W	java:S125Î"<This block of commented-out lines of code should be removed.(¬ë¤¨üÿÿÿÿ
+W	java:S125Ò"<This block of commented-out lines of code should be removed.(Ê¤º¤şÿÿÿÿ
+W	java:S125ô"<This block of commented-out lines of code should be removed.(åãÍ³ıÿÿÿÿ
+V
+java:S1854®"?Remove this useless assignment to local variable "designation".(×™º‘
+U
+java:S1854­"9Remove this useless assignment to local variable "phone".(‚Äí´ÿÿÿÿÿ
+U
+java:S1854¬"9Remove this useless assignment to local variable "email".(‰çèùÿÿÿÿ
+F
+java:S1481¬"*Remove this unused "email" local variable.(‰çèùÿÿÿÿ
+F
+java:S1481­"*Remove this unused "phone" local variable.(‚Äí´ÿÿÿÿÿ
+G
+java:S1481®"0Remove this unused "designation" local variable.(×™º‘
+W	java:S125Î"<This block of commented-out lines of code should be removed.(üç‰ôÿÿÿÿÿ

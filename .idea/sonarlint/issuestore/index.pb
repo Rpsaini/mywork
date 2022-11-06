@@ -1,12 +1,8 @@
 
-<
-build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 U
 %keystores/neptune_makAPP_password.txt,6/d/6d17c73b21704d554ed012bcfcb816ee5ee823dc
 g
 7app/src/main/java/com/markrap/login/ForgotPassword.java,3/3/33f7d203d504adba878f026acc9ab5bc8b904e45
-f
-6app/src/main/java/com/markrap/login/LoginActivity.java,e/8/e86db368f8cba4f0820a6340d8d3b3a6e43e09ad
 k
 ;app/src/main/java/com/markrap/dashboard/StoreSelection.java,c/9/c996b600da439c4c9e7d20682b9c959ce50aea40
 j
@@ -32,6 +28,10 @@ _
 p
 @app/src/main/java/com/markrap/fragments/AttendanceFragments.java,0/c/0cb9d27079efbbc0d1612dd16f788a262aa05631
 i
-9app/src/main/java/com/markrap/dashboard/MainActivity.java,4/6/46dd45861fbf1336f187a76cd791533695161a6f
-i
 9app/src/main/java/com/markrap/fragments/AllStoresFrg.java,b/a/ba3a7d4ed529eaa2b466d464b6ba3cca94bce994
+j
+:app/src/main/java/com/markrap/fragments/HomeFragments.java,d/2/d2845fdf11ca1017e5503665204f3049a98f9d4e
+o
+?app/src/main/java/com/markrap/dashboard/outlet/ViewOutLets.java,d/9/d9a4b8b9ca9b38ad8d8fb3aa129546edb7199f0e
+l
+<app/src/main/java/com/markrap/adapter/CategegoryAdapter.java,1/5/157908f297f63909261f9c09d7dca7598b3a737f

@@ -82,6 +82,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         if (v == tv_forgot_password) {
             //startActivity(ForgotPassword.getIntent(LoginActivity.this));
             Toast.makeText(getApplicationContext(),"To be reset by Area manager",Toast.LENGTH_SHORT).show();
+         //throw new RuntimeException("Test Crash"); // Force a crash
         }
     }
 
