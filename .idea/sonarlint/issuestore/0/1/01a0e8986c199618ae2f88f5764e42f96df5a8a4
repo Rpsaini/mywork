@@ -1,0 +1,24 @@
+
+n	java:S135N"YReduce the total number of break and continue statements in this loop to use at most one.(¯ÒÄÿ
+m	java:S127V"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ
+m	java:S127Z"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ
+m	java:S127^"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ
+n	java:S127‡"XRefactor the code in order to not assign to this loop counter from within the loop body.(É…ªÂ
+n	java:S127Š"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ
+k	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎšàŠýÿÿÿÿ
+~
+java:S1488"cImmediately return this expression instead of assigning it to the temporary variable "isConnected".(éÇã«øÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(¹‹ó¿ýÿÿÿÿ
+N
+java:S1874"3Remove this use of "NetworkInfo"; it is deprecated.(Õ¥—ãùÿÿÿÿ
+W
+java:S1874"<Remove this use of "getActiveNetworkInfo"; it is deprecated.(Õ¥—ãùÿÿÿÿ
+U
+java:S1874"?Remove this use of "isConnectedOrConnecting"; it is deprecated.(¸ª©ƒ
+V	java:S125'"<This block of commented-out lines of code should be removed.(±íÒïúÿÿÿÿ
+g
+java:S59985"LRefactor this repetition that can lead to a stack overflow for large inputs.(ÎšàŠýÿÿÿÿ
+h
+java:S3776J"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ìæ¶Í
+7	java:S131d""Add a default case to this switch.(õü“¡

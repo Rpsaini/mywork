@@ -422,7 +422,7 @@ public class LocationPickerActivity extends AppCompatActivity implements Respons
 
 
     private void getData(final String url,String placeid) {
-        System.out.println("login url==="+url);
+        System.out.println("login url=== rahul"+url);
         final ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Loading...");
         progressDialog.show();

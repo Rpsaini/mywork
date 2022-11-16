@@ -31,6 +31,12 @@ public class UtilClass {
         dialog = builder.create();
         dialog.setCancelable(false);
         dialog.show();
+      /*  try {
+            dialog.show();
+        } catch(Exception e){
+            // WindowManager$BadTokenException will be caught and the app would not display
+            // the 'Force Close' message
+        }*/
     }
 
     public void show_alert_finish(String title, String message, final AppCompatActivity appCompatActivity) {

@@ -1,51 +1,52 @@
 
-^
-java:S1192¯"GDefine a constant instead of duplicating this literal "errors" 4 times.(ô¼®¥
-g	java:S117å"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ç­õ
-g	java:S117æ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„Í¨Ó
-g	java:S117é"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ŽÀË
-g	java:S117û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÐÎ’
-C
-java:S1604n"(Make this anonymous inner class a lambda(²â£âüÿÿÿÿ
-D
-java:S1604"(Make this anonymous inner class a lambda(ö³óÀÿÿÿÿÿ
-?
-java:S1604Ý"(Make this anonymous inner class a lambda(†£°î
-?
-java:S1604ð"(Make this anonymous inner class a lambda(ÉäÅõ
-|
-java:S1488®"`Immediately return this expression instead of assigning it to the temporary variable "encImage".(ÿÚÌ‰ýÿÿÿÿ
-N
-java:S1874]"3Remove this use of "instantiate"; it is deprecated.(Ì³Ùÿÿÿÿÿ
->
-java:S1185b"(Remove this method to simply inherit it.(ßìê¯
-?
-java:S1185´"(Remove this method to simply inherit it.(öÿÕÅ
-M
-java:S1874È"6Remove this use of "ProgressDialog"; it is deprecated.(Ó¾õ
+e
+java:S1192±"GDefine a constant instead of duplicating this literal "errors" 4 times.(ô¼®¥8áûï¬Æ0
+n	java:S117ç"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ç­õ8ãûï¬Æ0
+n	java:S117è"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„Í¨Ó8äûï¬Æ0
+n	java:S117ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ŽÀË8äûï¬Æ0
+n	java:S117ý"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÐÎ’8æûï¬Æ0
+J
+java:S1604n"(Make this anonymous inner class a lambda(²â£âüÿÿÿÿ8çûï¬Æ0
+K
+java:S1604"(Make this anonymous inner class a lambda(ö³óÀÿÿÿÿÿ8èûï¬Æ0
+F
+java:S1604Ý"(Make this anonymous inner class a lambda(†£°î8éûï¬Æ0
+F
+java:S1604ò"(Make this anonymous inner class a lambda(ÉäÅõ8êûï¬Æ0
+ƒ
+java:S1488®"`Immediately return this expression instead of assigning it to the temporary variable "encImage".(ÿÚÌ‰ýÿÿÿÿ8ëûï¬Æ0
+U
+java:S1874]"3Remove this use of "instantiate"; it is deprecated.(Ì³Ùÿÿÿÿÿ8ýüï¬Æ0
+E
+java:S1185b"(Remove this method to simply inherit it.(ßìê¯8ÿüï¬Æ0
+F
+java:S1185´"(Remove this method to simply inherit it.(öÿÕÅ8–ýï¬Æ0
+T
+java:S1874È"6Remove this use of "ProgressDialog"; it is deprecated.(Ó¾õ8œýï¬Æ0
+Y
+java:S1874Ë"6Remove this use of "ProgressDialog"; it is deprecated.(õ¥Ìøþÿÿÿÿ8žýï¬Æ0
+P
+java:S1874Ï"2Remove this use of "setMessage"; it is deprecated.(µâÕ°8ÇÜ­Æ0
 R
-java:S1874Ë"6Remove this use of "ProgressDialog"; it is deprecated.(õ¥Ìøþÿÿÿÿ
-I
-java:S1874Ï"2Remove this use of "setMessage"; it is deprecated.(µâÕ°
-K
-java:S1874Ù"/Remove this use of "Handler"; it is deprecated.(§çµüÿÿÿÿ
-O	java:S106å"9Replace this use of System.out or System.err by a logger.(–ûå…
-i	java:S100÷"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È˜Öüÿÿÿÿ
-Z
-java:S1854§">Remove this useless assignment to local variable "disposable".(ÝÌ˜•úÿÿÿÿ
-T	java:S106†"9Replace this use of System.out or System.err by a logger.(…“ÁÉúÿÿÿÿ
-M
-java:S1874œ"6Remove this use of "ProgressDialog"; it is deprecated.(•ØÛ 
-O	java:S106Å"9Replace this use of System.out or System.err by a logger.(”§ëó
-T	java:S106Ñ"9Replace this use of System.out or System.err by a logger.(öïµâýÿÿÿÿ
-K
-java:S1481§"/Remove this unused "disposable" local variable.(ÝÌ˜•úÿÿÿÿ
-Y	java:S125ô"<This block of commented-out lines of code should be removed.(§ßÄÏ8µÚ¿0
-G
-java:S1068W"1Remove this unused "PROFILE_IMAGE" private field.(Ãåñå
-M
-java:S1068Z"2Remove this unused "cameraImageUri" private field.(¼ÂØÛùÿÿÿÿ
-G
-java:S1144©"0Remove this unused private "encodeImage" method.(õ‡õ¸
-M
-java:S1144ƒ"1Remove this unused private "showFragment" method.(¾ÏžÛüÿÿÿÿ
+java:S1874Ù"/Remove this use of "Handler"; it is deprecated.(§çµüÿÿÿÿ8¤ýï¬Æ0
+V	java:S106ä"9Replace this use of System.out or System.err by a logger.(¼Þªÿ8¿ýï¬Æ0
+V	java:S106ç"9Replace this use of System.out or System.err by a logger.(åý«©8Íýï¬Æ0
+p	java:S100ù"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È˜Öüÿÿÿÿ8®ýï¬Æ0
+a
+java:S1854©">Remove this useless assignment to local variable "disposable".(ÝÌ˜•úÿÿÿÿ8°ýï¬Æ0
+[	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(…“ÁÉúÿÿÿÿ8Ñýï¬Æ0
+T
+java:S1874ž"6Remove this use of "ProgressDialog"; it is deprecated.(•ØÛ 8Åýï¬Æ0
+V	java:S106Ç"9Replace this use of System.out or System.err by a logger.(”§ëó8‰Ï’­Æ0
+[	java:S106Ó"9Replace this use of System.out or System.err by a logger.(öïµâýÿÿÿÿ8ƒÜä¯Æ0
+R
+java:S1481©"/Remove this unused "disposable" local variable.(ÝÌ˜•úÿÿÿÿ8Óýï¬Æ0
+Y	java:S125ö"<This block of commented-out lines of code should be removed.(§ßÄÏ8Üýï¬Æ0
+N
+java:S1068W"1Remove this unused "PROFILE_IMAGE" private field.(Ãåñå8èýï¬Æ0
+T
+java:S1068Z"2Remove this unused "cameraImageUri" private field.(¼ÂØÛùÿÿÿÿ8éýï¬Æ0
+N
+java:S1144©"0Remove this unused private "encodeImage" method.(õ‡õ¸8êýï¬Æ0
+T
+java:S1144…"1Remove this unused private "showFragment" method.(¾ÏžÛüÿÿÿÿ8ëýï¬Æ0

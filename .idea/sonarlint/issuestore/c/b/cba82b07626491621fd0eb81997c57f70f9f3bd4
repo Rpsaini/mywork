@@ -1,0 +1,29 @@
+
+a
+java:S1192/"FDefine a constant instead of duplicating this literal "Error" 3 times.(¶ºÇ÷øÿÿÿÿ
+Q	java:S1074"<Method has 8 parameters, which is greater than 7 authorized.(‹±Ó
+C
+java:S1604H"(Make this anonymous inner class a lambda(±æÿÚýÿÿÿÿ
+=
+java:S1604W"(Make this anonymous inner class a lambda(–§º
+–
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(”ËÑ_
+c	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©çÝª
+R
+java:S1874&"<Remove this use of "getActiveNetworkInfo"; it is deprecated.(Çâ·ê
+h
+java:S37764"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(‹±Ó
+N	java:S106L"9Replace this use of System.out or System.err by a logger.(òè¬ê
+N	java:S106["9Replace this use of System.out or System.err by a logger.(…˜éÏ
+Q	java:S125]"<This block of commented-out lines of code should be removed.(þñÆ‰
+T
+java:S4719c"9Replace charset name argument with StandardCharsets.UTF_8(Ñã•åùÿÿÿÿ
+M	java:S106i"9Replace this use of System.out or System.err by a logger.(ÙŠø&
+T	java:S106†"9Replace this use of System.out or System.err by a logger.(ý½Ëóøÿÿÿÿ
+R	java:S125„"<This block of commented-out lines of code should be removed.(Ë¢°
+8
+java:S1116Ž"Remove this empty statement.(Åñ­õþÿÿÿÿ
+l
+java:S3252È"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(ÒÖœªþÿÿÿÿ
+g
+java:S3252É"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(€ÔûÔ

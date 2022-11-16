@@ -39,6 +39,7 @@ import com.markrap.fragments.AllStoresFrg;
 import com.markrap.fragments.MyOrderFrg;
 import com.markrap.fragments.MyPointsFragments;
 import com.markrap.fragments.NotificationFrgmenst;
+import com.markrap.fragments.SamriddhiDashoboard;
 import com.markrap.fragments.TaskListFragments;
 //import com.markrap.services.LocService;
 import com.markrap.services.MyService;
@@ -57,8 +58,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private ImageButton menuBtn;
     TextView txtToolbartext;
     ImageView imgICBack;
-    private LinearLayout linearHome_btn,linearAttendance,linearTaskList,linearMAnageOrder,linearMyPoints,linearNotification,linearChangePasswords,llLogout;
-    TextView home_btn,btn_attendance,btn_taskList,btn_manageOrder,btnMyPoints,btnNotification,btnChangePassword,btnMyOrders,btnLogout;
+    private LinearLayout linearHome_btn,linearAttendance,linearTaskList,linearMAnageOrder,linearMyPoints,linearSamriddhiDashboard,linearNotification,linearChangePasswords,llLogout;
+    TextView btn_samriddhiDashboards,home_btn,btn_attendance,btn_taskList,btn_manageOrder,btnMyPoints,btnNotification,btnChangePassword,btnMyOrders,btnLogout;
     private boolean doubleBackToExitPressedOnce;
 
     public static Intent getIntent(Context context) {
@@ -89,7 +90,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         menuBtn = (ImageButton) findViewById(R.id.menu_btn);
         linearHome_btn = (LinearLayout) findViewById(R.id.linearHome_btn);
-
+        linearSamriddhiDashboard=(LinearLayout)findViewById(R.id.linearSamriddhiDashboard);
+        btn_samriddhiDashboards=(TextView)findViewById(R.id.btn_samriddhiDashboards);
         home_btn = (TextView) findViewById(R.id.home_btn);
         menuBtn = (ImageButton) findViewById(R.id.menu_btn);
         linearAttendance = (LinearLayout) findViewById(R.id.linearAttendance);
@@ -108,6 +110,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         linearChangePasswords=(LinearLayout)findViewById(R.id.linearChangePasswords);
         btnChangePassword=(TextView)findViewById(R.id.btnChangePassword);
         btnMyOrders=(TextView)findViewById(R.id.btnMyOrders);
+
         llLogout=(LinearLayout)findViewById(R.id.llLogout);
         btnLogout=(TextView)findViewById(R.id.btnLogout);
 
@@ -126,6 +129,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
     private void initListners() {
+        linearSamriddhiDashboard.setOnClickListener(this);
+        btn_samriddhiDashboards.setOnClickListener(this);
         menuBtn.setOnClickListener(this);
         home_btn.setOnClickListener(this);
         linearHome_btn.setOnClickListener(this);
@@ -217,6 +222,31 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 }, drawerCloseTime);
 
                 break;
+            case R.id.linearSamriddhiDashboard:
+//                it will check drawer state
+                checkDrawerState();
+//                this function will inflate the My payment screen
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        setUPSamriddhiDashboard();
+                    }
+                }, drawerCloseTime);
+
+                break;
+            case R.id.btn_samriddhiDashboards:
+//                it will check drawer state
+                checkDrawerState();
+//                this function will inflate the My payment screen
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        setUPSamriddhiDashboard();
+                    }
+                }, drawerCloseTime);
+
+                break;
+
             case R.id.btn_attendance:
 //                it will check drawer state
                 checkDrawerState();
@@ -442,6 +472,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         imgICBack.setVisibility(View.GONE);
 
         showFragment(TaskListFragments.newInstance(this), TaskListFragments.TAG);
+
+    }
+    private void setUPSamriddhiDashboard() {
+        txtToolbartext.setText("Samriddhi Dashboard");
+        imgICBack.setVisibility(View.GONE);
+
+        showFragment(SamriddhiDashoboard.newInstance(this), TaskListFragments.TAG);
 
     }
     private void setupTManageOrdersFragment() {

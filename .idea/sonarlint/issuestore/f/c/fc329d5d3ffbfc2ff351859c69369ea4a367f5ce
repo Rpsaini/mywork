@@ -1,0 +1,11 @@
+
+C
+java:S1604"(Make this anonymous inner class a lambda(ÐÌú·øÿÿÿÿ
+C
+java:S16040"(Make this anonymous inner class a lambda(ÐÌú·øÿÿÿÿ
+C
+java:S1604B"(Make this anonymous inner class a lambda(ÐÌú·øÿÿÿÿ
+b	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ¿Ð
+Q	java:S125""<This block of commented-out lines of code should be removed.(½‘Ñ³
+h	java:S100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÝŽÀüÿÿÿÿ
+c	java:S100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØýôŸ

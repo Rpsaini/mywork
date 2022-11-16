@@ -166,6 +166,35 @@
                 android:textColor="@color/color_black"
                 android:textSize="@dimen/text_size_normal" />
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/linecolor"
+
+            ></View>
+
+        <LinearLayout
+
+            android:id="@+id/linearSamriddhiDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearTaskList"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <fontspackageForTextView.Regular
+                android:id="@+id/btn_samriddhiDashboards"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/linearTaskList"
+                android:gravity="center|left"
+                android:paddingLeft="30dp"
+                android:text="@string/samriddhidashoard"
+                android:textAllCaps="false"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
 
         <View
             android:layout_width="match_parent"

@@ -225,8 +225,10 @@ public class AttendanceFragments extends Fragment {
                 double longitude = gpsTracker.getLongitude();
                 if (latitude > 0 && longitude > 0) {
                     pd.dismiss();
+                    System.out.println("Lat 2ndTime===" + latitude + "==" + longitude);
+
                     markAtten(latitude + "", longitude + "");
-                    System.out.println("Lat lnt===" + latitude + "==" + longitude);
+                    System.out.println("Lat lnt===Raul" + latitude + "==" + longitude);
                 }
 
             }

@@ -1,0 +1,106 @@
+
+h
+java:S1192é"QDefine a constant instead of duplicating this literal "current_location" 3 times.(€î‘İ
+g
+java:S1192Ü"KDefine a constant instead of duplicating this literal "sourcename" 3 times.(â¬éÄùÿÿÿÿ
+K
+java:S1066Ñ"/Merge this if statement with the enclosing one.(ş©åúûÿÿÿÿ
+>
+java:S1604X"(Make this anonymous inner class a lambda(ŒøúÖ
+D
+java:S1604ƒ"(Make this anonymous inner class a lambda(Ê±„ùıÿÿÿÿ
+?
+java:S1604¾"(Make this anonymous inner class a lambda(—ÙßÆ
+D
+java:S1604×"(Make this anonymous inner class a lambda(¦øíúÿÿÿÿ
+?
+java:S1604á"(Make this anonymous inner class a lambda(„ÑñŒ
+D
+java:S1604®"(Make this anonymous inner class a lambda(±æÿÚıÿÿÿÿ
+>
+java:S1604Ô"(Make this anonymous inner class a lambda(–§º
+g
+java:S1301È"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ
+‡
+java:S11049"lMake CUSTOM_AUTOCOMPLETE_REQUEST_CODE a static final constant or non-public and provide accessors if needed.(İ›“¼ùÿÿÿÿ
+a
+java:S14449"FMake this "public static CUSTOM_AUTOCOMPLETE_REQUEST_CODE" field final(İ›“¼ùÿÿÿÿ
+l	java:S1164"RRename this field "Address" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¦„÷ÿÿÿÿÿ
+l	java:S1165"WRename this field "GETPLACESHIT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Êà±á
+†
+java:S30089"kRename this field "CUSTOM_AUTOCOMPLETE_REQUEST_CODE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ›“¼ùÿÿÿÿ
+
+java:S1186»"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(³ÆÌ¶øÿÿÿÿ
+˜
+java:S1186À"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Õ˜å¨
+z
+java:S1845Ÿ"^Rename method "hidekeyboard" to prevent any misunderstanding/clash with method "hideKeyboard".(şÌÇÄıÿÿÿÿ
+|
+java:S1450B"fRemove the "contentmainpickerlinear" field and declare it as a local variable in the relevant methods.(âá¬º
+y
+java:S1450<"^Remove the "fragmentManager" field and declare it as a local variable in the relevant methods.(î›äÿÿÿÿÿ
+w
+java:S14507"\Remove the "mLastLocation" field and declare it as a local variable in the relevant methods.(¦ô¦ıÿÿÿÿ
+M
+java:S18740"7Remove this use of "GoogleApiClient"; it is deprecated.(¨´Úá
+Q
+java:S18740";Remove this use of "ConnectionCallbacks"; it is deprecated.(¨´Úá
+M
+java:S18740"7Remove this use of "GoogleApiClient"; it is deprecated.(¨´Úá
+X
+java:S18740"BRemove this use of "OnConnectionFailedListener"; it is deprecated.(¨´Úá
+Q	java:S125;"<This block of commented-out lines of code should be removed.(„Ã¹ƒ
+M
+java:S1874@"7Remove this use of "GoogleApiClient"; it is deprecated.(Ÿõ¸Ú
+m
+java:S3776F"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(¨Œşÿÿÿÿ
+—
+java:S1186w"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«û³±
+˜
+java:S1186­"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(±¾ê
+R	java:S125"<This block of commented-out lines of code should be removed.(˜µĞÏ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(“‚ÒÒ
+R	java:S125Œ"<This block of commented-out lines of code should be removed.(£ùÍÔ
+T	java:S106–"9Replace this use of System.out or System.err by a logger.(÷ãÁˆÿÿÿÿÿ
+F
+java:S1874¡"/Remove this use of "Handler"; it is deprecated.(õÊëì
+T	java:S106¨"9Replace this use of System.out or System.err by a logger.(®á“üÿÿÿÿ
+T	java:S106Í"9Replace this use of System.out or System.err by a logger.(Å“àôıÿÿÿÿ
+T	java:S106ú"9Replace this use of System.out or System.err by a logger.(ŒŒÒâûÿÿÿÿ
+R	java:S125„"<This block of commented-out lines of code should be removed.(á†×Ñ
+S
+java:S1874˜"7Remove this use of "GoogleApiClient"; it is deprecated.(£şÙ‚øÿÿÿÿ
+K
+java:S1874˜"/Remove this use of "Builder"; it is deprecated.(£şÙ‚øÿÿÿÿ
+N
+java:S1874¤"8Remove this use of "FusedLocationApi"; it is deprecated.(Æ­—V
+a
+java:S1874Å"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(¯ÜÑñ
+2
+java:S3626Ö"Remove this redundant jump.(ûÁİ…
+A
+java:S1197Å"*Move the array designators [] to the type.(¯ÜÑñ
+=	java:S131È""Add a default case to this switch.(×ö³–úÿÿÿÿ
+F
+java:S1874á"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ
+c
+java:S3252û"LUse static access with "android.content.Context" for "INPUT_METHOD_SERVICE".(êÑ×ã
+?
+java:S1185†"(Remove this method to simply inherit it.(Ù«µ§
+W	java:S125ˆ"<This block of commented-out lines of code should be removed.(·œ¥üÿÿÿÿ
+a
+java:S1874”"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ŸŒ¹Ñ
+J
+java:S1172¨".Remove this unused method parameter "placeid".(È„”Îşÿÿÿÿ
+T	java:S106©"9Replace this use of System.out or System.err by a logger.(¿¡Ä£ÿÿÿÿÿ
+R
+java:S1874ª"6Remove this use of "ProgressDialog"; it is deprecated.(°ÕÈøÿÿÿÿ
+R
+java:S1874ª"6Remove this use of "ProgressDialog"; it is deprecated.(°ÕÈøÿÿÿÿ
+N
+java:S1874«"2Remove this use of "setMessage"; it is deprecated.(ñËÄİÿÿÿÿÿ
+T	java:S106·"9Replace this use of System.out or System.err by a logger.(ÓØòüüÿÿÿÿ
+T	java:S106Ğ"9Replace this use of System.out or System.err by a logger.(à™ï¦ıÿÿÿÿ
+R	java:S125Ø"<This block of commented-out lines of code should be removed.(İÃã
+N
+java:S1068<"3Remove this unused "fragmentManager" private field.(î›äÿÿÿÿÿ
