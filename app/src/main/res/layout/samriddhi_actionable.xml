@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_margin="5dp"
+
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="0dp">
+            <TextView
+                android:backgroundTint="@color/color_black"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/color_black"
+                android:text="Month" />
+            <Spinner
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                ></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="0dp">
+            <TextView
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/color_black"
+                android:text="Till Date"/>
+            <TextView
+                android:backgroundTint="@color/color_black"
+
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/color_black"
+                android:text="19" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_light_gray"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/greenTextView"
+android:background="@color/redcolor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="All"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:background="@color/redcolor"
+
+                android:id="@+id/blueTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/colorWhite"
+
+                android:text="Unbilled" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp">
+
+        <TextView
+            android:background="@color/redcolor"
+            android:gravity="center"
+android:textSize="15sp"
+            android:id="@+id/txtValueofMAppedStockist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorWhite"
+            android:text="Build but Threshold not Active" />
+
+        <TextView
+            android:textSize="15sp"
+            android:background="@color/redcolor"
+
+            android:gravity="center"
+            android:id="@+id/txtValueTaget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorWhite"
+
+            android:text="Threhold active but Traget not Active" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_light_gray"
+        android:padding="10dp">
+        >
+            <Spinner
+android:layout_gravity="right"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+              ></Spinner>
+
+        </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5.4"
+        >
+
+        <fontspackageForTextView.BoldMedium
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="StkId"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:textColor="@color/colorWhite"
+
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Stockist Name"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:textColor="@color/colorWhite"
+            android:padding="6dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bgt Target"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:textColor="@color/colorWhite"
+            android:padding="6dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Threshold"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+        <fontspackageForTextView.BoldMedium
+            android:textColor="@color/colorWhite"
+            android:padding="6dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Active"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height=".5dp"
+        android:layout_width="match_parent"
+        android:background="@color/color_black"
+        ></View>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/psrRecyclerView"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>

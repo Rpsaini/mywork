@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="5.4"
+        >
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtStkId"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="stkId"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtStkName"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="StkName"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtBgtTarget"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="20.0"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtThreshold"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="30.0"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtUnbilled"
+            android:textColor="@color/color_black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Unbilled"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+    </LinearLayout>
+
+    <View
+        android:layout_height=".5dp"
+        android:layout_width="match_parent"
+        android:background="@color/color_black"
+        ></View>
+
+</LinearLayout>

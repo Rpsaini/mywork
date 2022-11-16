@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -21,7 +23,9 @@ import org.json.JSONArray;
 
 public class SamriddhiDashoboard extends Fragment {
     public static final String TAG = "SamriddhiDashoboard";
-
+Spinner spinnerMonth;
+TextView txtTillDate,txtValueofMAppedStockist,txtValueTaget,txtValueAchievment,txtValueBilling,txtThresholdTargetPerc
+        ,txtBusinesssTargetPercent,txtRangePercent,txtFPPercent,txtFP2AchievmentsPercentage;
     private View rootView;
     public static Fragment newInstance(Context context) {
         return Fragment.instantiate(context,
@@ -49,16 +53,19 @@ public class SamriddhiDashoboard extends Fragment {
         Log.i("@@MainHome_ONResume---", "onResume---");
     }
 
-
-
-
-
-
-
-
-
-
     private void initView() {
+        spinnerMonth=(Spinner)rootView.findViewById(R.id.spinnerMonth);
+        txtTillDate=(TextView) rootView.findViewById(R.id.txtTillDate);
+                txtValueofMAppedStockist=(TextView) rootView.findViewById(R.id.txtValueofMAppedStockist);
+                        txtValueTaget=(TextView) rootView.findViewById(R.id.txtValueTaget);
+                                txtValueAchievment=(TextView) rootView.findViewById(R.id.txtValueAchievment);
+
+                                txtValueBilling=(TextView) rootView.findViewById(R.id.txtValueBilling);
+                                        txtThresholdTargetPerc=(TextView) rootView.findViewById(R.id.txtThresholdTargetPerc);
+                txtBusinesssTargetPercent=(TextView) rootView.findViewById(R.id.txtBusinesssTargetPercent);
+                txtRangePercent=(TextView) rootView.findViewById(R.id.txtRangePercent);
+        txtFPPercent=(TextView) rootView.findViewById(R.id.txtFPPercent);
+                txtFP2AchievmentsPercentage=(TextView) rootView.findViewById(R.id.txtFP2AchievmentsPercentage);
 
     }
 

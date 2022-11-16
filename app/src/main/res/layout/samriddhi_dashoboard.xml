@@ -19,7 +19,8 @@
             android:layout_height="match_parent"
             android:layout_width="0dp">
             <TextView
-                android:layout_weight="0.4"
+                android:backgroundTint="@color/color_black"
+                android:layout_weight="0.3"
                 android:gravity="center"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
@@ -30,7 +31,10 @@
                 android:textColor="@color/color_black"
                 android:text="Month" />
             <Spinner
-                android:layout_width="wrap_content"
+
+                android:id="@+id/spinnerMonth"
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 ></Spinner>
         </LinearLayout>
@@ -40,7 +44,7 @@
             android:layout_height="match_parent"
             android:layout_width="0dp">
             <TextView
-                android:layout_weight="04"
+                android:layout_weight="0.3"
                 android:gravity="center"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
@@ -51,7 +55,9 @@
                 android:textColor="@color/color_black"
                 android:text="Till Date"/>
             <TextView
-                android:layout_weight="0.6"
+                android:backgroundTint="@color/color_black"
+android:id="@+id/txtTillDate"
+                android:layout_weight="0.7"
                 android:gravity="center"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
@@ -246,6 +252,7 @@ android:textSize="15sp"
               />
 
             <TextView
+                android:id="@+id/txtValueBilling"
                 android:gravity="right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -275,7 +282,7 @@ android:textSize="15sp"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textColor="@color/color_black"
-                android:text="Biling" />
+                android:text="Threshhold Target" />
 
             <SeekBar
                 android:layout_weight="1"
@@ -285,6 +292,7 @@ android:textSize="15sp"
                 />
 
             <TextView
+                android:id="@+id/txtThresholdTargetPerc"
                 android:gravity="right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -315,7 +323,7 @@ android:textSize="15sp"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textColor="@color/color_black"
-                android:text="Biling" />
+                android:text="Business Target" />
 
             <SeekBar
                 android:layout_weight="1"
@@ -325,6 +333,7 @@ android:textSize="15sp"
                 />
 
             <TextView
+                android:id="@+id/txtBusinesssTargetPercent"
                 android:gravity="right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -355,7 +364,7 @@ android:textSize="15sp"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textColor="@color/color_black"
-                android:text="Biling" />
+                android:text="Range" />
 
             <SeekBar
                 android:layout_weight="1"
@@ -365,6 +374,7 @@ android:textSize="15sp"
                 />
 
             <TextView
+                android:id="@+id/txtRangePercent"
                 android:gravity="right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -395,7 +405,7 @@ android:textSize="15sp"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textColor="@color/color_black"
-                android:text="Biling" />
+                android:text="FP!" />
 
             <SeekBar
                 android:layout_weight="1"
@@ -405,6 +415,7 @@ android:textSize="15sp"
                 />
 
             <TextView
+                android:id="@+id/txtFPPercent"
                 android:gravity="right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -436,7 +447,7 @@ android:textSize="15sp"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textColor="@color/color_black"
-                android:text="Biling" />
+                android:text="FP2" />
 
             <SeekBar
                 android:layout_weight="1"
@@ -448,7 +459,7 @@ android:textSize="15sp"
 
             <TextView
                 android:gravity="right"
-                android:id="@+id/txtAchievmentsPercentage"
+                android:id="@+id/txtFP2AchievmentsPercentage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

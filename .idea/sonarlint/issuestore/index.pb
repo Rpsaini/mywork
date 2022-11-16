@@ -5,8 +5,6 @@ g
 7app/src/main/java/com/markrap/login/ForgotPassword.java,3/3/33f7d203d504adba878f026acc9ab5bc8b904e45
 k
 ;app/src/main/java/com/markrap/dashboard/StoreSelection.java,c/9/c996b600da439c4c9e7d20682b9c959ce50aea40
-j
-:app/src/main/java/com/markrap/adapter/PsrSalesAdapter.java,1/c/1cf812144a1146827239de3c903f2daf9a989b72
 i
 9app/src/main/java/com/markrap/dashboard/OrderConfirm.java,0/f/0f9aa991b611d62f790218514388fb79a21a2add
 s
@@ -49,11 +47,11 @@ u
 Eapp/src/main/java/com/markrap/placepicker/LocationPickerActivity.java,5/1/5132a6e73ee91a6a8222419fd8f86fc71492bb29
 j
 :app/src/main/java/com/markrap/adapter/StockistAdapter.java,3/c/3cd5a7c1a3ca9dda51e26943a334f2fdc2e0bce1
-j
-:app/src/main/java/com/markrap/fragments/HomeFragments.java,d/2/d2845fdf11ca1017e5503665204f3049a98f9d4e
 i
 9app/src/main/java/com/markrap/adapter/OutLetsAdapter.java,3/a/3abbc36c8f2fcb7fcf3501f1d6b71163f17ee0a4
 o
 ?app/src/main/java/com/markrap/dashboard/outlet/ViewOutLets.java,d/9/d9a4b8b9ca9b38ad8d8fb3aa129546edb7199f0e
 p
 @app/src/main/java/com/markrap/fragments/AttendanceFragments.java,0/c/0cb9d27079efbbc0d1612dd16f788a262aa05631
+n
+>app/src/main/java/com/markrap/fragments/MyPointsFragments.java,1/2/12c2725c0c5f3c700bb735c5a53d82858a5166bb
