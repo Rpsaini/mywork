@@ -55,3 +55,11 @@ p
 @app/src/main/java/com/markrap/fragments/AttendanceFragments.java,0/c/0cb9d27079efbbc0d1612dd16f788a262aa05631
 n
 >app/src/main/java/com/markrap/fragments/MyPointsFragments.java,1/2/12c2725c0c5f3c700bb735c5a53d82858a5166bb
+@
+app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
+k
+;app/src/main/java/com/markrap/fragments/ChangePassword.java,4/4/442189d011ba0f97a9014c212db95c52b84cb178
+j
+:app/src/main/java/com/markrap/adapter/PsrSalesAdapter.java,1/c/1cf812144a1146827239de3c903f2daf9a989b72
+j
+:app/src/main/java/com/markrap/fragments/HomeFragments.java,d/2/d2845fdf11ca1017e5503665204f3049a98f9d4e

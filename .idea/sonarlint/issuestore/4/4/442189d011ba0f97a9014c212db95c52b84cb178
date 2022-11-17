@@ -1,0 +1,19 @@
+
+D
+java:S1604„"(Make this anonymous inner class a lambda(Á¥…Ğüÿÿÿÿ
+b
+java:S1659+"LDeclare "textNewPassword" and all following declarations on a separate line.(İÍü¤
+N
+java:S18740"3Remove this use of "instantiate"; it is deprecated.(Ì³Ùÿÿÿÿÿ
+>
+java:S11855"(Remove this method to simply inherit it.(ßìê¯
+S	java:S106]"9Replace this use of System.out or System.err by a logger.(¥ÔÄÆıÿÿÿÿ
+N	java:S106l"9Replace this use of System.out or System.err by a logger.(Â‰ğç
+2
+java:S3626¦"Remove this redundant jump.(ûÁİ…
+d
+java:S1117“"HRename "textinputoldpassword" which hides the field declared at line 43.(”œ³ûÿÿÿÿ
+Z
+java:S1117”"CRename "textNewPassword" which hides the field declared at line 43.(•ïÍŠ
+^
+java:S1117•"GRename "confirmTextPassword" which hides the field declared at line 43.(ï¯¬‚
