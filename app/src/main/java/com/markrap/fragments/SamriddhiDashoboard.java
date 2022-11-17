@@ -1,5 +1,7 @@
 package com.markrap.fragments;
 
+import static com.markrap.utility.AppConstants.id;
+
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -37,6 +39,7 @@ public class SamriddhiDashoboard extends Fragment {
     TextView txtTillDate, txtValueofMAppedStockist, txtValueTaget, txtValueAchievment, txtValueBilling, txtThresholdTargetPerc, txtBusinesssTargetPercent, txtRangePercent, txtFPPercent, txtFP2AchievmentsPercentage;
     private View rootView;
     private SeekBar seekBarBilling, seekbarThreshhold, seekBarBusinessTarget, seekBarRange, seekkBarFPOne, seekBarFBTwo;
+    private MainActivity mainActivity;
 
     public static Fragment newInstance(Context context) {
         return Fragment.instantiate(context,
@@ -52,16 +55,17 @@ public class SamriddhiDashoboard extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.samriddhi_dashoboard, container, false);
+        mainActivity = (MainActivity) getActivity();
 
         initView();
-
+        getSamriddhiEntryDashboardData();
         return rootView;
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        Log.i("@@MainHome_ONResume---", "onResume---");
+        Log.i("@@SamriddhiDashoboard", "onResume---");
     }
 
     private void initView() {
@@ -87,19 +91,24 @@ public class SamriddhiDashoboard extends Fragment {
 
     }
    // https://neptunesolution.in/marketstage/api/smriddhi_dashboard/24/2022-12-22
-    private void getSamriddhiDahboardData() {
+    private void getSamriddhiEntryDashboardData() {
         LinkedHashMap<String, String> m = new LinkedHashMap<>();
         Map<String, String> headerMap = new HashMap<>();
         //+mainActivity.getLoginData("id")
-        new ServerHandler().sendToServer(getActivity(), AppConstants.apiUlr + "smriddhi_dashboard/"/*+mainActivity.getLoginData("id")*/, m, 0, headerMap, 20000, R.layout.loader_dialog, new CallBack() {
+        new ServerHandler().sendToServer(getActivity(), AppConstants.apiUlr + "entrydates/"+mainActivity.getLoginData("id"), m, 0, headerMap, 20000, R.layout.loader_dialog, new CallBack() {
+
             @Override
             public void getRespone(String dta, ArrayList<Object> respons) {
                 try {
                     System.out.println("getSamriddhiDahboardData====" + dta);
                     JSONObject obj = new JSONObject(dta);
                     if (obj.getInt("result") > 0) {
+                        JSONArray dataAr=obj.getJSONArray("data");
+                        JSONObject jsonObject = dataAr.getJSONObject(0);
+                        String enterdates=jsonObject.getString("enterdates");
+                        System.out.println("@@enterdates====" + enterdates);
 
-                     //   showTask(obj.getJSONArray("data"));
+                        //   showTask(obj.getJSONArray("data"));
 
                     } else {
                     }
