@@ -39,8 +39,6 @@ h
 8app/src/main/java/com/markrap/gpstracter/GpsTracker.java,6/0/60ef9cfd94dfe8aa9a1eb8950acdaa1da9014114
 f
 6app/src/main/java/com/markrap/login/LoginActivity.java,e/8/e86db368f8cba4f0820a6340d8d3b3a6e43e09ad
-g
-7app/src/main/java/com/markrap/utility/AppConstants.java,5/6/561d77d3e944769a9cbfbd9d8121632c4e070d95
 P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
 u
@@ -53,13 +51,7 @@ o
 ?app/src/main/java/com/markrap/dashboard/outlet/ViewOutLets.java,d/9/d9a4b8b9ca9b38ad8d8fb3aa129546edb7199f0e
 p
 @app/src/main/java/com/markrap/fragments/AttendanceFragments.java,0/c/0cb9d27079efbbc0d1612dd16f788a262aa05631
-n
->app/src/main/java/com/markrap/fragments/MyPointsFragments.java,1/2/12c2725c0c5f3c700bb735c5a53d82858a5166bb
 @
 app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
 k
 ;app/src/main/java/com/markrap/fragments/ChangePassword.java,4/4/442189d011ba0f97a9014c212db95c52b84cb178
-j
-:app/src/main/java/com/markrap/adapter/PsrSalesAdapter.java,1/c/1cf812144a1146827239de3c903f2daf9a989b72
-j
-:app/src/main/java/com/markrap/fragments/HomeFragments.java,d/2/d2845fdf11ca1017e5503665204f3049a98f9d4e

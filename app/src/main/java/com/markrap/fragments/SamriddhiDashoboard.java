@@ -17,9 +17,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.markrap.R;
 import com.markrap.adapter.NotificationAdapter;
+import com.markrap.communication.CallBack;
+import com.markrap.communication.ServerHandler;
 import com.markrap.dashboard.MainActivity;
+import com.markrap.utility.AppConstants;
 
 import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 
 public class SamriddhiDashoboard extends Fragment {
@@ -77,7 +86,30 @@ public class SamriddhiDashoboard extends Fragment {
 
 
     }
+   // https://neptunesolution.in/marketstage/api/smriddhi_dashboard/24/2022-12-22
+    private void getSamriddhiDahboardData() {
+        LinkedHashMap<String, String> m = new LinkedHashMap<>();
+        Map<String, String> headerMap = new HashMap<>();
+        //+mainActivity.getLoginData("id")
+        new ServerHandler().sendToServer(getActivity(), AppConstants.apiUlr + "smriddhi_dashboard/"/*+mainActivity.getLoginData("id")*/, m, 0, headerMap, 20000, R.layout.loader_dialog, new CallBack() {
+            @Override
+            public void getRespone(String dta, ArrayList<Object> respons) {
+                try {
+                    System.out.println("getSamriddhiDahboardData====" + dta);
+                    JSONObject obj = new JSONObject(dta);
+                    if (obj.getInt("result") > 0) {
 
+                     //   showTask(obj.getJSONArray("data"));
+
+                    } else {
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+    }
 
 }
 

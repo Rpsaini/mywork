@@ -14,6 +14,7 @@
         <entry key="app/src/main/res/layout/forgot_password.xml" value="0.16510416666666666" />
         <entry key="app/src/main/res/layout/home_fragment.xml" value="0.2" />
         <entry key="app/src/main/res/layout/home_menu_layout.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/loader_dialog.xml" value="0.16510416666666666" />
         <entry key="app/src/main/res/layout/manageorder_fragment.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/layout/mypoints_fragment.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/layout/outlet_markvisit_layout.xml" value="0.13541666666666666" />
