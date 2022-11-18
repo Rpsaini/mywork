@@ -1,0 +1,28 @@
+
+C
+java:S16044"(Make this anonymous inner class a lambda(€ƒ¨Şıÿÿÿÿ
+C
+java:S1604I"(Make this anonymous inner class a lambda(Å©¨üÿÿÿÿ
+?
+java:S1604í"(Make this anonymous inner class a lambda(Çøä–
+>
+java:S1604õ"(Make this anonymous inner class a lambda(å§¯o
+D
+java:S1604"(Make this anonymous inner class a lambda(Á¥…Ğüÿÿÿÿ
+Q	java:S125)"<This block of commented-out lines of code should be removed.(šÀ“Ì
+S	java:S106p"9Replace this use of System.out or System.err by a logger.(¡ÔÆäúÿÿÿÿ
+S	java:S106w"9Replace this use of System.out or System.err by a logger.(Ç¸Æ×ÿÿÿÿÿ
+7
+java:S1116{"Remove this empty statement.(Åñ­õşÿÿÿÿ
+R
+java:S1854 "6Remove this useless assignment to local variable "id".(¶ ¿üÿÿÿÿ
+C
+java:S1481 "'Remove this unused "id" local variable.(¶ ¿üÿÿÿÿ
+N	java:S106©"9Replace this use of System.out or System.err by a logger.(Ğ¦üg
+W	java:S125À"<This block of commented-out lines of code should be removed.(ñ…¾Òıÿÿÿÿ
+l
+java:S3252Ö"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(ÒÖœªşÿÿÿÿ
+g
+java:S3252×"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(€ÔûÔ
+S
+java:S1117å"<Rename "mAdapter" which hides the field declared at line 42.(áŠ¢á

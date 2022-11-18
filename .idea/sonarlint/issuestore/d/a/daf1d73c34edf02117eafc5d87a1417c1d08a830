@@ -1,0 +1,31 @@
+
+N
+java:S1874="3Remove this use of "instantiate"; it is deprecated.(Ì³Ùÿÿÿÿÿ
+E
+java:S1185B"(Remove this method to simply inherit it.(ßìê¯8±µÉ«È0
+N	java:S106K"9Replace this use of System.out or System.err by a logger.(òÆüµ
+E
+java:S1185R"(Remove this method to simply inherit it.(öÿÕÅ8·µÉ«È0
+S	java:S106k"9Replace this use of System.out or System.err by a logger.(ç„äúÿÿÿÿ
+4
+java:S1128"Remove this duplicated import.(©Ê‰è
+9
+java:S1128"Remove this duplicated import.(°şÊóøÿÿÿÿ
+9
+java:S1128"Remove this duplicated import.(Ô¦Ø²øÿÿÿÿ
+4
+java:S1128"Remove this duplicated import.(À¯ÑÇ
+9
+java:S1128"Remove this duplicated import.(Ø½­äşÿÿÿÿ
+4
+java:S1128 "Remove this duplicated import.(‹îá
+9
+java:S1128""Remove this duplicated import.(‚Š©“ùÿÿÿÿ
+9
+java:S1128%"Remove this duplicated import.(Á‰ƒ ûÿÿÿÿ
+9
+java:S1128&"Remove this duplicated import.(ôœ¹ºıÿÿÿÿ
+9
+java:S1128'"Remove this duplicated import.(Îèòçøÿÿÿÿ
+9
+java:S1128/"Remove this duplicated import.(¬¸Ê’üÿÿÿÿ

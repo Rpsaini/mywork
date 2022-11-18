@@ -1,110 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
+
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="5dp"
 
-        android:weightSum="2"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
         android:orientation="horizontal"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        android:weightSum="2">
 
 
         <LinearLayout
-            android:layout_weight="1"
-            android:orientation="horizontal"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_width="0dp">
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
             <TextView
-                android:backgroundTint="@color/color_black"
-                android:layout_weight="0.3"
-                android:gravity="center"
-                android:textSize="18sp"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_weight="0.3"
+                android:backgroundTint="@color/color_black"
                 android:ellipsize="end"
+                android:gravity="center"
                 android:maxLines="1"
+                android:text="Month"
                 android:textColor="@color/color_black"
-                android:text="Month" />
+                android:textSize="14sp" />
+
             <Spinner
 
                 android:id="@+id/spinnerMonth"
-                android:layout_weight="0.7"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                ></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:layout_height="match_parent"
-            android:layout_width="0dp">
-            <TextView
-                android:layout_weight="0.3"
-                android:gravity="center"
-                android:textSize="18sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:textColor="@color/color_black"
-                android:text="Till Date"/>
-            <TextView
-                android:backgroundTint="@color/color_black"
-android:id="@+id/txtTillDate"
+                android:layout_height="30dp"
                 android:layout_weight="0.7"
-                android:gravity="center"
-                android:textSize="18sp"
+                android:background="@drawable/edittextdrawable"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="0.3"
                 android:ellipsize="end"
+                android:gravity="center"
                 android:maxLines="1"
+                android:text="Till"
                 android:textColor="@color/color_black"
-                android:text="19" />
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtTillDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="0.7"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="19"
+                android:textColor="@color/color_black"
+                android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:background="@color/color_light_gray"
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/color_light_gray"
         android:padding="10dp">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/color_light_gray"
-        android:padding="10dp">
-        <TextView
-            android:gravity="center"
-
-            android:id="@+id/txtBusinesssValueAchievemnets"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="8dp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textColor="@color/color_black"
-            android:text="Business Value Achievement"></TextView>
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/color_light_gray"
+            android:orientation="horizontal"
+            android:padding="6dp">
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/txtBusinesssValueAchievemnets"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Business Value Achievement"
+                android:textColor="@color/color_black"></TextView>
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorLightBlack"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="6dp">
 
             <TextView
                 android:id="@+id/greenTextView"
@@ -128,9 +140,9 @@ android:id="@+id/txtTillDate"
                 android:ellipsize="end"
                 android:gravity="center"
                 android:maxLines="1"
-                android:textColor="@color/colorWhite"
+                android:text="Target"
 
-                android:text="Target" />
+                android:textColor="@color/colorWhite" />
 
             <TextView
                 android:id="@+id/orangetextView"
@@ -145,333 +157,335 @@ android:id="@+id/txtTillDate"
 
                 android:textColor="@color/colorWhite" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/txtValueofMAppedStockist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="No of Mapped stockist"
+                android:textColor="@color/color_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtValueTaget"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Target"
+                android:textColor="@color/color_black"
+
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtValueAchievment"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Achievement"
+                android:textColor="@color/color_black"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="14dp">
-
-        <TextView
-            android:gravity="center"
-android:textSize="15sp"
-            android:id="@+id/txtValueofMAppedStockist"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="8dp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textColor="@color/color_black"
-            android:text="No of Mapped stockist" />
-
-        <TextView
-            android:textSize="15sp"
-
-            android:gravity="center"
-            android:id="@+id/txtValueTaget"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="8dp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textColor="@color/color_black"
-
-            android:text="Target" />
-
-        <TextView
-            android:textSize="15sp"
-
-            android:gravity="center"
-            android:id="@+id/txtValueAchievment"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="8dp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textColor="@color/color_black"
-
-            android:text="Achievement" />
-    </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
         android:layout_marginTop="30dp"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:background="@color/color_light_gray"
+        android:orientation="vertical"
         android:padding="10dp">
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
+            android:orientation="horizontal"
             android:padding="10dp">
-            <TextView
-                android:textSize="15sp"
-                android:gravity="center"
 
+            <TextView
                 android:id="@+id/txtNumericAchievment"
                 android:layout_width="0dp"
+
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:gravity="center"
                 android:maxLines="1"
+                android:text="Numeric Achievements"
                 android:textColor="@color/colorWhite"
-                android:text="Numeric Achievements"></TextView>
+                android:textSize="15sp"></TextView>
 
         </LinearLayout>
+
         <LinearLayout
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp">
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="6dp">
 
             <TextView
-                android:gravity="left"
-
                 android:id="@+id/txtThresholdTarget"
+
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:gravity="left"
                 android:maxLines="1"
-                android:textColor="@color/color_black"
-                android:text="Biling" />
+                android:text="Biling"
+                android:textColor="@color/color_black" />
 
             <SeekBar
                 android:id="@+id/seekBarBilling"
-                android:layout_weight="1"
-
                 android:layout_width="wrap_content"
+
                 android:layout_height="wrap_content"
-              />
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/txtValueBilling"
-                android:gravity="right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:gravity="right"
                 android:maxLines="1"
-                android:textColor="@color/color_black"
+                android:text="60%"
 
-                android:text="60%" />
+                android:textColor="@color/color_black" />
         </LinearLayout>
+
         <LinearLayout
-            android:layout_marginTop="4dp"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
             android:padding="10dp">
 
             <TextView
-                android:gravity="left"
-
                 android:id="@+id/txtBilling"
+
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:gravity="left"
                 android:maxLines="1"
-                android:textColor="@color/color_black"
-                android:text="Threshhold Target" />
+                android:text="Threshhold Target"
+                android:textColor="@color/color_black" />
 
             <SeekBar
                 android:id="@+id/seekbarThreshhold"
-                android:layout_weight="1"
-
                 android:layout_width="wrap_content"
+
                 android:layout_height="wrap_content"
-                />
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/txtThresholdTargetPerc"
-                android:gravity="right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:gravity="right"
                 android:maxLines="1"
-                android:textColor="@color/color_black"
+                android:text="60%"
 
-                android:text="60%" />
+                android:textColor="@color/color_black" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="4dp"
 
-            android:orientation="horizontal"
+        <LinearLayout
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
             android:padding="10dp">
 
             <TextView
-                android:gravity="left"
-
                 android:id="@+id/txtBusinessTarget"
+
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:gravity="left"
                 android:maxLines="1"
-                android:textColor="@color/color_black"
-                android:text="Business Target" />
+                android:text="Business Target"
+                android:textColor="@color/color_black" />
 
             <SeekBar
                 android:id="@+id/seekBarBusinessTarget"
-                android:layout_weight="1"
-
                 android:layout_width="wrap_content"
+
                 android:layout_height="wrap_content"
-                />
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/txtBusinesssTargetPercent"
-                android:gravity="right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:gravity="right"
                 android:maxLines="1"
-                android:textColor="@color/color_black"
+                android:text="60%"
 
-                android:text="60%" />
+                android:textColor="@color/color_black" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="4dp"
 
-            android:orientation="horizontal"
+        <LinearLayout
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
             android:padding="10dp">
 
             <TextView
-                android:gravity="left"
-
                 android:id="@+id/txtRange"
+
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:gravity="left"
                 android:maxLines="1"
-                android:textColor="@color/color_black"
-                android:text="Range" />
+                android:text="Range"
+                android:textColor="@color/color_black" />
 
             <SeekBar
-                android:layout_weight="1"
-android:id="@+id/seekBarRange"
+                android:id="@+id/seekBarRange"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                />
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/txtRangePercent"
-                android:gravity="right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:gravity="right"
                 android:maxLines="1"
-                android:textColor="@color/color_black"
+                android:text="60%"
 
-                android:text="60%" />
+                android:textColor="@color/color_black" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="4dp"
 
-            android:orientation="horizontal"
+        <LinearLayout
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
             android:padding="10dp">
 
             <TextView
-                android:gravity="left"
-
                 android:id="@+id/txtBtxtFP1illing"
+
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:gravity="left"
                 android:maxLines="1"
-                android:textColor="@color/color_black"
-                android:text="FP!" />
+                android:text="FP!"
+                android:textColor="@color/color_black" />
 
             <SeekBar
-                android:layout_weight="1"
-android:id="@+id/seekkBarFPOne"
+                android:id="@+id/seekkBarFPOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                />
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/txtFPPercent"
-                android:gravity="right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:gravity="right"
                 android:maxLines="1"
-                android:textColor="@color/color_black"
+                android:text="60%"
 
-                android:text="60%" />
+                android:textColor="@color/color_black" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="4dp"
-
-            android:orientation="horizontal"
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
             android:padding="10dp">
 
             <TextView
-                android:gravity="left"
-
                 android:id="@+id/txtFP2"
+
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:gravity="left"
                 android:maxLines="1"
-                android:textColor="@color/color_black"
-                android:text="FP2" />
+                android:text="FP2"
+                android:textColor="@color/color_black" />
 
             <SeekBar
-                android:layout_weight="1"
-
                 android:id="@+id/seekBarFBTwo"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                />
+                android:layout_weight="1" />
 
             <TextView
-                android:gravity="right"
                 android:id="@+id/txtFP2AchievmentsPercentage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:ellipsize="end"
+                android:gravity="right"
                 android:maxLines="1"
-                android:textColor="@color/color_black"
+                android:text="60%"
 
-                android:text="60%" />
+                android:textColor="@color/color_black" />
         </LinearLayout>
 
     </LinearLayout>

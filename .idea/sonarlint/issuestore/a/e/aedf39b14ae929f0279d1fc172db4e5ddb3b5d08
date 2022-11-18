@@ -1,0 +1,8 @@
+
+N
+java:S1874%"3Remove this use of "instantiate"; it is deprecated.(Ì³Ùÿÿÿÿÿ
+E
+java:S1185*"(Remove this method to simply inherit it.(ßìê¯8Ù¨É«È0
+S	java:S106S"9Replace this use of System.out or System.err by a logger.(öíÍ—ıÿÿÿÿ
+N	java:S106T"9Replace this use of System.out or System.err by a logger.(ó¡Ÿ²
+V	java:S125i"<This block of commented-out lines of code should be removed.(Á“Á§ÿÿÿÿÿ

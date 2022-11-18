@@ -1,0 +1,11 @@
+
+C
+java:S1604-"(Make this anonymous inner class a lambda(€ƒ¨Þýÿÿÿÿ
+j	java:S116""URename this field "order_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ý÷ŽÑ
+h	java:S116""SRename this field "order_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ý÷ŽÑ
+m	java:S116""XRename this field "order_comment" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ý÷ŽÑ
+`
+java:S1659""JDeclare "txtTotalPrice" and all following declarations on a separate line.(ý÷ŽÑ
+V	java:S125W"<This block of commented-out lines of code should be removed.(×‰‘ƒÿÿÿÿÿ
+V	java:S125\"<This block of commented-out lines of code should be removed.(åö”éüÿÿÿÿ
+M	java:S106c"9Replace this use of System.out or System.err by a logger.(œ“¬K
