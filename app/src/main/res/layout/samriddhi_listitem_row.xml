@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:id="@+id/MainLinearView"
     android:layout_height="wrap_content">
 
     <LinearLayout
@@ -16,14 +17,15 @@
             android:background="@color/color_black"
             ></View>
         <fontspackageForTextView.BoldMedium
+            android:maxLines="2"
             android:id="@+id/txtStkId"
-            android:textColor="@color/color_black"
+            android:textColor="@color/colorPrimary"
 
             android:layout_weight="1.2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="stkId"
-            android:textSize="12dp"
+            android:textSize="11sp"
             android:gravity="center"
             ></fontspackageForTextView.BoldMedium>
 
@@ -34,13 +36,14 @@
             ></View>
         <fontspackageForTextView.BoldMedium
             android:id="@+id/txtStkName"
-            android:textColor="@color/color_black"
+            android:textColor="@color/colorPrimary"
+            android:maxLines="2"
 
             android:layout_weight="1.2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="StkName"
-            android:textSize="12dp"
+            android:textSize="11sp"
             android:gravity="center"
             ></fontspackageForTextView.BoldMedium>
 
@@ -55,12 +58,13 @@
         <fontspackageForTextView.BoldMedium
             android:id="@+id/txtBgtTarget"
             android:textColor="@color/color_black"
+            android:maxLines="2"
 
             android:layout_weight="1.2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="20.0"
-            android:textSize="12dp"
+            android:textSize="11sp"
             android:gravity="center"
             ></fontspackageForTextView.BoldMedium>
 
@@ -75,12 +79,13 @@
         <fontspackageForTextView.BoldMedium
             android:id="@+id/txtThreshold"
             android:textColor="@color/color_black"
+            android:maxLines="2"
 
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="30.0"
-            android:textSize="12dp"
+            android:textSize="11sp"
             android:gravity="center"
             ></fontspackageForTextView.BoldMedium>
 
@@ -92,13 +97,15 @@
 
 
         <fontspackageForTextView.BoldMedium
+            android:maxLines="2"
+
             android:id="@+id/txtUnbilled"
             android:textColor="@color/color_black"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Unbilled"
-            android:textSize="12dp"
+            android:textSize="11sp"
             android:gravity="center"
             ></fontspackageForTextView.BoldMedium>
         <View

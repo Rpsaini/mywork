@@ -23,5 +23,8 @@ public class AppConstants {
     public static  String outlet_name="outlet_name";
     public static  String category="category";
 
+    public static  String stockiest_id="stockiest_id";
+
+
 
 }

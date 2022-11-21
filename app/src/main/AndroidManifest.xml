@@ -104,6 +104,8 @@ android:exported="true"
         <activity android:name=".dashboard.myorders.MyOrdersDetailActivity" />
         <activity android:name=".attendance.AttendanceActivity" />
         <activity android:name=".fragments.AttendanceFragmentss" />
+        <activity android:name=".dashboard.samradhii_dashboard.SamraddhiActionaleActivity" />
+        <activity android:name=".dashboard.samradhii_dashboard.SamraddhiActionDetailsActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

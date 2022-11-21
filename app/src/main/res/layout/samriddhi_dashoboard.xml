@@ -20,13 +20,13 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginTop="4dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:orientation="horizontal">
 
-            <TextView
+            <fontspackageForTextView.BoldMedium
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.3"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
                 android:backgroundTint="@color/color_black"
                 android:ellipsize="end"
                 android:gravity="center"
@@ -39,18 +39,19 @@
 
                 android:id="@+id/spinnerMonth"
                 android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_weight="0.7"
+                android:layout_height="40dp"
+                android:layout_weight="1.5"
                 android:background="@drawable/edittextdrawable"></Spinner>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-
             android:layout_height="match_parent"
+
             android:layout_marginTop="4dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="gone">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -96,7 +97,7 @@
             android:orientation="horizontal"
             android:padding="6dp">
 
-            <TextView
+            <fontspackageForTextView.BoldTextView
                 android:id="@+id/txtBusinesssValueAchievemnets"
 
                 android:layout_width="match_parent"
@@ -107,28 +108,28 @@
                 android:gravity="center"
                 android:maxLines="1"
                 android:text="Business Value Achievement"
-                android:textColor="@color/color_black"></TextView>
+                android:textColor="@color/color_black"></fontspackageForTextView.BoldTextView>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:background="@color/colorLightBlack"
             android:orientation="horizontal"
             android:padding="6dp">
 
             <TextView
                 android:id="@+id/greenTextView"
-
                 android:layout_width="0dp"
+
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
                 android:ellipsize="end"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="No of Mapped stockist"
+                android:text="Mapped stockist"
                 android:textColor="@color/colorWhite" />
 
             <TextView
@@ -139,7 +140,7 @@
                 android:layout_weight="1"
                 android:ellipsize="end"
                 android:gravity="center"
-                android:maxLines="1"
+                android:maxLines="2"
                 android:text="Target"
 
                 android:textColor="@color/colorWhite" />
@@ -152,7 +153,7 @@
                 android:layout_weight="1"
                 android:ellipsize="end"
                 android:gravity="center"
-                android:maxLines="1"
+                android:maxLines="2"
                 android:text="Achievement"
 
                 android:textColor="@color/colorWhite" />
@@ -164,7 +165,7 @@
             android:orientation="horizontal"
             android:padding="12dp">
 
-            <TextView
+            <fontspackageForTextView.BoldMedium
                 android:id="@+id/txtValueofMAppedStockist"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -177,7 +178,7 @@
                 android:textColor="@color/color_black"
                 android:textSize="15sp" />
 
-            <TextView
+            <fontspackageForTextView.BoldMedium
                 android:id="@+id/txtValueTaget"
 
                 android:layout_width="0dp"
@@ -192,7 +193,7 @@
 
                 android:textSize="15sp" />
 
-            <TextView
+            <fontspackageForTextView.BoldMedium
                 android:id="@+id/txtValueAchievment"
 
                 android:layout_width="0dp"
@@ -245,11 +246,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:orientation="horizontal"
-            android:padding="6dp">
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/txtThresholdTarget"
-
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
@@ -258,14 +258,19 @@
                 android:gravity="left"
                 android:maxLines="1"
                 android:text="Biling"
-                android:textColor="@color/color_black" />
+                android:textColor="@color/color_black"
+                android:textStyle="bold" />
 
             <SeekBar
                 android:id="@+id/seekBarBilling"
                 android:layout_width="wrap_content"
-
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:clickable="false"
+                android:enabled="false"
+
+                android:focusable="false"
+                android:max="100" />
 
             <TextView
                 android:id="@+id/txtValueBilling"
@@ -289,9 +294,8 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/txtBilling"
-
                 android:layout_width="0dp"
+
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
@@ -299,14 +303,17 @@
                 android:gravity="left"
                 android:maxLines="1"
                 android:text="Threshhold Target"
-                android:textColor="@color/color_black" />
+                android:textColor="@color/color_black"
+                android:textStyle="bold" />
 
             <SeekBar
                 android:id="@+id/seekbarThreshhold"
-                android:layout_width="wrap_content"
 
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+
+                android:layout_weight="1"
+                android:enabled="false" />
 
             <TextView
                 android:id="@+id/txtThresholdTargetPerc"
@@ -332,8 +339,8 @@
 
             <TextView
                 android:id="@+id/txtBusinessTarget"
-
                 android:layout_width="0dp"
+
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
@@ -341,7 +348,8 @@
                 android:gravity="left"
                 android:maxLines="1"
                 android:text="Business Target"
-                android:textColor="@color/color_black" />
+                android:textColor="@color/color_black"
+                android:textStyle="bold" />
 
             <SeekBar
                 android:id="@+id/seekBarBusinessTarget"
@@ -374,8 +382,8 @@
 
             <TextView
                 android:id="@+id/txtRange"
-
                 android:layout_width="0dp"
+
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
@@ -383,7 +391,8 @@
                 android:gravity="left"
                 android:maxLines="1"
                 android:text="Range"
-                android:textColor="@color/color_black" />
+                android:textColor="@color/color_black"
+                android:textStyle="bold" />
 
             <SeekBar
                 android:id="@+id/seekBarRange"
@@ -415,16 +424,17 @@
 
             <TextView
                 android:id="@+id/txtBtxtFP1illing"
-
                 android:layout_width="0dp"
+
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
                 android:ellipsize="end"
                 android:gravity="left"
                 android:maxLines="1"
-                android:text="FP!"
-                android:textColor="@color/color_black" />
+                android:text="FP1"
+                android:textColor="@color/color_black"
+                android:textStyle="bold" />
 
             <SeekBar
                 android:id="@+id/seekkBarFPOne"
@@ -456,8 +466,8 @@
 
             <TextView
                 android:id="@+id/txtFP2"
-
                 android:layout_width="0dp"
+
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
@@ -465,7 +475,8 @@
                 android:gravity="left"
                 android:maxLines="1"
                 android:text="FP2"
-                android:textColor="@color/color_black" />
+                android:textColor="@color/color_black"
+                android:textStyle="bold" />
 
             <SeekBar
                 android:id="@+id/seekBarFBTwo"
@@ -489,5 +500,23 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <fontspackageForTextView.Regular
+        android:id="@+id/txtActionable"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ll_sign_in"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription=""
+        android:gravity="center"
+        android:minHeight="10dp"
+        android:padding="10dp"
+        android:text="Actionable Continue"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_normal"
+        android:visibility="visible" />
 
 </LinearLayout>

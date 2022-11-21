@@ -3,307 +3,938 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <LinearLayout
-        android:orientation="horizontal"
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:padding="15dp"
+        android:src="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/imagCall"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/callicon_phone"></ImageView>
+</RelativeLayout>
+    <ScrollView android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+        <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:textColor="@color/color_black"
-            android:text="Stockist Id"
             android:id="@+id/textItem"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:padding="10dp"
+            android:text="Stockist Id"
+            android:textColor="@color/color_black"
             android:textSize="16sp" />
+
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/etStkID"
+android:editable="false"
+            android:focusable="false"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:textColor="@color/color_black" />
     </LinearLayout>
+
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:textColor="@color/color_black"
-            android:text="Stockist Name"
             android:id="@+id/txtStockistName"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="10dp"
+            android:text="Stockist Name"
+            android:textColor="@color/color_black"
             android:textSize="16sp" />
+
         <EditText
+            android:editable="false"
+            android:focusable="false"
             android:id="@+id/etStockistName"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
     </LinearLayout>
+
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:textColor="@color/color_black"
-            android:text="Mobile Number"
             android:id="@+id/txtMobileNumber"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:padding="10dp"
+            android:text="Mobile Number"
+            android:textColor="@color/color_black"
             android:textSize="16sp" />
+
         <EditText
+            android:editable="false"
+            android:focusable="false"
             android:id="@+id/etMobileNumber"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
+
     </LinearLayout>
+
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:textColor="@color/color_black"
-            android:text="PSR Name"
             android:id="@+id/txtPSRNAme"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:padding="10dp"
+            android:text="PSR Name"
+            android:textColor="@color/color_black"
             android:textSize="16sp" />
+
         <EditText
+            android:editable="false"
+            android:focusable="false"
             android:id="@+id/etPASRName"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
     </LinearLayout>
+
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <TextView
-            android:textColor="@color/color_black"
-            android:text="ROC Name"
             android:id="@+id/txtROCName"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:padding="10dp"
+            android:text="ROC Name"
+            android:textColor="@color/color_black"
             android:textSize="16sp" />
+
         <EditText
+            android:editable="false"
+            android:focusable="false"
             android:id="@+id/etROCNAme"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
     </LinearLayout>
+
     <LinearLayout
-        android:layout_margin="5dp"
-
-        android:weightSum="2"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:layout_height="match_parent"
-            android:layout_width="0dp">
-            <TextView
-                android:backgroundTint="@color/color_black"
-                android:layout_weight="0.3"
-                android:gravity="center"
-                android:textSize="18sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:textColor="@color/color_black"
-                android:text="Month" />
-            <Spinner
-                android:layout_weight="0.7"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                ></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:layout_height="match_parent"
-            android:layout_width="0dp">
-            <TextView
-                android:layout_weight="0.3"
-                android:gravity="center"
-                android:textSize="18sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:textColor="@color/color_black"
-                android:text="Till Date"/>
-            <TextView
-                android:backgroundTint="@color/color_black"
-
-                android:layout_weight="0.7"
-                android:gravity="center"
-                android:textSize="18sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:textColor="@color/color_black"
-                android:text="19" />
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:background="@color/colorPrimary"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <fontspackageForTextView.BoldMedium
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Month"
+                android:textColor="@color/color_black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:editable="false"
+                android:focusable="false"
+                android:id="@+id/month"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="0.3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Till Date"
+                android:textColor="@color/color_black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="0.7"
+                android:backgroundTint="@color/color_black"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="19"
+                android:textColor="@color/color_black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="5.4">
+
+        <fontspackageForTextView.BoldMedium
+            android:maxLines="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="Target"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:layout_width="0dp"
+            android:maxLines="2"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="Achieve"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:maxLines="2"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Pending"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:maxLines="2"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:text="Max Incentive"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+
+        <fontspackageForTextView.BoldMedium
+            android:maxLines="2"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:text="Incentive Achieved"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/color_black"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:orientation="horizontal"
         android:weightSum="5.4"
         >
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
 
         <fontspackageForTextView.BoldMedium
-            android:textColor="@color/colorWhite"
-            android:layout_weight="1.2"
+            android:id="@+id/txtThresholdTarget"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Target"
-            android:textSize="12dp"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
             android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
+            android:text="Threshold Target"
+            android:textColor="@color/color_black"
+            android:textSize="11sp"></fontspackageForTextView.BoldMedium>
 
-
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
         <fontspackageForTextView.BoldMedium
-            android:textColor="@color/colorWhite"
+            android:id="@+id/txtThresholdTgtActive"
+            android:textColor="@color/color_black"
 
             android:layout_weight="1.2"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="Active"
-            android:textSize="12dp"
+            android:textSize="11sp"
             android:gravity="center"
             ></fontspackageForTextView.BoldMedium>
+
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
 
 
         <fontspackageForTextView.BoldMedium
-            android:textColor="@color/colorWhite"
-            android:padding="6dp"
-            android:layout_weight="1"
+            android:id="@+id/txtThresholdPending"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="0.6"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Pending"
+            android:layout_height="match_parent"
+            android:text="20.0"
+            android:textSize="11sp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtThresholdtgtMaxIncent"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="30.0"
             android:textSize="12dp"
             android:gravity="center"
             ></fontspackageForTextView.BoldMedium>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
 
 
         <fontspackageForTextView.BoldMedium
-            android:singleLine="true"
-            android:textColor="@color/colorWhite"
-            android:padding="6dp"
-            android:layout_weight="1"
+            android:id="@+id/txtIncentiveExpensive"
+            android:textColor="@color/color_black"
+            android:layout_weight="1.3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Max Incentive"
-            android:textSize="12dp"
+            android:text="Unbilled"
+            android:textSize="11sp"
             android:gravity="center"
             ></fontspackageForTextView.BoldMedium>
-        <fontspackageForTextView.BoldMedium
-            android:singleLine="true"
-
-            android:textColor="@color/colorWhite"
-            android:padding="6dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Incentive Achieved"
-            android:textSize="12dp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="5.4"
+        >
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtTgt"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="BZ Target"
+            android:textColor="@color/color_black"
+            android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtActive"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Active"
+            android:textSize="11sp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtBgtTarget"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="20.0"
+            android:textSize="11sp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtThreshold"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="30.0"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtUnbilled"
+            android:textColor="@color/color_black"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Unbilled"
+            android:textSize="11sp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="5.4"
+        >
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtRange"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="Range"
+            android:textColor="@color/color_black"
+            android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtRangeActive"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Active"
+            android:textSize="11sp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtRangeBgtTarget"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="20.0"
+            android:textSize="11sp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtRangeThreshold"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="30.0"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtRangeUnbilled"
+            android:textColor="@color/color_black"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Unbilled"
+            android:textSize="11sp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="5.4"
+        >
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtFPOne"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="FP1"
+            android:textColor="@color/color_black"
+            android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtFpOneActive"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Active"
+            android:textSize="11sp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtFpOneBgtTarget"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="20.0"
+            android:textSize="11sp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtFpOneThreshold"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="30.0"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtFpOneUnbilled"
+            android:textColor="@color/color_black"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Unbilled"
+            android:textSize="11sp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="5.4"
+        >
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtFPtw0"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="FP1"
+            android:textColor="@color/color_black"
+            android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtFptwoActive"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Active"
+            android:textSize="11sp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtFptwoBgtTarget"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="20.0"
+            android:textSize="11sp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtFpTwoThreshold"
+            android:textColor="@color/color_black"
+
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="30.0"
+            android:textSize="12dp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+
+
+        <fontspackageForTextView.BoldMedium
+            android:id="@+id/txtFPTwoUnbilled"
+            android:textColor="@color/color_black"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Unbilled"
+            android:textSize="11sp"
+            android:gravity="center"
+            ></fontspackageForTextView.BoldMedium>
+        <View
+            android:layout_height="match_parent"
+            android:layout_width=".5dp"
+            android:background="@color/color_black"
+            ></View>
+    </LinearLayout>
+
     <View
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:layout_height=".5dp"
         android:layout_width="match_parent"
         android:background="@color/color_black"
         ></View>
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        android:id="@+id/deatilsRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:id="@+id/psrRecyclerView"
-        ></androidx.recyclerview.widget.RecyclerView>
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"></androidx.recyclerview.widget.RecyclerView>
 
     <LinearLayout
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
+
+        android:visibility="visible"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-        <TextView
-            android:background="@color/colorPrimary"
-            android:textColor="@color/colorWhite"
-            android:text="Unnati Download Status"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <fontspackageForTextView.BoldMedium
+
             android:id="@+id/txtUnnatiDownloadStatis"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:padding="10dp"
-            android:textSize="16sp" />
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
+            android:text="Unnati Download Status"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp" />
+
         <EditText
-            android:background="@color/color_light_gray"
+            android:textSize="13sp"
+android:gravity="center"
             android:id="@+id/editunnatidDownlaodstatus"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/color_light_gray" />
     </LinearLayout>
+
     <LinearLayout
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:visibility="visible"
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-        <TextView
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <fontspackageForTextView.BoldMedium
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:textColor="@color/colorWhite"
+            android:padding="8dp"
             android:text="Unnati MTD Order Value "
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:textSize="16sp" />
-        <EditText
-            android:background="@color/color_light_gray"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-        <TextView
-            android:background="@color/colorPrimary"
             android:textColor="@color/colorWhite"
-            android:text="Unnati MTD Invoice Value"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etUnnatiMTDOrderValue"
+            android:textSize="13sp"
+            android:gravity="center"
+
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/color_light_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:visibility="visible"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <fontspackageForTextView.BoldMedium
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:padding="10dp"
-            android:textSize="16sp" />
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
+            android:text="Unnati MTD Invoice Value"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp" />
+
         <EditText
-            android:background="@color/color_light_gray"
+            android:id="@+id/EtUnnatiMTDINvoice"
+            android:textSize="13sp"
+            android:gravity="center"
+
+
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/color_light_gray" />
     </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

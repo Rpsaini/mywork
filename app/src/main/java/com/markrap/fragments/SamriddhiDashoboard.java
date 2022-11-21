@@ -3,6 +3,7 @@ package com.markrap.fragments;
 import static com.markrap.utility.AppConstants.id;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -27,7 +28,9 @@ import com.markrap.adapter.NotificationAdapter;
 import com.markrap.communication.CallBack;
 import com.markrap.communication.ServerHandler;
 import com.markrap.dashboard.MainActivity;
+import com.markrap.dashboard.samradhii_dashboard.SamraddhiActionaleActivity;
 import com.markrap.utility.AppConstants;
+import com.markrap.utility.PrefHelper;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -41,7 +44,7 @@ import java.util.Map;
 public class SamriddhiDashoboard extends Fragment {
     public static final String TAG = "SamriddhiDashoboard";
     Spinner spinnerMonth;
-    TextView txtTillDate, txtValueofMAppedStockist, txtValueTaget, txtValueAchievment, txtValueBilling, txtThresholdTargetPerc, txtBusinesssTargetPercent, txtRangePercent, txtFPPercent, txtFP2AchievmentsPercentage;
+    TextView txtActionable, txtTillDate, txtValueofMAppedStockist, txtValueTaget, txtValueAchievment, txtValueBilling, txtThresholdTargetPerc, txtBusinesssTargetPercent, txtRangePercent, txtFPPercent, txtFP2AchievmentsPercentage;
     private View rootView;
     private SeekBar seekBarBilling, seekbarThreshhold, seekBarBusinessTarget, seekBarRange, seekkBarFPOne, seekBarFBTwo;
     private MainActivity mainActivity;
@@ -71,11 +74,27 @@ public class SamriddhiDashoboard extends Fragment {
     public void onResume() {
         super.onResume();
         Log.i("@@SamriddhiDashoboard", "onResume---");
+        getSamriddhiEntryDashboardData();
+
     }
 
     private void initView() {
         spinnerMonth = (Spinner) rootView.findViewById(R.id.spinnerMonth);
         txtTillDate = (TextView) rootView.findViewById(R.id.txtTillDate);
+        txtActionable = (TextView) rootView.findViewById(R.id.txtActionable);
+        txtActionable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Create the bundle
+                Bundle bundle = new Bundle();
+//Add your data from getFactualResults method to bundle
+                Intent in = new Intent(getActivity(), SamraddhiActionaleActivity.class);
+                bundle.putString("ALL", "ALL");
+//Add the bundle to the intent
+                in.putExtras(bundle);
+                startActivity(in);
+            }
+        });
         txtValueofMAppedStockist = (TextView) rootView.findViewById(R.id.txtValueofMAppedStockist);
         txtValueTaget = (TextView) rootView.findViewById(R.id.txtValueTaget);
         txtValueAchievment = (TextView) rootView.findViewById(R.id.txtValueAchievment);
@@ -156,6 +175,8 @@ public class SamriddhiDashoboard extends Fragment {
 
 
                 String selectedItemStr = spinnerMonth.getSelectedItem().toString();
+                PrefHelper.getInstance().storeSharedValue("selectedItemStr", String.valueOf(selectedItemStr));
+
                 txtTillDate.setText(selectedItemStr);
                 // JSONArray filterArray = new JSONArray();
                 getSamriddhiDashboardData(selectedItemStr);
@@ -207,11 +228,71 @@ public class SamriddhiDashoboard extends Fragment {
                         //   showTask(obj.getJSONArray("data"));
                         JSONObject jsonnumeric_achievement = dataAr.getJSONObject("numeric_achievement");
                         txtValueBilling.setText(jsonnumeric_achievement.getString("Billing"));
-                        // txtThresholdTargetPerc.setText(jsonnumeric_achievement.getString("Billing"));
+                        txtThresholdTargetPerc.setText(jsonnumeric_achievement.getString("Threshold Target"));
                         txtBusinesssTargetPercent.setText(jsonnumeric_achievement.getString("Business Target"));
                         txtRangePercent.setText(jsonnumeric_achievement.getString("Range"));
                         txtFPPercent.setText(jsonnumeric_achievement.getString("FP1"));
                         txtFP2AchievmentsPercentage.setText(jsonnumeric_achievement.getString("FP2"));
+                        String str = txtValueBilling.getText().toString();
+
+                        String[] arrOfStr = str.split("%", 0);
+                        System.out.println("@@arrOfStr--" + arrOfStr.toString());
+                        for (String a : arrOfStr) {
+
+                            seekBarBilling.setProgress(Integer.parseInt(a));
+                            System.out.println("@@a--" + a.toString());
+
+                        }
+                        String txtBusinesssTargetPercentseek = txtBusinesssTargetPercent.getText().toString();
+
+                        String[] txtBusinesssTargetPercentseeks = txtBusinesssTargetPercentseek.split("%", 0);
+                        System.out.println("@@arrOfStr--" + txtBusinesssTargetPercentseeks.toString());
+                        for (String b : txtBusinesssTargetPercentseeks) {
+
+                            seekBarBusinessTarget.setProgress(Integer.parseInt(b));
+                            System.out.println("@@b--" + b.toString());
+
+                        }
+                        String txtRangePercentseek = txtRangePercent.getText().toString();
+
+                        String[] txtRangePercentseeks = txtRangePercentseek.split("%", 0);
+                        System.out.println("@@arrOfStr--" + txtRangePercentseeks.toString());
+                        for (String c : txtRangePercentseeks) {
+
+                            seekBarRange.setProgress(Integer.parseInt(c));
+                            System.out.println("@@c--" + c.toString());
+
+                        }
+                        String txtFPPercentseek = txtFPPercent.getText().toString();
+
+                        String[] txtFPPercentseeks = txtFPPercentseek.split("%", 0);
+                        System.out.println("@@txtFPPercentseek--" + txtFPPercentseek.toString());
+                        for (String d : txtFPPercentseeks) {
+
+                            seekkBarFPOne.setProgress(Integer.parseInt(d));
+                            System.out.println("@@d--" + d.toString());
+
+                        }
+                        String txtFP2AchievmentsPercentageseek = txtFP2AchievmentsPercentage.getText().toString();
+
+                        String[] txtFP2AchievmentsPercentageseeks = txtFP2AchievmentsPercentageseek.split("%", 0);
+                        System.out.println("@@txtFP2AchievmentsPercentageseek--" + txtFP2AchievmentsPercentageseek.toString());
+                        for (String e : txtFP2AchievmentsPercentageseeks) {
+
+                            seekBarFBTwo.setProgress(Integer.parseInt(e));
+                            System.out.println("@@e--" + e.toString());
+
+                        }
+                        String txtThresholdTargetPercss = txtThresholdTargetPerc.getText().toString();
+
+                        String[] txtThresholdTargetPercs = txtThresholdTargetPercss.split("%", 0);
+                        System.out.println("@@txtThresholdTargetPercs--" + txtFP2AchievmentsPercentageseek.toString());
+                        for (String f : txtThresholdTargetPercs) {
+
+                            seekbarThreshhold.setProgress(Integer.parseInt(f));
+                            System.out.println("@@f--" + f.toString());
+
+                        }
 
                     } else {
                     }

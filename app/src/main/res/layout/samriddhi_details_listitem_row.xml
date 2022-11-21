@@ -16,7 +16,7 @@
             android:background="@color/color_black"
             ></View>
         <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtStkId"
+            android:id="@+id/txtTgt"
             android:textColor="@color/color_black"
 
             android:layout_weight="1.2"
