@@ -84,7 +84,7 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
         txtUnbilled = (TextView) findViewById(R.id.txtUnbilled);
 
         etStkID = (EditText) findViewById(R.id.etStkID);
-        etStkID.setText(getIntent().getStringExtra(AppConstants.stockiest_id));
+        etStkID.setText(getIntent().getStringExtra(AppConstants.siffiId));
 
         etStockistName = (EditText) findViewById(R.id.etStockistName);
         etMobileNumber = (EditText) findViewById(R.id.etMobileNumber);
@@ -189,7 +189,7 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
 // i row
                         txtActive.setText(BZTarget.optString("achieve"));
                         txtBgtTarget.setText(BZTarget.optString("pending"));
-                        txtThreshold.setText(BZTarget.optString("max_incentive"));
+                        txtThresholdtgtMaxIncent.setText(BZTarget.optString("max_incentive"));
                         txtUnbilled.setText(BZTarget.optString("incentive_achieve"));
                         //2nd row
                         JSONObject Range = month_wise.getJSONObject("Range");
@@ -225,6 +225,13 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
                         txtThresholdPending.setText(ThresholdTarget.optString("pending"));
                         txtThresholdtgtMaxIncent.setText(ThresholdTarget.optString("max_incentive"));
                         txtIncentiveExpensive.setText(ThresholdTarget.optString("incentive_achieve"));
+System.out.println("@@@-1"+txtThresholdTgtActive.getText().toString()+"check"+ThresholdTarget.optString("achieve"));
+                        System.out.println("@@@-1"+txtThresholdPending.getText().toString()+"check"+ThresholdTarget.optString("pending"));
+                        System.out.println("@@@-1"+txtThresholdtgtMaxIncent.getText().toString()+"check"+ThresholdTarget.optString("max_incentive"));
+                        System.out.println("@@@-1"+txtIncentiveExpensive.getText().toString()+"check"+ThresholdTarget.optString("incentive_achieve"));
+
+
+
 
                         editunnatidDownlaodstatus.setText(dataAr.getString("unnati_download_status"));
                         etUnnatiMTDOrderValue.setText(dataAr.getString("unnati_download_status"));

@@ -24,6 +24,8 @@ public class AppConstants {
     public static  String category="category";
 
     public static  String stockiest_id="stockiest_id";
+    public static  String siffiId="siffiId";
+
 
 
 

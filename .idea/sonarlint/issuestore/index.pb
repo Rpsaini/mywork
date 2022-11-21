@@ -53,3 +53,15 @@ o
 ?app/src/main/java/com/markrap/dashboard/outlet/ViewOutLets.java,d/9/d9a4b8b9ca9b38ad8d8fb3aa129546edb7199f0e
 m
 =app/src/main/java/com/markrap/dashboard/outlet/AddOutlet.java,0/7/0757e3ae40410c9551cbd1f89be5f0be7cf77fc9
+w
+Gapp/src/main/java/com/markrap/adapter/SamriddhiDEtailsDataAdadpter.java,9/d/9d99cf88ec6d27e2fd07829e48ab3009c53868d0
+p
+@app/src/main/java/com/markrap/fragments/SamriddhiDashoboard.java,5/8/589e082734381db09e2d4e95a99d59fa1de12470
+j
+:app/src/main/java/com/markrap/fragments/HomeFragments.java,d/2/d2845fdf11ca1017e5503665204f3049a98f9d4e
+i
+9app/src/main/java/com/markrap/dashboard/MainActivity.java,4/6/46dd45861fbf1336f187a76cd791533695161a6f
+i
+9app/src/main/java/com/markrap/fragments/AllStoresFrg.java,b/a/ba3a7d4ed529eaa2b466d464b6ba3cca94bce994
+j
+:app/src/main/java/com/markrap/adapter/StockistAdapter.java,3/c/3cd5a7c1a3ca9dda51e26943a334f2fdc2e0bce1

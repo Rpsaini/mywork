@@ -47,7 +47,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:padding="10dp"
-            android:text="Stockist Id"
+            android:text="Sifi Id"
             android:textColor="@color/color_black"
             android:textSize="16sp" />
 
@@ -234,14 +234,15 @@ android:editable="false"
         android:layout_marginBottom="5dp"
         android:background="@color/colorPrimary"
         android:orientation="horizontal"
-        android:weightSum="5.4">
+        android:weightSum="6">
 
         <fontspackageForTextView.BoldMedium
+            android:paddingLeft="5dp"
             android:maxLines="2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.2"
-            android:gravity="center"
+            android:gravity="left|center"
             android:text="Target"
             android:textColor="@color/colorWhite"
             android:textSize="12dp"></fontspackageForTextView.BoldMedium>
@@ -253,19 +254,21 @@ android:editable="false"
 
             android:layout_height="wrap_content"
             android:layout_weight="1.2"
-            android:gravity="center"
+            android:gravity="left|center"
+
             android:text="Achieve"
             android:textColor="@color/colorWhite"
             android:textSize="12dp"></fontspackageForTextView.BoldMedium>
 
 
         <fontspackageForTextView.BoldMedium
-            android:maxLines="2"
-
             android:layout_width="0dp"
+
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
+            android:layout_weight="1.2"
+            android:gravity="left"
+
+            android:maxLines="2"
             android:padding="6dp"
             android:text="Pending"
             android:textColor="@color/colorWhite"
@@ -277,8 +280,9 @@ android:editable="false"
 
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
+            android:layout_weight="1.2"
+            android:gravity="left|center"
+
             android:padding="6dp"
             android:singleLine="true"
             android:text="Max Incentive"
@@ -291,11 +295,12 @@ android:editable="false"
             android:layout_width="0dp"
 
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
+            android:layout_weight="1.2"
+            android:gravity="left|center"
+
             android:padding="6dp"
             android:singleLine="true"
-            android:text="Incentive Achieved"
+            android:text="Ince. Achieve"
             android:textColor="@color/colorWhite"
             android:textSize="12dp"></fontspackageForTextView.BoldMedium>
     </LinearLayout>
@@ -338,7 +343,7 @@ android:editable="false"
             android:id="@+id/txtThresholdTgtActive"
             android:textColor="@color/color_black"
 
-            android:layout_weight="1.2"
+            android:layout_weight="0.6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="Active"
@@ -358,7 +363,9 @@ android:editable="false"
             android:id="@+id/txtThresholdPending"
             android:textColor="@color/color_black"
 
-            android:layout_weight="0.6"
+            android:layout_weight="1.3"
+
+
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="20.0"
@@ -379,9 +386,10 @@ android:editable="false"
             android:textColor="@color/color_black"
 
             android:layout_weight="1.3"
+
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="30.0"
+            android:text=""
             android:textSize="12dp"
             android:gravity="center"
             ></fontspackageForTextView.BoldMedium>
@@ -397,6 +405,7 @@ android:editable="false"
             android:id="@+id/txtIncentiveExpensive"
             android:textColor="@color/color_black"
             android:layout_weight="1.3"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Unbilled"
@@ -442,7 +451,7 @@ android:editable="false"
             android:id="@+id/txtActive"
             android:textColor="@color/color_black"
 
-            android:layout_weight="1.2"
+            android:layout_weight="0.6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="Active"
@@ -462,7 +471,8 @@ android:editable="false"
             android:id="@+id/txtBgtTarget"
             android:textColor="@color/color_black"
 
-            android:layout_weight="0.6"
+            android:layout_weight="1.3"
+
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="20.0"
@@ -499,14 +509,13 @@ android:editable="false"
 
         <fontspackageForTextView.BoldMedium
             android:id="@+id/txtUnbilled"
-            android:textColor="@color/color_black"
-            android:layout_weight="1.3"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Unbilled"
-            android:textSize="11sp"
+            android:layout_height="13dp"
+            android:layout_weight="1.3"
             android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
+            android:text="Unbilled"
+            android:textColor="@color/color_black"
+            android:textSize="11sp"></fontspackageForTextView.BoldMedium>
         <View
             android:layout_height="match_parent"
             android:layout_width=".5dp"
@@ -545,7 +554,7 @@ android:editable="false"
             android:id="@+id/txtRangeActive"
             android:textColor="@color/color_black"
 
-            android:layout_weight="1.2"
+            android:layout_weight="0.6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="Active"
@@ -565,7 +574,8 @@ android:editable="false"
             android:id="@+id/txtRangeBgtTarget"
             android:textColor="@color/color_black"
 
-            android:layout_weight="0.6"
+            android:layout_weight="1.3"
+
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="20.0"
@@ -588,7 +598,7 @@ android:editable="false"
             android:layout_weight="1.3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="30.0"
+            android:text=""
             android:textSize="12dp"
             android:gravity="center"
             ></fontspackageForTextView.BoldMedium>
@@ -603,7 +613,7 @@ android:editable="false"
         <fontspackageForTextView.BoldMedium
             android:id="@+id/txtRangeUnbilled"
             android:textColor="@color/color_black"
-            android:layout_weight="1.3"
+            android:layout_weight="1.35"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Unbilled"
@@ -648,7 +658,7 @@ android:editable="false"
             android:id="@+id/txtFpOneActive"
             android:textColor="@color/color_black"
 
-            android:layout_weight="1.2"
+            android:layout_weight="0.6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="Active"
@@ -668,7 +678,7 @@ android:editable="false"
             android:id="@+id/txtFpOneBgtTarget"
             android:textColor="@color/color_black"
 
-            android:layout_weight="0.6"
+            android:layout_weight="1.3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="20.0"
@@ -691,7 +701,7 @@ android:editable="false"
             android:layout_weight="1.3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="30.0"
+            android:text=""
             android:textSize="12dp"
             android:gravity="center"
             ></fontspackageForTextView.BoldMedium>
@@ -751,7 +761,7 @@ android:editable="false"
             android:id="@+id/txtFptwoActive"
             android:textColor="@color/color_black"
 
-            android:layout_weight="1.2"
+            android:layout_weight="0.6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="Active"
@@ -771,7 +781,7 @@ android:editable="false"
             android:id="@+id/txtFptwoBgtTarget"
             android:textColor="@color/color_black"
 
-            android:layout_weight="0.6"
+            android:layout_weight="1.3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="20.0"

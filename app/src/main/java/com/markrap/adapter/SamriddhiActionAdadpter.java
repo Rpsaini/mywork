@@ -99,6 +99,8 @@ public class SamriddhiActionAdadpter extends RecyclerView.Adapter<SamriddhiActio
 
                         JSONObject dataOb = new JSONObject(v.getTag().toString());
                         Intent intent = new Intent(mContext, SamraddhiActionDetailsActivity.class);
+                        intent.putExtra(AppConstants.siffiId, dataOb.getString("sifi_id"));
+
                         intent.putExtra(AppConstants.stockiest_id, dataOb.getString("stockist_id"));
                         intent.putExtra("stockist_name", dataOb.getString("stockist_name"));
                         intent.putExtra("ba_target", dataOb.getString("ba_target"));
