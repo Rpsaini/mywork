@@ -43,7 +43,7 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
     private EditText month;
     private ImageView back_btn,imagCall;
     SamriddhiDEtailsDataAdadpter SamriddhiDEtailsDataAdadpter;
-    TextView txtTgt, txtStkName, txtBgtTarget, txtThreshold, txtUnbilled,
+    TextView txtTgt, txtStkName, txtBgtTarget, txtThresholdBZ, txtUnbilled,
             txtActive, txtRangeActive, txtRangeBgtTarget, txtRangeThreshold, txtRangeUnbilled,
             txtFpOneActive, txtFpOneBgtTarget, txtFpOneThreshold, txtFpOneUnbilled, txtFptwoActive, txtFptwoBgtTarget, txtFpTwoThreshold, txtFPTwoUnbilled, txtThresholdTgtActive, txtThresholdPending, txtThresholdtgtMaxIncent, txtIncentiveExpensive;
 
@@ -80,7 +80,7 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
         txtTgt = (TextView) findViewById(R.id.txtTgt);
         txtStkName = (TextView) findViewById(R.id.txtStkName);
         txtBgtTarget = (TextView) findViewById(R.id.txtBgtTarget);
-        txtThreshold = (TextView) findViewById(R.id.txtThreshold);
+        txtThresholdBZ = (TextView) findViewById(R.id.txtThresholdBZ);
         txtUnbilled = (TextView) findViewById(R.id.txtUnbilled);
 
         etStkID = (EditText) findViewById(R.id.etStkID);
@@ -189,7 +189,7 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
 // i row
                         txtActive.setText(BZTarget.optString("achieve"));
                         txtBgtTarget.setText(BZTarget.optString("pending"));
-                        txtThresholdtgtMaxIncent.setText(BZTarget.optString("max_incentive"));
+                        txtThresholdBZ.setText(BZTarget.optString("max_incentive"));
                         txtUnbilled.setText(BZTarget.optString("incentive_achieve"));
                         //2nd row
                         JSONObject Range = month_wise.getJSONObject("Range");

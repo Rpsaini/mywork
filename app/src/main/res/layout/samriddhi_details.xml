@@ -489,13 +489,13 @@ android:editable="false"
             ></View>
 
         <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtThreshold"
+            android:id="@+id/txtThresholdBZ"
             android:textColor="@color/color_black"
 
             android:layout_weight="1.3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="30.0"
+            android:text=""
             android:textSize="12dp"
             android:gravity="center"
             ></fontspackageForTextView.BoldMedium>
@@ -748,7 +748,7 @@ android:editable="false"
             android:layout_height="match_parent"
             android:layout_weight="1.2"
             android:gravity="center"
-            android:text="FP1"
+            android:text="FP2"
             android:textColor="@color/color_black"
             android:textSize="11sp"></fontspackageForTextView.BoldMedium>
 
