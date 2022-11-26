@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -40,16 +41,20 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
     private RecyclerView deatilsRecyclerView;
     private TextView spinnerMonth;
     private SamraddhiActionDetailsActivity samraddhiActionaleActivity;
-    private TextView month;
-    private ImageView back_btn,imagCall;
+    private Spinner month;
+    private ImageView back_btn, imagCall;
     SamriddhiDEtailsDataAdadpter SamriddhiDEtailsDataAdadpter;
     TextView txtTgt, txtStkName, txtBgtTarget, txtThresholdBZ, txtUnbilled,
             txtActive, txtRangeActive, txtRangeBgtTarget, txtRangeThreshold, txtRangeUnbilled,
             txtFpOneActive, txtFpOneBgtTarget, txtFpOneThreshold, txtFpOneUnbilled, txtFptwoActive, txtFptwoBgtTarget, txtFpTwoThreshold, txtFPTwoUnbilled, txtThresholdTgtActive, txtThresholdPending, txtThresholdtgtMaxIncent, txtIncentiveExpensive;
+    private TextView txtTillDate;
 
     @Override
     protected void setUp() {
         PrefHelper.getInstance().getSharedValue("selectedItemStr");
+
+        PrefHelper.getInstance().getSharedValue("days");
+
         init();
         setupSamriddhiStockiestDetails(getIntent().getStringExtra(AppConstants.stockiest_id), PrefHelper.getInstance().getSharedValue("selectedItemStr"));
     }
@@ -77,6 +82,7 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
     }
 
     private void init() {
+        txtTillDate = (TextView) findViewById(R.id.txtTillDate);
         txtTgt = (TextView) findViewById(R.id.txtTgt);
         txtStkName = (TextView) findViewById(R.id.txtStkName);
         txtBgtTarget = (TextView) findViewById(R.id.txtBgtTarget);
@@ -92,17 +98,21 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
         etROCNAme = (TextView) findViewById(R.id.etROCNAme);
         //samraddhiiRecyclerView=(RecyclerView)findViewById(R.id.samraddhiiRecyclerView);
         editunnatidDownlaodstatus = (EditText) findViewById(R.id.editunnatidDownlaodstatus);
-       // editunnatidDownlaodstatus.setText("No Data Found!.");
+        // editunnatidDownlaodstatus.setText("No Data Found!.");
         etUnnatiMTDOrderValue = (EditText) findViewById(R.id.etUnnatiMTDOrderValue);
-       // etUnnatiMTDOrderValue.setText("No Data Found!.");
+        // etUnnatiMTDOrderValue.setText("No Data Found!.");
 
         EtUnnatiMTDINvoice = (EditText) findViewById(R.id.EtUnnatiMTDINvoice);
-     //   EtUnnatiMTDINvoice.setText("No Data Found!.");
+        //   EtUnnatiMTDINvoice.setText("No Data Found!.");
 
+        txtTillDate.setText(PrefHelper.getInstance().getSharedValue("days"));
+        month = (Spinner) findViewById(R.id.month);
 
-        month = (TextView) findViewById(R.id.month);
+        ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, new String[]{PrefHelper.getInstance().getSharedValue("selectedItemStr")});
+        month.setAdapter(aa);
+
         back_btn = (ImageView) findViewById(R.id.back_btn);
-        imagCall=(ImageView)findViewById(R.id.imagCall);
+        imagCall = (ImageView) findViewById(R.id.imagCall);
         imagCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -137,9 +147,9 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
         txtFpTwoThreshold = (TextView) findViewById(R.id.txtFpTwoThreshold);
         txtThresholdTgtActive = (TextView) findViewById(R.id.txtThresholdTgtActive);
 
-                txtThresholdPending = (TextView) findViewById(R.id.txtThresholdPending);
+        txtThresholdPending = (TextView) findViewById(R.id.txtThresholdPending);
         txtThresholdtgtMaxIncent = (TextView) findViewById(R.id.txtThresholdtgtMaxIncent);
-                txtIncentiveExpensive = (TextView) findViewById(R.id.txtIncentiveExpensive);
+        txtIncentiveExpensive = (TextView) findViewById(R.id.txtIncentiveExpensive);
 
     }
 
@@ -180,7 +190,7 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
 
                         etROCNAme.setText(dataAr.getString("roc_name"));
 
-                        month.setText(dataAr.getString("month_date"));
+                        //  month.setText(dataAr.getString("month_date"));
                         JSONObject month_wise_data = dataAr.getJSONObject("month_wise_data");
                         JSONObject month_wise = month_wise_data.getJSONObject("month_wise");
                         System.out.println("@@month_wise" + month_wise);
@@ -225,12 +235,10 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
                         txtThresholdPending.setText(ThresholdTarget.optString("pending"));
                         txtThresholdtgtMaxIncent.setText(ThresholdTarget.optString("max_incentive"));
                         txtIncentiveExpensive.setText(ThresholdTarget.optString("incentive_achieve"));
-System.out.println("@@@-1"+txtThresholdTgtActive.getText().toString()+"check"+ThresholdTarget.optString("achieve"));
-                        System.out.println("@@@-1"+txtThresholdPending.getText().toString()+"check"+ThresholdTarget.optString("pending"));
-                        System.out.println("@@@-1"+txtThresholdtgtMaxIncent.getText().toString()+"check"+ThresholdTarget.optString("max_incentive"));
-                        System.out.println("@@@-1"+txtIncentiveExpensive.getText().toString()+"check"+ThresholdTarget.optString("incentive_achieve"));
-
-
+                        System.out.println("@@@-1" + txtThresholdTgtActive.getText().toString() + "check" + ThresholdTarget.optString("achieve"));
+                        System.out.println("@@@-1" + txtThresholdPending.getText().toString() + "check" + ThresholdTarget.optString("pending"));
+                        System.out.println("@@@-1" + txtThresholdtgtMaxIncent.getText().toString() + "check" + ThresholdTarget.optString("max_incentive"));
+                        System.out.println("@@@-1" + txtIncentiveExpensive.getText().toString() + "check" + ThresholdTarget.optString("incentive_achieve"));
 
 
                         editunnatidDownlaodstatus.setText(dataAr.getString("unnati_download_status"));
@@ -260,6 +268,7 @@ System.out.println("@@@-1"+txtThresholdTgtActive.getText().toString()+"check"+Th
         recyclerlistview.setItemAnimator(new DefaultItemAnimator());
         recyclerlistview.setAdapter(SamriddhiDEtailsDataAdadpter);
     }
+
     private void actionCall(String phoneNumber) {
 
         try {

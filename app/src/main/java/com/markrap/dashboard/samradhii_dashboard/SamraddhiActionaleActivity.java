@@ -23,7 +23,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.preferences.SavePreferences;
-import com.bumptech.glide.Glide;
 import com.google.android.material.textfield.TextInputLayout;
 import com.markrap.R;
 import com.markrap.adapter.PsrSalesAdapter;
@@ -60,11 +59,11 @@ import io.reactivex.disposables.Disposable;
 import okhttp3.MultipartBody;
 
 public class SamraddhiActionaleActivity extends BaseActivity implements View.OnClickListener {
-    private TextView txtMonth, txtTillDate, txtAllFilter, txtUnbilledFilter, txtBuildButNotThresholdActive, txtThreshholdActivebutTargetNot;
+    private TextView txtTillDate, txtAllFilter, txtUnbilledFilter, txtBuildButNotThresholdActive, txtThreshholdActivebutTargetNot;
     private RecyclerView samraddhiiRecyclerView;
     private Spinner spinnerMonth;
     private SamraddhiActionaleActivity samraddhiActionaleActivity;
-    private Spinner spinnerWDCode;
+    private Spinner spinnerWDCode,txtMonth;
     private ImageView back_btn;
     private SamriddhiActionAdadpter samriddhiActionAdadpter;
     private TextView txtTillDatesss;
@@ -110,7 +109,7 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
         super.onResume();
         getSamriddhiActionable(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
 
-       getWDCodesValues(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
+        getWDCodesValues(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
 
     }
 
@@ -127,8 +126,10 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
         txtBuildButNotThresholdActive = (TextView) findViewById(R.id.txtBuildButNotThresholdActive);
         txtThreshholdActivebutTargetNot = (TextView) findViewById(R.id.txtThreshholdActivebutTargetNot);
         spinnerWDCode = (Spinner) findViewById(R.id.spinnerWDCode);
-        txtMonth = (TextView) findViewById(R.id.txtMonth);
-        txtMonth.setText(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
+        txtMonth = (Spinner) findViewById(R.id.txtMonth);
+      //  txtMonth.setText(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
+        ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, new String[]{PrefHelper.getInstance().getSharedValue("selectedItemStr")});
+        txtMonth.setAdapter(aa);
         txtTillDate = (TextView) findViewById(R.id.txtTillDate);
         txtAllFilter = (TextView) findViewById(R.id.txtAllFilter);
         txtUnbilledFilter = (TextView) findViewById(R.id.txtUnbilledFilter);
@@ -447,10 +448,14 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 String spinSelectWDCode = spinnerWDCode.getSelectedItem().toString();
-              //  PrefHelper.getInstance().storeSharedValue("selectedItemStr", String.valueOf(spinSelectWDCode));
+                //  PrefHelper.getInstance().storeSharedValue("selectedItemStr", String.valueOf(spinSelectWDCode));
+                System.out.println("@@positinvalue greater than 0" + position);
+                if (position > 0) {
+                    getSamriddhiActionableWDCode(PrefHelper.getInstance().getSharedValue("selectedItemStr"), spinSelectWDCode);
 
-
-               getSamriddhiActionableWDCode(PrefHelper.getInstance().getSharedValue("selectedItemStr"),spinSelectWDCode);
+                } else {
+                   // Toast.makeText(getApplicationContext(), "Please select value" + position, Toast.LENGTH_SHORT).show();
+                }
             }
 
 
@@ -461,7 +466,8 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
 
 
     }
-    private void getSamriddhiActionableWDCode(String entryDates,String wdcodesSelect) {
+
+    private void getSamriddhiActionableWDCode(String entryDates, String wdcodesSelect) {
         System.out.println("@@Data using wdcodw" + entryDates);
         ArrayList<String> wdIdAr = new ArrayList<>();
         ArrayList<String> storenameAr = new ArrayList<>();

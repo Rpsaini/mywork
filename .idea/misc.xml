@@ -21,6 +21,7 @@
         <entry key="app/src/main/res/drawable/seekbar_thumb_drawable01.xml" value="0.159" />
         <entry key="app/src/main/res/drawable/seekbar_thumb_shape.xml" value="0.174" />
         <entry key="app/src/main/res/drawable/shape_line_botton.xml" value="0.1175" />
+        <entry key="app/src/main/res/drawable/shape_line_botton_white.xml" value="0.146" />
         <entry key="app/src/main/res/drawable/spinner_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/spinner_line.xml" value="0.1445" />
         <entry key="app/src/main/res/layout/activity_add_outlet.xml" value="0.1" />
@@ -39,8 +40,8 @@
         <entry key="app/src/main/res/layout/mypoints_fragment.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/layout/outlet_markvisit_layout.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/layout/psr_list_row.xml" value="0.18072916666666666" />
-        <entry key="app/src/main/res/layout/samriddhi_actionable.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/samriddhi_dashoboard.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/samriddhi_actionable.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/samriddhi_dashoboard.xml" value="0.22" />
         <entry key="app/src/main/res/layout/samriddhi_details.xml" value="0.22" />
         <entry key="app/src/main/res/layout/samriddhi_details_listitem_row.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/layout/samriddhi_listitem_row.xml" value="0.18072916666666666" />

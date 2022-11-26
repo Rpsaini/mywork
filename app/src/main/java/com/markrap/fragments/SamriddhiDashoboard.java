@@ -190,6 +190,8 @@ String nameArR=nameAr.get(position).toString();
                 PrefHelper.getInstance().storeSharedValue("selectedItemStr", String.valueOf(selectedItemStr));
 
                 txtTillDate.setText(nameArR);
+                PrefHelper.getInstance().storeSharedValue("days", String.valueOf(txtTillDate.getText().toString()));
+
                 // JSONArray filterArray = new JSONArray();
                 getSamriddhiDashboardData(selectedItemStr);
                 //     if(position>0) {
