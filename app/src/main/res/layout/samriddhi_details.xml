@@ -235,7 +235,7 @@
                         android:layout_toRightOf="@+id/txtMonths"
                         android:background="@drawable/shape_line_botton"
                         android:drawableRight="@drawable/ic_down"
-                        android:gravity="left|center"
+                        android:gravity="center"
                         android:hint="Month"
                         android:tag="Selection of Make is required."
                         android:textSize="@dimen/text_size_normal" />
@@ -301,8 +301,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.2"
-                    android:gravity="center"
+                    android:gravity="center|left"
                     android:maxLines="2"
+                    android:paddingLeft="10dp"
                     android:text="Tgt"
                     android:textColor="@color/colorWhite"
                     android:textSize="10sp"></fontspackageForTextView.BoldMedium>
