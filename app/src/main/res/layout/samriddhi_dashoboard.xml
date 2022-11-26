@@ -378,7 +378,7 @@
                         android:layout_weight="1.4"
                         android:gravity="left"
                         android:maxLines="1"
-                        android:text="Threshhold Target"
+                        android:text="Threshold Target"
                         android:textColor="@color/color_black"
                      android:textStyle="bold" />
 

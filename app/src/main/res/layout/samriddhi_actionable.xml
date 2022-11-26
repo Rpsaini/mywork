@@ -185,7 +185,7 @@ android:layout_centerVertical="true"
             android:orientation="horizontal">
 
             <fontspackageForTextView.Regular
-
+android:paddingLeft="2dp"
                 android:id="@+id/txtBuildButNotThresholdActive"
                 android:layout_width="160dp"
                 android:layout_height="40dp"
@@ -206,6 +206,8 @@ android:layout_centerVertical="true"
                 android:visibility="gone" />
 
             <fontspackageForTextView.Regular
+                android:paddingLeft="2dp"
+
                 android:id="@+id/txtThreshholdActivebutTargetNot"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
