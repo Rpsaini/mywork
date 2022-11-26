@@ -3,12 +3,15 @@ buildscript {
     repositories {
 
 // Add Google's Maven repository.
-        google()
 
+
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        google()
+        jcenter()
         maven {
             url 'https://maven.fabric.io/public'
         }
-        jcenter()
 
     }
     dependencies {
