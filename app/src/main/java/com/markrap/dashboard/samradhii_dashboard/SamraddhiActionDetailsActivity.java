@@ -36,11 +36,11 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class SamraddhiActionDetailsActivity extends BaseActivity implements View.OnClickListener {
-    private EditText etStkID, etStockistName, etMobileNumber, etPASRName, etROCNAme, editunnatidDownlaodstatus, etUnnatiMTDOrderValue, EtUnnatiMTDINvoice;
+    private TextView etStkID, etStockistName, etMobileNumber, etPASRName, etROCNAme, editunnatidDownlaodstatus, etUnnatiMTDOrderValue, EtUnnatiMTDINvoice;
     private RecyclerView deatilsRecyclerView;
-    private Spinner spinnerMonth;
+    private TextView spinnerMonth;
     private SamraddhiActionDetailsActivity samraddhiActionaleActivity;
-    private EditText month;
+    private TextView month;
     private ImageView back_btn,imagCall;
     SamriddhiDEtailsDataAdadpter SamriddhiDEtailsDataAdadpter;
     TextView txtTgt, txtStkName, txtBgtTarget, txtThresholdBZ, txtUnbilled,
@@ -83,13 +83,13 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
         txtThresholdBZ = (TextView) findViewById(R.id.txtThresholdBZ);
         txtUnbilled = (TextView) findViewById(R.id.txtUnbilled);
 
-        etStkID = (EditText) findViewById(R.id.etStkID);
+        etStkID = (TextView) findViewById(R.id.etStkID);
         etStkID.setText(getIntent().getStringExtra(AppConstants.siffiId));
 
-        etStockistName = (EditText) findViewById(R.id.etStockistName);
-        etMobileNumber = (EditText) findViewById(R.id.etMobileNumber);
-        etPASRName = (EditText) findViewById(R.id.etPASRName);
-        etROCNAme = (EditText) findViewById(R.id.etROCNAme);
+        etStockistName = (TextView) findViewById(R.id.etStockistName);
+        etMobileNumber = (TextView) findViewById(R.id.etMobileNumber);
+        etPASRName = (TextView) findViewById(R.id.etPASRName);
+        etROCNAme = (TextView) findViewById(R.id.etROCNAme);
         //samraddhiiRecyclerView=(RecyclerView)findViewById(R.id.samraddhiiRecyclerView);
         editunnatidDownlaodstatus = (EditText) findViewById(R.id.editunnatidDownlaodstatus);
        // editunnatidDownlaodstatus.setText("No Data Found!.");
@@ -100,7 +100,7 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
      //   EtUnnatiMTDINvoice.setText("No Data Found!.");
 
 
-        month = (EditText) findViewById(R.id.month);
+        month = (TextView) findViewById(R.id.month);
         back_btn = (ImageView) findViewById(R.id.back_btn);
         imagCall=(ImageView)findViewById(R.id.imagCall);
         imagCall.setOnClickListener(new View.OnClickListener() {

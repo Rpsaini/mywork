@@ -3,948 +3,1136 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/back_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        android:padding="15dp"
-        android:src="@drawable/ic_back" />
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
 
-    <ImageView
-        android:id="@+id/imagCall"
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_alignParentRight="true"
-        android:layout_centerInParent="true"
-        android:layout_marginRight="15dp"
-        android:src="@drawable/callicon_phone"></ImageView>
-</RelativeLayout>
-    <ScrollView android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_back" />
+
+        <!--  <ImageView
+              android:id="@+id/imagCall"
+              android:layout_width="18dp"
+              android:layout_height="18dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerInParent="true"
+              android:layout_marginRight="15dp"
+              android:src="@drawable/callicon_phone"></ImageView>-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/scrollView">
+        android:layout_marginTop="20dp">
 
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-        <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textItem"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:text="Sifi Id"
-            android:textColor="@color/color_black"
-            android:textSize="16sp" />
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/textItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:padding="4dp"
+                    android:text="Sify ID :"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/etStkID"
-android:editable="false"
-            android:focusable="false"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="@color/color_black" />
-    </LinearLayout>
+                <fontspackageForTextView.Regular
+                    android:id="@+id/etStkID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/textItem"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textColor="@color/color_black" />
+            </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/txtStockistName"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:text="Stockist Name"
-            android:textColor="@color/color_black"
-            android:textSize="16sp" />
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtStockistName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:text="Stockist Name :"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-        <EditText
-            android:editable="false"
-            android:focusable="false"
-            android:id="@+id/etStockistName"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-    </LinearLayout>
+                <fontspackageForTextView.Regular
+                    android:id="@+id/etStockistName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/txtStockistName"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textColor="@color/color_black" />
+            </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/txtMobileNumber"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:text="Mobile Number"
-            android:textColor="@color/color_black"
-            android:textSize="16sp" />
-
-        <EditText
-            android:editable="false"
-            android:focusable="false"
-            android:id="@+id/etMobileNumber"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/txtPSRNAme"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:text="PSR Name"
-            android:textColor="@color/color_black"
-            android:textSize="16sp" />
-
-        <EditText
-            android:editable="false"
-            android:focusable="false"
-            android:id="@+id/etPASRName"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/txtROCName"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:text="ROC Name"
-            android:textColor="@color/color_black"
-            android:textSize="16sp" />
-
-        <EditText
-            android:editable="false"
-            android:focusable="false"
-            android:id="@+id/etROCNAme"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:orientation="horizontal"
-        android:weightSum="2">
-
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <fontspackageForTextView.BoldMedium
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:text="Month"
-                android:textColor="@color/color_black"
-                android:textSize="16sp" />
-
-            <EditText
-                android:editable="false"
-                android:focusable="false"
-                android:id="@+id/month"
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
-        </LinearLayout>
+                android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:visibility="gone">
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtMobileNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:padding="4dp"
 
-            <TextView
-                android:layout_width="wrap_content"
+                    android:text="Mobile Number :"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/etMobileNumber"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/txtMobileNumber"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textColor="@color/color_black" />
+
+                <ImageView
+                    android:id="@+id/imagCall"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/etMobileNumber"
+                    android:src="@drawable/callicon_phone"></ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="0.3"
-                android:ellipsize="end"
-                android:gravity="center"
-                android:maxLines="1"
-                android:text="Till Date"
-                android:textColor="@color/color_black"
-                android:textSize="18sp" />
+                android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
+                <fontspackageForTextView.BoldMedium
+
+                    android:id="@+id/txtPSRNAme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:padding="4dp"
+
+                    android:text="PSR Name :"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/etPASRName"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/txtPSRNAme"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textColor="@color/color_black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtROCName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:padding="4dp"
+
+                    android:text="ROC Name :"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <fontspackageForTextView.Regular
+                    android:id="@+id/etROCNAme"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/txtROCName"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textColor="@color/color_black" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="match_parent"
 
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="0.7"
-                android:backgroundTint="@color/color_black"
-                android:ellipsize="end"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <fontspackageForTextView.BoldMedium
+                        android:id="@+id/txtMonths"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:padding="4dp"
+
+                        android:text="Month"
+                        android:textColor="@color/color_black"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/month"
+                        android:layout_width="130dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_toRightOf="@+id/txtMonths"
+                        android:background="@drawable/shape_line_botton"
+                        android:drawableRight="@drawable/ic_down"
+                        android:gravity="left|center"
+                        android:hint="Month"
+                        android:tag="Selection of Make is required."
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <fontspackageForTextView.Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@+id/txtMonths"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:focusable="false" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="0.3"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Till Date"
+                        android:textColor="@color/color_black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="0.7"
+                        android:backgroundTint="@color/color_black"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="19"
+                        android:textColor="@color/color_black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
                 android:gravity="center"
-                android:maxLines="1"
-                android:text="19"
-                android:textColor="@color/color_black"
-                android:textSize="18sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@color/colorPrimary"
-        android:orientation="horizontal"
-        android:weightSum="6">
-
-        <fontspackageForTextView.BoldMedium
-            android:paddingLeft="5dp"
-            android:maxLines="2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.2"
-            android:gravity="left|center"
-            android:text="Target"
-            android:textColor="@color/colorWhite"
-            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
-
-
-        <fontspackageForTextView.BoldMedium
-            android:layout_width="0dp"
-            android:maxLines="2"
-
-            android:layout_height="wrap_content"
-            android:layout_weight="1.2"
-            android:gravity="left|center"
-
-            android:text="Achieve"
-            android:textColor="@color/colorWhite"
-            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
-
-
-        <fontspackageForTextView.BoldMedium
-            android:layout_width="0dp"
-
-            android:layout_height="wrap_content"
-            android:layout_weight="1.2"
-            android:gravity="left"
-
-            android:maxLines="2"
-            android:padding="6dp"
-            android:text="Pending"
-            android:textColor="@color/colorWhite"
-            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
-
-
-        <fontspackageForTextView.BoldMedium
-            android:maxLines="2"
-
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.2"
-            android:gravity="left|center"
-
-            android:padding="6dp"
-            android:singleLine="true"
-            android:text="Max Incentive"
-            android:textColor="@color/colorWhite"
-            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
-
-        <fontspackageForTextView.BoldMedium
-            android:maxLines="2"
-
-            android:layout_width="0dp"
-
-            android:layout_height="wrap_content"
-            android:layout_weight="1.2"
-            android:gravity="left|center"
-
-            android:padding="6dp"
-            android:singleLine="true"
-            android:text="Ince. Achieve"
-            android:textColor="@color/colorWhite"
-            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height=".5dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@color/color_black"></View>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:weightSum="5.4"
-        >
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtThresholdTarget"
-            android:layout_width="0dp"
-
-            android:layout_height="match_parent"
-            android:layout_weight="1.2"
-            android:gravity="center"
-            android:text="Threshold Target"
-            android:textColor="@color/color_black"
-            android:textSize="11sp"></fontspackageForTextView.BoldMedium>
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtThresholdTgtActive"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="0.6"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="Active"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtThresholdPending"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="1.3"
-
-
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="20.0"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtThresholdtgtMaxIncent"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="1.3"
-
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text=""
-            android:textSize="12dp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtIncentiveExpensive"
-            android:textColor="@color/color_black"
-            android:layout_weight="1.3"
-
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Unbilled"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:weightSum="5.4"
-        >
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtTgt"
-            android:layout_width="0dp"
-
-            android:layout_height="match_parent"
-            android:layout_weight="1.2"
-            android:gravity="center"
-            android:text="BZ Target"
-            android:textColor="@color/color_black"
-            android:textSize="11sp"></fontspackageForTextView.BoldMedium>
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtActive"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="0.6"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="Active"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtBgtTarget"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="1.3"
-
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="20.0"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtThresholdBZ"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="1.3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text=""
-            android:textSize="12dp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtUnbilled"
-            android:layout_width="0dp"
-            android:layout_height="13dp"
-            android:layout_weight="1.3"
-            android:gravity="center"
-            android:text="Unbilled"
-            android:textColor="@color/color_black"
-            android:textSize="11sp"></fontspackageForTextView.BoldMedium>
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:weightSum="5.4"
-        >
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtRange"
-            android:layout_width="0dp"
-
-            android:layout_height="match_parent"
-            android:layout_weight="1.2"
-            android:gravity="center"
-            android:text="Range"
-            android:textColor="@color/color_black"
-            android:textSize="11sp"></fontspackageForTextView.BoldMedium>
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtRangeActive"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="0.6"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="Active"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtRangeBgtTarget"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="1.3"
-
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="20.0"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtRangeThreshold"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="1.3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text=""
-            android:textSize="12dp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtRangeUnbilled"
-            android:textColor="@color/color_black"
-            android:layout_weight="1.35"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Unbilled"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:weightSum="5.4"
-        >
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtFPOne"
-            android:layout_width="0dp"
-
-            android:layout_height="match_parent"
-            android:layout_weight="1.2"
-            android:gravity="center"
-            android:text="FP1"
-            android:textColor="@color/color_black"
-            android:textSize="11sp"></fontspackageForTextView.BoldMedium>
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtFpOneActive"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="0.6"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="Active"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtFpOneBgtTarget"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="1.3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="20.0"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtFpOneThreshold"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="1.3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text=""
-            android:textSize="12dp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtFpOneUnbilled"
-            android:textColor="@color/color_black"
-            android:layout_weight="1.3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Unbilled"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:weightSum="5.4"
-        >
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtFPtw0"
-            android:layout_width="0dp"
-
-            android:layout_height="match_parent"
-            android:layout_weight="1.2"
-            android:gravity="center"
-            android:text="FP2"
-            android:textColor="@color/color_black"
-            android:textSize="11sp"></fontspackageForTextView.BoldMedium>
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtFptwoActive"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="0.6"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="Active"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtFptwoBgtTarget"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="1.3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="20.0"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtFpTwoThreshold"
-            android:textColor="@color/color_black"
-
-            android:layout_weight="1.3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="30.0"
-            android:textSize="12dp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-
-
-        <fontspackageForTextView.BoldMedium
-            android:id="@+id/txtFPTwoUnbilled"
-            android:textColor="@color/color_black"
-            android:layout_weight="1.3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Unbilled"
-            android:textSize="11sp"
-            android:gravity="center"
-            ></fontspackageForTextView.BoldMedium>
-        <View
-            android:layout_height="match_parent"
-            android:layout_width=".5dp"
-            android:background="@color/color_black"
-            ></View>
-    </LinearLayout>
-
-    <View
-        android:layout_height=".5dp"
-        android:layout_width="match_parent"
-        android:background="@color/color_black"
-        ></View>
-    <androidx.recyclerview.widget.RecyclerView
-        android:visibility="gone"
-        android:id="@+id/deatilsRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginRight="5dp"></androidx.recyclerview.widget.RecyclerView>
-
-    <LinearLayout
-
-        android:visibility="visible"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal">
-
-        <fontspackageForTextView.BoldMedium
-
-            android:id="@+id/txtUnnatiDownloadStatis"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:padding="8dp"
-            android:text="Unnati Download Status"
-            android:textColor="@color/colorWhite"
-            android:textSize="13sp" />
-
-        <EditText
-            android:textSize="13sp"
-android:gravity="center"
-            android:id="@+id/editunnatidDownlaodstatus"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="2dp"
-            android:layout_weight="1"
-            android:background="@color/color_light_gray" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:visibility="visible"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal">
-
-        <fontspackageForTextView.BoldMedium
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:padding="8dp"
-            android:text="Unnati MTD Order Value "
-            android:textColor="@color/colorWhite"
-            android:textSize="13sp" />
-
-        <EditText
-            android:id="@+id/etUnnatiMTDOrderValue"
-            android:textSize="13sp"
-            android:gravity="center"
-
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="2dp"
-            android:layout_weight="1"
-            android:background="@color/color_light_gray" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:visibility="visible"
-
-        android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal">
-
-        <fontspackageForTextView.BoldMedium
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:padding="8dp"
-            android:text="Unnati MTD Invoice Value"
-            android:textColor="@color/colorWhite"
-            android:textSize="13sp" />
-
-        <EditText
-            android:id="@+id/EtUnnatiMTDINvoice"
-            android:textSize="13sp"
-            android:gravity="center"
-
-
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="2dp"
-            android:layout_weight="1"
-            android:background="@color/color_light_gray" />
-    </LinearLayout>
+                android:orientation="horizontal"
+                android:weightSum="5.7">
+
+                <fontspackageForTextView.BoldMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="Tgt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"></fontspackageForTextView.BoldMedium>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:maxLines="1"
+
+                    android:text="Achieve"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"></fontspackageForTextView.BoldMedium>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+
+                    android:maxLines="1"
+                    android:padding="6dp"
+                    android:text="Pending"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"></fontspackageForTextView.BoldMedium>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:gravity="center"
+                    android:maxLines="1"
+
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:text="Max Incentive"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"></fontspackageForTextView.BoldMedium>
+
+                <fontspackageForTextView.BoldMedium
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:maxLines="2"
+
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:text="Ince. Achieve"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"></fontspackageForTextView.BoldMedium>
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/color_black"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/lightnewgrey"
+                android:orientation="horizontal"
+                android:weightSum="5.7">
+
+                <View
+                    android:layout_width=".5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtThresholdTarget"
+                    android:layout_width="0dp"
+android:paddingLeft="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="center|left"
+                    android:text="Threshold Target"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtThresholdTgtActive"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="Active"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtThresholdPending"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+
+
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="20.0"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtThresholdtgtMaxIncent"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/color_black"
+                    android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtIncentiveExpensive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="Unbilled"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:background="@color/color_black"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:weightSum="5.7">
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtTgt"
+                    android:layout_width="0dp"
+                    android:paddingLeft="2dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="center|left"
+                    android:text="BZ Target"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtActive"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="Active"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtBgtTarget"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="20.0"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtThresholdBZ"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/color_black"
+                    android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtUnbilled"
+                    android:layout_width="0dp"
+                    android:layout_height="13dp"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="Unbilled"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:background="@color/color_light_gray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+                android:background="@color/lightnewgrey"
+                android:orientation="horizontal"
+                android:weightSum="5.7">
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtRange"
+                    android:layout_width="0dp"
+                    android:paddingLeft="2dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="center|left"
+
+                    android:text="Range"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtRangeActive"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="Active"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtRangeBgtTarget"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="20.0"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtRangeThreshold"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/color_black"
+                    android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtRangeUnbilled"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.35"
+                    android:gravity="center"
+                    android:text="Unbilled"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:background="@color/color_black"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:weightSum="5.7">
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtFPOne"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="center|left"
+                    android:paddingLeft="2dp"
+
+                    android:text="FP1"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtFpOneActive"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="Active"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtFpOneBgtTarget"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="20.0"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtFpOneThreshold"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/color_black"
+                    android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtFpOneUnbilled"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="Unbilled"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:background="@color/color_light_gray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+                android:background="@color/lightnewgrey"
+                android:orientation="horizontal"
+                android:weightSum="5.7">
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtFPtw0"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="center|left"
+                    android:paddingLeft="2dp"
+
+                    android:text="FP2"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtFptwoActive"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="Active"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtFptwoBgtTarget"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="20.0"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtFpTwoThreshold"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="30.0"
+                    android:textColor="@color/color_black"
+                    android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+
+                <fontspackageForTextView.BoldMedium
+                    android:id="@+id/txtFPTwoUnbilled"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="Unbilled"
+                    android:textColor="@color/color_black"
+                    android:textSize="11sp"></fontspackageForTextView.BoldMedium>
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:background="@color/color_black"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:weightSum="5.7">
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:background="@color/color_black"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+                android:background="@color/color_light_gray"
+                android:orientation="horizontal"
+                android:weightSum="5.7">
+
+                <View
+                    android:layout_width=".5dp"
+
+                    android:layout_height="match_parent"
+                    android:background="@color/color_black"
+                    android:visibility="gone"></View>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:background="@color/color_black"></View>
+
+            <View
+                android:layout_width="match_parent"
+
+                android:layout_height=".5dp"
+                android:background="@color/color_black"
+                android:visibility="gone"></View>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/deatilsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <fontspackageForTextView.BoldMedium
+
+                    android:id="@+id/txtUnnatiDownloadStatis"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+
+                    android:padding="4dp"
+                    android:text="Unnati Download Status"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/editunnatidDownlaodstatus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="0.9"
+                    android:background="@color/color_light_gray"
+                    android:gravity="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <fontspackageForTextView.BoldMedium
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.1"
+                    android:background="@color/colorPrimary"
+                   android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Unnati MTD Order Value "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/etUnnatiMTDOrderValue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="0.9"
+                    android:background="@color/color_light_gray"
+
+                    android:gravity="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <fontspackageForTextView.BoldMedium
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+
+                    android:padding="4dp"
+                    android:text="Unnati MTD Invoice Value"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/EtUnnatiMTDINvoice"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="0.9"
+
+                    android:background="@color/color_light_gray"
+
+                    android:gravity="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

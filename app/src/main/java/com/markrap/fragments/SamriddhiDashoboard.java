@@ -35,7 +35,10 @@ import com.markrap.utility.PrefHelper;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -48,7 +51,7 @@ public class SamriddhiDashoboard extends Fragment {
     private View rootView;
     private SeekBar seekBarBilling, seekbarThreshhold, seekBarBusinessTarget, seekBarRange, seekkBarFPOne, seekBarFBTwo;
     private MainActivity mainActivity;
-
+private TextView tempTxt;
     public static Fragment newInstance(Context context) {
         return Fragment.instantiate(context,
                 SamriddhiDashoboard.class.getName());
@@ -79,6 +82,7 @@ public class SamriddhiDashoboard extends Fragment {
     }
 
     private void initView() {
+        tempTxt=(TextView)rootView.findViewById(R.id.tempTxt);
         spinnerMonth = (Spinner) rootView.findViewById(R.id.spinnerMonth);
         txtTillDate = (TextView) rootView.findViewById(R.id.txtTillDate);
         txtActionable = (TextView) rootView.findViewById(R.id.txtActionable);
@@ -90,6 +94,8 @@ public class SamriddhiDashoboard extends Fragment {
 //Add your data from getFactualResults method to bundle
                 Intent in = new Intent(getActivity(), SamraddhiActionaleActivity.class);
                 bundle.putString("ALL", "ALL");
+                bundle.putString("day", txtTillDate.getText().toString().trim());
+
 //Add the bundle to the intent
                 in.putExtras(bundle);
                 startActivity(in);
@@ -117,6 +123,7 @@ public class SamriddhiDashoboard extends Fragment {
 
     // https://neptunesolution.in/marketstage/api/smriddhi_dashboard/24/2022-12-22
     private void getSamriddhiEntryDashboardData() {
+
         ArrayList<String> wdIdAr = new ArrayList<>();
         ArrayList<String> storenameAr = new ArrayList<>();
         LinkedHashMap<String, String> m = new LinkedHashMap<>();
@@ -127,6 +134,7 @@ public class SamriddhiDashoboard extends Fragment {
             @Override
             public void getRespone(String dta, ArrayList<Object> respons) {
                 try {
+                    Date res = null;
                     System.out.println("getSamriddhiDahboardData====" + dta);
                     JSONObject obj = new JSONObject(dta);
                     if (obj.getInt("result") > 0) {
@@ -139,8 +147,11 @@ public class SamriddhiDashoboard extends Fragment {
                             JSONObject dataObje = dataAr.getJSONObject(x);
 
                             if (!wdIdAr.contains(dataObje.getString("enterdates"))) {
-                                wdIdAr.add(dataObje.getString("enterdates"));
+
+                                  wdIdAr.add(dataObje.getString("enterdates"));
+                                storenameAr.add(dataObje.getString("day"));
                                 System.out.println("@@enterdates====" + wdIdAr.toString());
+                                System.out.println("@@enterdates====" + storenameAr.toString());
                             }
                             setFilterData(wdIdAr, storenameAr);
 
@@ -165,7 +176,7 @@ public class SamriddhiDashoboard extends Fragment {
 
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
-                android.R.layout.simple_spinner_item, wdArray);
+                android.R.layout.simple_spinner_dropdown_item, wdArray);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMonth.setAdapter(adapter);
 
@@ -173,11 +184,12 @@ public class SamriddhiDashoboard extends Fragment {
         spinnerMonth.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-
+String nameArR=nameAr.get(position).toString();
                 String selectedItemStr = spinnerMonth.getSelectedItem().toString();
+                String dayGet = spinnerMonth.getSelectedItem().toString();
                 PrefHelper.getInstance().storeSharedValue("selectedItemStr", String.valueOf(selectedItemStr));
 
-                txtTillDate.setText(selectedItemStr);
+                txtTillDate.setText(nameArR);
                 // JSONArray filterArray = new JSONArray();
                 getSamriddhiDashboardData(selectedItemStr);
                 //     if(position>0) {

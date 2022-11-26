@@ -24,34 +24,75 @@
         android:weightSum="2">
 
 
-        <LinearLayout
-            android:layout_width="0dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="4dp"
-            android:layout_weight="2"
             android:orientation="horizontal">
 
             <fontspackageForTextView.BoldMedium
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_weight="0.5"
+                android:layout_centerVertical="true"
+                android:id="@+id/textMonthss"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
                 android:backgroundTint="@color/color_black"
-                android:ellipsize="end"
                 android:gravity="center"
                 android:maxLines="1"
                 android:text="Month"
                 android:textColor="@color/color_black"
                 android:textSize="16sp" />
 
-            <fontspackageForTextView.BoldMedium
+            <TextView
+android:layout_centerVertical="true"
                 android:id="@+id/txtMonth"
-                android:layout_width="0dp"
-                android:layout_height="43dp"
-                android:layout_weight="1.5"
-                android:background="@drawable/edittextdrawable"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textMonthss"
+                android:background="@drawable/shape_line_botton"
+                android:drawableRight="@drawable/ic_down"
                 android:gravity="center"
-                android:textSize="12sp"></fontspackageForTextView.BoldMedium>
-        </LinearLayout>
+                android:hint="Month"
+                android:tag="Selection of Make is required."
+                android:textSize="@dimen/text_size_normal" />
+
+            <fontspackageForTextView.BoldMedium
+                android:id="@+id/txtTillDatess"
+android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/txtMonth"
+                android:gravity="center"
+                android:text="Till Date"
+                android:textColor="@color/color_black"
+                android:textStyle="bold" />
+
+            <fontspackageForTextView.BoldMedium
+                android:id="@+id/txtTillDatesss"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/txtTillDatess"
+                android:background="@drawable/shape_line_botton"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_black"
+                android:textStyle="bold" />
+            <!--  <fontspackageForTextView.BoldMedium
+                  android:id="@+id/txtMonth"
+                  android:layout_width="0dp"
+                  android:layout_height="43dp"
+                  android:layout_weight="1.5"
+                  android:background="@drawable/edittextdrawable"
+                  android:gravity="center"
+                  android:textSize="12sp"></fontspackageForTextView.BoldMedium>-->
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -93,96 +134,96 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorWhite"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="8dp">
 
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:padding="10dp">
+            android:orientation="horizontal">
 
             <fontspackageForTextView.Regular
-                android:background="@drawable/round_button_red"
-android:padding="2dp"
+
                 android:id="@+id/txtAllFilter"
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="1"
-                android:ellipsize="end"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/botombackground"
                 android:gravity="center"
                 android:maxLines="1"
+                android:padding="4dp"
                 android:text="All"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
 
             <fontspackageForTextView.Regular
-                android:background="@drawable/round_button_red"
-                android:padding="2dp"
-
                 android:id="@+id/txtUnbilledFilter"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/txtAllFilter"
 
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="1"
+                android:background="@drawable/botombackground"
                 android:ellipsize="end"
                 android:gravity="center"
                 android:maxLines="1"
+                android:padding="2dp"
                 android:text="Unbilled"
+                android:textColor="@color/colorWhite"
 
-                android:textColor="@color/colorWhite" />
+                android:textSize="10sp" />
 
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="14dp">
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
 
             <fontspackageForTextView.Regular
-                android:background="@drawable/round_button_red"
-                android:padding="2dp"
 
                 android:id="@+id/txtBuildButNotThresholdActive"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="1"
-                android:ellipsize="end"
-                android:gravity="center"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+
+                android:background="@drawable/botombackground"
+                android:gravity="center|left"
                 android:maxLines="2"
-                android:text="Build But Threshold Not Active"
+                android:text="Billed but Threshold Not Achieve"
                 android:textColor="@color/colorWhite"
-                android:textSize="15sp" />
+                android:textSize="10sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="2dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
 
             <fontspackageForTextView.Regular
-                android:background="@drawable/round_button_red"
                 android:id="@+id/txtThreshholdActivebutTargetNot"
-                android:layout_width="0dp"
-                android:padding="2dp"
-
-                android:layout_height="match_parent"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="1"
-                android:ellipsize="end"
-                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/txtBuildButNotThresholdActive"
+                android:background="@drawable/botombackground"
+                android:gravity="center|left"
                 android:maxLines="2"
-                android:text="Threshold Achive But Target not Achive"
+                android:padding="2dp"
+                android:text="Threshold Achieve But Target not Achieve"
                 android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
 
-                android:textSize="15sp" />
 
-
-        </LinearLayout>
+        </RelativeLayout>
     </LinearLayout>
 
-    <LinearLayout
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/color_light_gray"
@@ -197,13 +238,23 @@ android:padding="2dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"></Spinner>
 
-    </LinearLayout>
+    </LinearLayout>-->
+
+    <Spinner
+        android:id="@+id/spinnerWDCode"
+
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|right"
+        android:background="@drawable/spinner_background"
+        android:gravity="center"
+
+        ></Spinner>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:background="@color/colorPrimary"
         android:orientation="horizontal"
         android:weightSum="5.4">
@@ -212,13 +263,20 @@ android:padding="2dp"
             android:layout_width="0dp"
 
             android:layout_height="wrap_content"
-            android:layout_weight="1.2"
+            android:layout_weight="1.3"
             android:gravity="center"
             android:maxLines="2"
-            android:text="StkId"
+            android:text="Sifi ID"
             android:textColor="@color/colorWhite"
-            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+            android:textSize="10sp"></fontspackageForTextView.BoldMedium>
 
+        <View
+            android:layout_width=".5dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorWhite"
+            android:visibility="visible"></View>
 
         <fontspackageForTextView.BoldMedium
             android:layout_width="0dp"
@@ -229,8 +287,15 @@ android:padding="2dp"
 
             android:text="Stockist Name"
             android:textColor="@color/colorWhite"
-            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+            android:textSize="10sp"></fontspackageForTextView.BoldMedium>
 
+        <View
+            android:layout_width=".5dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorWhite"
+            android:visibility="visible"></View>
 
         <fontspackageForTextView.BoldMedium
             android:layout_width="0dp"
@@ -239,25 +304,38 @@ android:padding="2dp"
             android:layout_weight="1"
             android:gravity="center"
             android:maxLines="2"
-            android:padding="6dp"
+            android:padding="4dp"
 
-            android:text="Bgt Target"
+            android:text="Bz Target"
             android:textColor="@color/colorWhite"
-            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+            android:textSize="10sp"></fontspackageForTextView.BoldMedium>
 
+        <View
+            android:layout_width=".5dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorWhite"
+            android:visibility="visible"></View>
 
         <fontspackageForTextView.BoldMedium
             android:layout_width="0dp"
 
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.9"
             android:gravity="center"
-            android:maxLines="2"
-            android:padding="6dp"
 
             android:text="Threshold"
             android:textColor="@color/colorWhite"
-            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+            android:textSize="10sp"></fontspackageForTextView.BoldMedium>
+
+        <View
+            android:layout_width=".5dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorWhite"
+            android:visibility="visible"></View>
 
         <fontspackageForTextView.BoldMedium
             android:layout_width="0dp"
@@ -266,11 +344,10 @@ android:padding="2dp"
             android:layout_weight="1"
             android:gravity="center"
             android:maxLines="2"
-            android:padding="6dp"
 
-            android:text="Active"
+            android:text="Achieve"
             android:textColor="@color/colorWhite"
-            android:textSize="12dp"></fontspackageForTextView.BoldMedium>
+            android:textSize="10sp"></fontspackageForTextView.BoldMedium>
     </LinearLayout>
 
     <View
@@ -278,6 +355,12 @@ android:padding="2dp"
         android:layout_height=".5dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
+        android:background="@color/color_black"
+        android:visibility="gone"></View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
         android:background="@color/color_black"></View>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -285,7 +368,6 @@ android:padding="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="2dp"
         android:layout_marginRight="5dp"></androidx.recyclerview.widget.RecyclerView>
 
 

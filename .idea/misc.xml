@@ -5,9 +5,24 @@
       <map>
         <entry key="..\:/RND/AndroidLIveData2/LiveData/app/src/main/res/layout/home_fragment.xml" value="0.10643115942028986" />
         <entry key="..\:/RND/AndroidLIveData2/LiveData/app/src/main/res/layout/psr_list_row.xml" value="0.17" />
+        <entry key="app/src/main/res/drawable/border_shadow.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/botombackground.xml" value="0.1445" />
+        <entry key="app/src/main/res/drawable/bottom_line.xml" value="0.1445" />
+        <entry key="app/src/main/res/drawable/bottom_line_lite.xml" value="0.1445" />
+        <entry key="app/src/main/res/drawable/custom_thumb.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/dotted_border.xml" value="0.1445" />
+        <entry key="app/src/main/res/drawable/edittext_bg.xml" value="0.1445" />
         <entry key="app/src/main/res/drawable/edittextdrawable.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/round_button.xml" value="0.1445" />
         <entry key="app/src/main/res/drawable/round_button_red.xml" value="0.1445" />
+        <entry key="app/src/main/res/drawable/roundcornerrawable.xml" value="0.1445" />
+        <entry key="app/src/main/res/drawable/seekbar_progress.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/seekbar_style.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/seekbar_thumb_drawable01.xml" value="0.159" />
+        <entry key="app/src/main/res/drawable/seekbar_thumb_shape.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/shape_line_botton.xml" value="0.1175" />
+        <entry key="app/src/main/res/drawable/spinner_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/spinner_line.xml" value="0.1445" />
         <entry key="app/src/main/res/layout/activity_add_outlet.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_attendance.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_attendance_new.xml" value="0.11770833333333333" />
@@ -24,8 +39,8 @@
         <entry key="app/src/main/res/layout/mypoints_fragment.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/layout/outlet_markvisit_layout.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/layout/psr_list_row.xml" value="0.18072916666666666" />
-        <entry key="app/src/main/res/layout/samriddhi_actionable.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/samriddhi_dashoboard.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/samriddhi_actionable.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/samriddhi_dashoboard.xml" value="0.29541864139020535" />
         <entry key="app/src/main/res/layout/samriddhi_details.xml" value="0.22" />
         <entry key="app/src/main/res/layout/samriddhi_details_listitem_row.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/layout/samriddhi_listitem_row.xml" value="0.18072916666666666" />

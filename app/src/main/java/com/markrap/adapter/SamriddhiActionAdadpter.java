@@ -2,6 +2,7 @@ package com.markrap.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -80,41 +81,83 @@ public class SamriddhiActionAdadpter extends RecyclerView.Adapter<SamriddhiActio
         Log.i("---@@position", "" + position);
         JSONObject jsonObject = null;
         try {
-            jsonObject = moviesList.getJSONObject(position);
-            Log.i("---@@jsonObject", "" + jsonObject.toString());
+            if(position%2==1){
+                holder.itemView.setBackgroundColor(Color.parseColor("#FFFFFF"));
+                jsonObject = moviesList.getJSONObject(position);
+                Log.i("---@@jsonObject", "" + jsonObject.toString());
 
-            holder.txtStkId.setText(jsonObject.getString("sifi_id"));
-            holder.txtStkName.setText(jsonObject.getString("stockist_name"));
-            holder.txtBgtTarget.setText(jsonObject.getString("ba_target"));
+                holder.txtStkId.setText(jsonObject.getString("sifi_id"));
+                holder.txtStkName.setText(jsonObject.getString("stockist_name"));
+                holder.txtBgtTarget.setText(jsonObject.getString("ba_target"));
 
-            holder.txtThreshold.setText(jsonObject.getString("threshold"));
+                holder.txtThreshold.setText(jsonObject.getString("threshold"));
 
-            holder.txtUnbilled.setText(jsonObject.getString("achieve"));
-            holder.MainLinearView.setTag(jsonObject + "");
-            holder.MainLinearView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    try {
-                       // PrefHelper.getInstance().storeSharedValue("selectedItemStr", String.valueOf(selectedItemStr));
+                holder.txtUnbilled.setText(jsonObject.getString("achieve"));
+                holder.MainLinearView.setTag(jsonObject + "");
+                holder.MainLinearView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        try {
+                            // PrefHelper.getInstance().storeSharedValue("selectedItemStr", String.valueOf(selectedItemStr));
 
-                        JSONObject dataOb = new JSONObject(v.getTag().toString());
-                        Intent intent = new Intent(mContext, SamraddhiActionDetailsActivity.class);
-                        intent.putExtra(AppConstants.siffiId, dataOb.getString("sifi_id"));
+                            JSONObject dataOb = new JSONObject(v.getTag().toString());
+                            Intent intent = new Intent(mContext, SamraddhiActionDetailsActivity.class);
+                            intent.putExtra(AppConstants.siffiId, dataOb.getString("sifi_id"));
 
-                        intent.putExtra(AppConstants.stockiest_id, dataOb.getString("stockist_id"));
-                        intent.putExtra("stockist_name", dataOb.getString("stockist_name"));
-                        intent.putExtra("ba_target", dataOb.getString("ba_target"));
-                        intent.putExtra("threshold", dataOb.getString("threshold"));
+                            intent.putExtra(AppConstants.stockiest_id, dataOb.getString("stockist_id"));
+                            intent.putExtra("stockist_name", dataOb.getString("stockist_name"));
+                            intent.putExtra("ba_target", dataOb.getString("ba_target"));
+                            intent.putExtra("threshold", dataOb.getString("threshold"));
 
-                        intent.putExtra("achieve", dataOb.getString("achieve"));
+                            intent.putExtra("achieve", dataOb.getString("achieve"));
 
 
-                        mContext.startActivity(intent);
-                    } catch (Exception e) {
-                        e.printStackTrace();
+                            mContext.startActivity(intent);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
                     }
-                }
-            });
+                });
+            }else{
+                holder.itemView.setBackgroundColor(Color.parseColor("#e6e6e6"));
+
+                jsonObject = moviesList.getJSONObject(position);
+                Log.i("---@@jsonObject", "" + jsonObject.toString());
+
+                holder.txtStkId.setText(jsonObject.getString("sifi_id"));
+                holder.txtStkName.setText(jsonObject.getString("stockist_name"));
+                holder.txtBgtTarget.setText(jsonObject.getString("ba_target"));
+
+                holder.txtThreshold.setText(jsonObject.getString("threshold"));
+
+                holder.txtUnbilled.setText(jsonObject.getString("achieve"));
+                holder.MainLinearView.setTag(jsonObject + "");
+                holder.MainLinearView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        try {
+                            // PrefHelper.getInstance().storeSharedValue("selectedItemStr", String.valueOf(selectedItemStr));
+
+                            JSONObject dataOb = new JSONObject(v.getTag().toString());
+                            Intent intent = new Intent(mContext, SamraddhiActionDetailsActivity.class);
+                            intent.putExtra(AppConstants.siffiId, dataOb.getString("sifi_id"));
+
+                            intent.putExtra(AppConstants.stockiest_id, dataOb.getString("stockist_id"));
+                            intent.putExtra("stockist_name", dataOb.getString("stockist_name"));
+                            intent.putExtra("ba_target", dataOb.getString("ba_target"));
+                            intent.putExtra("threshold", dataOb.getString("threshold"));
+
+                            intent.putExtra("achieve", dataOb.getString("achieve"));
+
+
+                            mContext.startActivity(intent);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
+            }
+
 
         } catch (JSONException e) {
             e.printStackTrace();

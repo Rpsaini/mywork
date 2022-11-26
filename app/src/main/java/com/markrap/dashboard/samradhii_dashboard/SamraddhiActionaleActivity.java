@@ -7,6 +7,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -65,24 +67,28 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
     private Spinner spinnerWDCode;
     private ImageView back_btn;
     private SamriddhiActionAdadpter samriddhiActionAdadpter;
+    private TextView txtTillDatesss;
+    private String tillDay;
 
     @Override
     protected void setUp() {
-
-        init();
         Bundle bundle = getIntent().getExtras();
 
 //Extract the data…
         String allData = bundle.getString("ALL");
-        if(bundle!=null){
-            if(allData.equalsIgnoreCase("")) {
-                getSamriddhiActionable(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
-            }
-        }
-        else{
-            Toast.makeText(getApplicationContext(),"No Data Found",Toast.LENGTH_SHORT).show();
-        }
+        tillDay = bundle.getString("day");
 
+        init();
+
+        if (bundle != null) {
+            if (allData.equalsIgnoreCase("")) {
+                getSamriddhiActionable(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
+                getWDCodesValues(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
+
+            }
+        } else {
+            Toast.makeText(getApplicationContext(), "No Data Found", Toast.LENGTH_SHORT).show();
+        }
         // setItemClickListner();
 
     }
@@ -103,6 +109,9 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
     protected void onResume() {
         super.onResume();
         getSamriddhiActionable(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
+
+       getWDCodesValues(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
+
     }
 
     @Override
@@ -111,6 +120,8 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
     }
 
     private void init() {
+        txtTillDatesss = (TextView) findViewById(R.id.txtTillDatesss);
+        txtTillDatesss.setText(tillDay);
         txtAllFilter = (TextView) findViewById(R.id.txtAllFilter);
         txtUnbilledFilter = (TextView) findViewById(R.id.txtUnbilledFilter);
         txtBuildButNotThresholdActive = (TextView) findViewById(R.id.txtBuildButNotThresholdActive);
@@ -375,5 +386,124 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
         }
     }
 
+    private void getWDCodesValues(String entryDates) {
+        System.out.println("@@getWDCodesValues---" + entryDates);
+        ArrayList<String> Wdcodes = new ArrayList<>();
+        ArrayList<String> wdcodesExtra = new ArrayList<>();
+        LinkedHashMap<String, String> m = new LinkedHashMap<>();
+        Map<String, String> headerMap = new HashMap<>();
+        m.put("user_id", getLoginData("id"));
+        m.put("date", entryDates);
+        System.out.println("@@getWDCodesValues" + AppConstants.apiUlr + "wdcodes/" + m);
+
+
+        new ServerHandler().sendToServer(this, AppConstants.apiUlr + "wdcodes/", m, 0, headerMap, 20000, R.layout.loader_dialog, new CallBack() {
+
+            @Override
+            public void getRespone(String dta, ArrayList<Object> respons) {
+                try {
+                    System.out.println("wdcodes====" + dta);
+                    JSONObject obj = new JSONObject(dta);
+                    if (obj.getInt("result") > 0) {
+                        JSONArray dataAr = obj.getJSONArray("data");
+                        Wdcodes.add("WD Code");
+
+                        for (int x = 0; x < dataAr.length(); x++) {
+                            JSONObject dataObje = dataAr.getJSONObject(x);
+
+                            if (!Wdcodes.contains(dataObje.getString("wd_code"))) {
+
+                                Wdcodes.add(dataObje.getString("wd_code"));
+                                //  wdcodesExtra.add(dataObje.getString("day"));
+                                System.out.println("@@Wdcodes====" + Wdcodes.toString());
+                                System.out.println("@@Wdcodes====" + wdcodesExtra.toString());
+                            }
+                            setFilterWdCode(Wdcodes, wdcodesExtra);
+
+
+                        }
+
+                    } else {
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+    }
+
+    private void setFilterWdCode(ArrayList<String> wdArray, ArrayList<String> wdcodes) {
+        Spinner spinnerMonth = findViewById(R.id.spinnerWDCode);
+
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),
+                android.R.layout.simple_spinner_dropdown_item, wdArray);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerMonth.setAdapter(adapter);
+
+
+        spinnerMonth.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                String spinSelectWDCode = spinnerWDCode.getSelectedItem().toString();
+              //  PrefHelper.getInstance().storeSharedValue("selectedItemStr", String.valueOf(spinSelectWDCode));
+
+
+               getSamriddhiActionableWDCode(PrefHelper.getInstance().getSharedValue("selectedItemStr"),spinSelectWDCode);
+            }
+
+
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+    }
+    private void getSamriddhiActionableWDCode(String entryDates,String wdcodesSelect) {
+        System.out.println("@@Data using wdcodw" + entryDates);
+        ArrayList<String> wdIdAr = new ArrayList<>();
+        ArrayList<String> storenameAr = new ArrayList<>();
+        LinkedHashMap<String, String> m = new LinkedHashMap<>();
+        Map<String, String> headerMap = new HashMap<>();
+        m.put("user_id", getLoginData("id"));
+        m.put("date", entryDates);
+        m.put("wd_code", wdcodesSelect);
+
+        System.out.println("@@getSamriddhiActionableWDCode" + AppConstants.apiUlr + "smriddhi_actionable/" + m);
+
+
+        new ServerHandler().sendToServer(this, AppConstants.apiUlr + "smriddhi_actionable/", m, 0, headerMap, 20000, R.layout.loader_dialog, new CallBack() {
+
+            @Override
+            public void getRespone(String dta, ArrayList<Object> respons) {
+                try {
+                    System.out.println("getSamriddhiActionable====" + dta);
+                    JSONObject obj = new JSONObject(dta);
+                    if (obj.getInt("result") > 0) {
+                        JSONObject dataAr = obj.getJSONObject("data");
+                        JSONArray dataArAll = dataAr.getJSONArray("all");
+                        System.out.println("@@dataArAll====" + dataArAll);
+                        showSamriddhiActionable(dataArAll);
+
+                        /*JSONArray unbilled = dataAr.getJSONArray("unbilled");
+                        System.out.println("@@unbilled====" + unbilled);
+
+                        JSONArray billedbutthresholdnotachieved = dataAr.getJSONArray("billed but threshold not achieved");
+                        System.out.println("@@billedbutthresholdnotachieved====" + billedbutthresholdnotachieved);
+
+                        JSONArray thresholdachbuttarnotachieved = dataAr.getJSONArray("threshold ach but tar not achieved");
+                        System.out.println("@@thresholdachbuttarnotachieved====" + thresholdachbuttarnotachieved);*/
+
+                    } else {
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+    }
 
 }

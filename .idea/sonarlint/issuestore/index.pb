@@ -25,8 +25,6 @@ P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
 u
 Eapp/src/main/java/com/markrap/placepicker/LocationPickerActivity.java,5/1/5132a6e73ee91a6a8222419fd8f86fc71492bb29
-n
->app/src/main/java/com/markrap/fragments/MyPointsFragments.java,1/2/12c2725c0c5f3c700bb735c5a53d82858a5166bb
 i
 9app/src/main/java/com/markrap/dashboard/OrderConfirm.java,0/f/0f9aa991b611d62f790218514388fb79a21a2add
 q
@@ -45,8 +43,6 @@ r
 Bapp/src/main/java/com/markrap/dashboard/outlet/SearchStockist.java,e/8/e835974c631324cc8a96f1d919ca6262e3b64571
 n
 >app/src/main/java/com/markrap/communication/ServerHandler.java,c/b/cba82b07626491621fd0eb81997c57f70f9f3bd4
-k
-;app/src/main/java/com/markrap/fragments/ChangePassword.java,4/4/442189d011ba0f97a9014c212db95c52b84cb178
 d
 4app/src/main/java/com/markrap/base/BaseActivity.java,0/c/0ccdeac7032cfe09ffeeeb911053def68aed33ef
 o
@@ -55,13 +51,7 @@ m
 =app/src/main/java/com/markrap/dashboard/outlet/AddOutlet.java,0/7/0757e3ae40410c9551cbd1f89be5f0be7cf77fc9
 w
 Gapp/src/main/java/com/markrap/adapter/SamriddhiDEtailsDataAdadpter.java,9/d/9d99cf88ec6d27e2fd07829e48ab3009c53868d0
-p
-@app/src/main/java/com/markrap/fragments/SamriddhiDashoboard.java,5/8/589e082734381db09e2d4e95a99d59fa1de12470
 j
 :app/src/main/java/com/markrap/fragments/HomeFragments.java,d/2/d2845fdf11ca1017e5503665204f3049a98f9d4e
-i
-9app/src/main/java/com/markrap/dashboard/MainActivity.java,4/6/46dd45861fbf1336f187a76cd791533695161a6f
-i
-9app/src/main/java/com/markrap/fragments/AllStoresFrg.java,b/a/ba3a7d4ed529eaa2b466d464b6ba3cca94bce994
-j
-:app/src/main/java/com/markrap/adapter/StockistAdapter.java,3/c/3cd5a7c1a3ca9dda51e26943a334f2fdc2e0bce1
+k
+;app/src/main/java/com/markrap/fragments/ChangePassword.java,4/4/442189d011ba0f97a9014c212db95c52b84cb178
