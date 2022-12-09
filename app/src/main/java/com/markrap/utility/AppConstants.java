@@ -2,7 +2,7 @@ package com.markrap.utility;
 
 public class AppConstants {
 
-    public static String apiUlr="https://neptunesolution.in/marketing/api/";
+    public static String apiUlr="https://www.neptunesolution.in/golden/api/";
 
 
     public static  String logindata="logindata";

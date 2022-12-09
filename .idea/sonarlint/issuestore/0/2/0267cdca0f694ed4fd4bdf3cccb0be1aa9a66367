@@ -1,0 +1,87 @@
+
+J
+java:S3740o"/Provide the parametrized type for this generic.(¿Ï¨Ñùÿÿÿÿ
+J
+java:S3740o"/Provide the parametrized type for this generic.(¿Ï¨Ñùÿÿÿÿ
+_
+java:S1192È"HDefine a constant instead of duplicating this literal "achieve" 6 times.(Æü÷æ
+]
+java:S1192î"FDefine a constant instead of duplicating this literal "@@@-1" 4 times.(’½ç‘
+_
+java:S1192É"HDefine a constant instead of duplicating this literal "pending" 6 times.(šë¦š
+b
+java:S1192Æ"KDefine a constant instead of duplicating this literal "@@BZTarget" 3 times.(÷‹ÂÇ
+d
+java:S1192Ê"NDefine a constant instead of duplicating this literal "max_incentive" 6 times.(ÚÀ«R
+]
+java:S1192î"FDefine a constant instead of duplicating this literal "check" 4 times.(’½ç‘
+n
+java:S1192Ë"RDefine a constant instead of duplicating this literal "incentive_achieve" 6 times.(ûºıÿÿÿÿÿ
+k
+java:S11926"PDefine a constant instead of duplicating this literal "selectedItemStr" 3 times.(ã÷ÅÈûÿÿÿÿ
+l	java:S117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü²Óãûÿÿÿÿ
+g	java:S117Â"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãóÿ¦
+g	java:S117Ã"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğŠ‘˜
+l	java:S117Å"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö™Ğåùÿÿÿÿ
+l	java:S117Í"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üÍñÿÿÿÿÿ
+l	java:S117Õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ã†Ÿüÿÿÿÿ
+g	java:S117ß"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØÏŠ«
+g	java:S117ç"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–…Ğµ
+>
+java:S1604t"(Make this anonymous inner class a lambda(ÂìéÔ
+C
+java:S1604"(Make this anonymous inner class a lambda(ÀíÇ×ıÿÿÿÿ
+r	java:S116("]Rename this field "EtUnnatiMTDINvoice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ÉÎ¯
+h	java:S116-"SRename this field "back_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûŸ£
+z	java:S116."gRename this field "SamriddhiDEtailsDataAdadpter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÕ	
+˜
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¡é††
+a
+java:S1659("KDeclare "etStockistName" and all following declarations on a separate line.(¸ÉÎ¯
+<
+java:S1659-"&Declare "imagCall" on a separate line.(ûŸ£
+]
+java:S1659/"GDeclare "txtStkName" and all following declarations on a separate line.(¨íé´
+m
+java:S1450-"WRemove the "back_btn" field and declare it as a local variable in the relevant methods.(ûŸ£
+l
+java:S1450("VRemove the "etStkID" field and declare it as a local variable in the relevant methods.(¸ÉÎ¯
+m
+java:S1450-"WRemove the "imagCall" field and declare it as a local variable in the relevant methods.(ûŸ£
+j
+java:S1450,"TRemove the "month" field and declare it as a local variable in the relevant methods.(ÊÅË
+p
+java:S14502"ZRemove the "txtTillDate" field and declare it as a local variable in the relevant methods.(”Àª¾
+Q	java:S125c"<This block of commented-out lines of code should be removed.(ıÖ€´
+P	java:S125e"<This block of commented-out lines of code should be removed.(‰ä
+Q	java:S125g"<This block of commented-out lines of code should be removed.(æªÿ
+V	java:S125j"<This block of commented-out lines of code should be removed.(ßŒÌúûÿÿÿÿ
+[
+java:S1854¤"?Remove this useless assignment to local variable "storenameAr".(íì÷ÿÿÿÿÿ
+V
+java:S1854£":Remove this useless assignment to local variable "wdIdAr".(ÜÆöïÿÿÿÿÿ
+O	java:S106¢"9Replace this use of System.out or System.err by a logger.(ğÔ²Ä
+G
+java:S1481£"+Remove this unused "wdIdAr" local variable.(ÜÆöïÿÿÿÿÿ
+L
+java:S1481¤"0Remove this unused "storenameAr" local variable.(íì÷ÿÿÿÿÿ
+T	java:S106­"9Replace this use of System.out or System.err by a logger.(¯¿ìàşÿÿÿÿ
+O	java:S106µ"9Replace this use of System.out or System.err by a logger.(µéÙ­
+W	java:S125Á"<This block of commented-out lines of code should be removed.(ìİ˜µûÿÿÿÿ
+N	java:S106Ä"9Replace this use of System.out or System.err by a logger.(„ƒãT
+O	java:S106Æ"9Replace this use of System.out or System.err by a logger.(÷‹ÂÇ
+O	java:S106Î"9Replace this use of System.out or System.err by a logger.(é”Õ‡
+T	java:S106Ö"9Replace this use of System.out or System.err by a logger.(¢ò€‹øÿÿÿÿ
+O	java:S106à"9Replace this use of System.out or System.err by a logger.(ŸÖÏ
+T	java:S106è"9Replace this use of System.out or System.err by a logger.(—Ó îúÿÿÿÿ
+O	java:S106î"9Replace this use of System.out or System.err by a logger.(’½ç‘
+T	java:S106ï"9Replace this use of System.out or System.err by a logger.(¤ÈŞ¾şÿÿÿÿ
+T	java:S106ğ"9Replace this use of System.out or System.err by a logger.(ç”â¤úÿÿÿÿ
+T	java:S106ñ"9Replace this use of System.out or System.err by a logger.(«ÏÄ¨øÿÿÿÿ
+R	java:S125ú"<This block of commented-out lines of code should be removed.(Ëš®¿
+?	java:S108û")Either remove or fill this block of code.(å¥‡
+W	java:S125‹"<This block of commented-out lines of code should be removed.(üç‰ôÿÿÿÿÿ
+F
+java:S1068*"0Remove this unused "spinnerMonth" private field.(Ê´öå
+S
+java:S1144…"<Remove this unused private "showSamriddhiActionable" method.(ÍÎ‡Ç

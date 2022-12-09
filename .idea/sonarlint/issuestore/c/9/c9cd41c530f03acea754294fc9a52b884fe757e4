@@ -1,0 +1,24 @@
+
+c
+java:S1192_"HDefine a constant instead of duplicating this literal "achieve" 6 times.(èº­•ÿÿÿÿÿ
+_
+java:S1192]"JDefine a constant instead of duplicating this literal "threshold" 6 times.(÷»±C
+d
+java:S1192Z"NDefine a constant instead of duplicating this literal "stockist_name" 6 times.(ğœ«Ç
+`
+java:S1192["JDefine a constant instead of duplicating this literal "ba_target" 6 times.(ı’¯¹
+c
+java:S1192Y"HDefine a constant instead of duplicating this literal "sifi_id" 4 times.(˜Å…·şÿÿÿÿ
+>
+java:S1604a"(Make this anonymous inner class a lambda(ÃÊÉ¼
+?
+java:S1604‡"(Make this anonymous inner class a lambda(ÃÊÉ¼
+s	java:S1161"YRename this field "MainLinearView" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò«Ü§ùÿÿÿÿ
+]
+java:S16590"GDeclare "txtStkName" and all following declarations on a separate line.(Úí­
+Q	java:S125#"<This block of commented-out lines of code should be removed.(À”™ı
+V	java:S125e"<This block of commented-out lines of code should be removed.(ºÖñ‡ûÿÿÿÿ
+W	java:S125‹"<This block of commented-out lines of code should be removed.(ºÖñ‡ûÿÿÿÿ
+T	java:S106©"9Replace this use of System.out or System.err by a logger.(ßüÆÅøÿÿÿÿ
+>
+java:S1068"(Remove this unused "ira1" private field.(’•ßŠ
