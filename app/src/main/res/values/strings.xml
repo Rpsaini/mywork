@@ -30,6 +30,6 @@
     <!--    <string name="googlemapkey">AIzaSyDx4bX2PBXd7Aj3q4cgTnl2ZTE41Ta-SxQ</string>-->
     <string name="googlemapkey">AIzaSyD0yVCzUZZw-LA3C_Bp4gYaAZOfc7HtVV0</string>
     <string name="str_attendenace_user_image">Browse Image</string>
-    <string name="billed">Billed but Threshold \n Not Achieve" </string>
-    <string name="achieve">Threshold Achieve But \n Target not Achieve</string>
+    <string name="billed">Billed but Threshold \n Not Achieved" </string>
+    <string name="achieve">Threshold Achieve But \n Target not Achieved</string>
 </resources>

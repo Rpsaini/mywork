@@ -47,6 +47,8 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
     TextView txtTgt, txtStkName, txtBgtTarget, txtThresholdBZ, txtUnbilled,
             txtActive, txtRangeActive, txtRangeBgtTarget, txtRangeThreshold, txtRangeUnbilled,
             txtFpOneActive, txtFpOneBgtTarget, txtFpOneThreshold, txtFpOneUnbilled, txtFptwoActive, txtFptwoBgtTarget, txtFpTwoThreshold, txtFPTwoUnbilled, txtThresholdTgtActive, txtThresholdPending, txtThresholdtgtMaxIncent, txtIncentiveExpensive;
+    TextView   txtBzTargets,txtRangeTargets,txtFP1Targets,txtFp2Target,txtThrehholdTarget;
+    TextView txtFPOne,txtFPtw0;
     private TextView txtTillDate;
 
     @Override
@@ -82,6 +84,14 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
     }
 
     private void init() {
+        txtFPOne=(TextView)findViewById(R.id.txtFPOne);
+        txtFPtw0=(TextView)findViewById(R.id.txtFPtw0);
+        txtBzTargets = (TextView) findViewById(R.id.txtBzTargets);
+        txtRangeTargets= (TextView) findViewById(R.id.txtRangeTargets);
+        txtFP1Targets= (TextView) findViewById(R.id.txtFP1Targets);
+        txtFp2Target= (TextView) findViewById(R.id.txtFp2Target);
+        txtThrehholdTarget= (TextView) findViewById(R.id.txtThrehholdTarget);
+
         txtTillDate = (TextView) findViewById(R.id.txtTillDate);
         txtTgt = (TextView) findViewById(R.id.txtTgt);
         txtStkName = (TextView) findViewById(R.id.txtStkName);
@@ -197,6 +207,8 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
                         JSONObject BZTarget = month_wise.getJSONObject("BZ Target");
                         System.out.println("@@BZTarget" + BZTarget);
 // i row
+
+                        txtBzTargets.setText(BZTarget.optString("target"));
                         txtActive.setText(BZTarget.optString("achieve"));
                         txtBgtTarget.setText(BZTarget.optString("pending"));
                         txtThresholdBZ.setText(BZTarget.optString("max_incentive"));
@@ -205,6 +217,7 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
                         JSONObject Range = month_wise.getJSONObject("Range");
                         System.out.println("@@BZTarget" + Range);
 // i row
+                        txtRangeTargets.setText(Range.optString("target"));
                         txtRangeActive.setText(Range.optString("achieve"));
                         txtRangeBgtTarget.setText(Range.optString("pending"));
                         txtRangeThreshold.setText(Range.optString("max_incentive"));
@@ -213,6 +226,9 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
                         JSONObject FP1 = month_wise.getJSONObject("FP1");
                         System.out.println("@@BZTarget" + FP1);
 
+                        txtFPOne.setText("FP1 "+" - "+FP1.optString("name"));
+
+                        txtFP1Targets.setText(FP1.optString("target"));
                         txtFpOneActive.setText(FP1.optString("achieve"));
                         txtFpOneBgtTarget.setText(FP1.optString("pending"));
                         txtFpOneThreshold.setText(FP1.optString("max_incentive"));
@@ -222,6 +238,9 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
 //4th
                         JSONObject FP2 = month_wise.getJSONObject("FP2");
                         System.out.println("@@FP2" + FP2);
+                        txtFPtw0.setText("FP2 "+" - "+FP2.optString("name"));
+
+                        txtFp2Target.setText(FP2.optString("target"));
 
                         txtFptwoActive.setText(FP2.optString("achieve"));
                         txtFptwoBgtTarget.setText(FP2.optString("pending"));
@@ -230,6 +249,7 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
 //3 row
                         JSONObject ThresholdTarget = month_wise.getJSONObject("Threshold Target");
                         System.out.println("@@Threshold Target" + ThresholdTarget);
+                        txtThrehholdTarget.setText(ThresholdTarget.optString("target"));
 
                         txtThresholdTgtActive.setText(ThresholdTarget.optString("achieve"));
                         txtThresholdPending.setText(ThresholdTarget.optString("pending"));
