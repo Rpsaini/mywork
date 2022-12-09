@@ -1,0 +1,154 @@
+
+K
+java:S3740ƒ"/Provide the parametrized type for this generic.(¿Ï¨Ñùÿÿÿÿ
+K
+java:S3740ƒ"/Provide the parametrized type for this generic.(¿Ï¨Ñùÿÿÿÿ
+p
+java:S2293¹"YReplace the type specification in this constructor call with the diamond operator ("<>").(Êòø®
+w
+java:S1192«"[Define a constant instead of duplicating this literal "getSamriddhiActionable====" 6 times.(µ–óãøÿÿÿÿ
+u
+java:S1192£"YDefine a constant instead of duplicating this literal "@@getSamriddhiActionable" 5 times.(“¾î‘øÿÿÿÿ
+d
+java:S1192Ÿ"HDefine a constant instead of duplicating this literal "wd_code" 3 times.(ÌÅúºþÿÿÿÿ
+^
+java:S1192­"GDefine a constant instead of duplicating this literal "result" 7 times.(Œóôê
+l
+java:S1192°"PDefine a constant instead of duplicating this literal "@@dataArAll====" 3 times.(õø±çûÿÿÿÿ
+n
+java:S1192œ"WDefine a constant instead of duplicating this literal "getSamriddhiActionable" 5 times.(°¢Óµ
+l
+java:S1192T"QDefine a constant instead of duplicating this literal "selectedItemStr" 10 times.(ú£äÿÿÿÿÿ
+_
+java:S1192¡"HDefine a constant instead of duplicating this literal "user_id" 7 times.(„íŒ
+r
+java:S1192£"VDefine a constant instead of duplicating this literal "smriddhi_actionable/" 12 times.(“¾î‘øÿÿÿÿ
+l	java:S117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä°”¹ÿÿÿÿÿ
+D
+java:S1604Œ"(Make this anonymous inner class a lambda(ÀíÇ×ýÿÿÿÿ
+?
+java:S1700A")Rename field "samraddhiActionaleActivity"(£Èã
+Y
+java:S2583R"CChange this condition so that it does not always evaluate to "true"(Œ×¢Ù
+m	java:S116C"SRename this field "back_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉŒÓúøÿÿÿÿ
+ƒ
+java:S4144Æ"gUpdate this method so that its implementation is not identical to "getSamriddhiActionable" on line 155.(·ãÚòùÿÿÿÿ
+_
+java:S1659>"IDeclare "txtAllFilter" and all following declarations on a separate line.(ßÔ‚Õ
+<
+java:S1659B"&Declare "txtMonth" on a separate line.(Áû¤þ
+r
+java:S1450C"WRemove the "back_btn" field and declare it as a local variable in the relevant methods.(ÉŒÓúøÿÿÿÿ
+|
+java:S1450D"fRemove the "samriddhiActionAdadpter" field and declare it as a local variable in the relevant methods.(ªÒÝÈ
+m
+java:S1450B"WRemove the "txtMonth" field and declare it as a local variable in the relevant methods.(Áû¤þ
+p
+java:S1450>"ZRemove the "txtTillDate" field and declare it as a local variable in the relevant methods.(ßÔ‚Õ
+s
+java:S1450E"]Remove the "txtTillDatesss" field and declare it as a local variable in the relevant methods.(„ÿª‚
+Q	java:S125["<This block of commented-out lines of code should be removed.(¡ƒÊ¤
+R	java:S125‚"<This block of commented-out lines of code should be removed.(ÇÛÚ¬
+[
+java:S1854ž"?Remove this useless assignment to local variable "storenameAr".(íì÷ÿÿÿÿÿ
+V
+java:S1854":Remove this useless assignment to local variable "wdIdAr".(ÜÆöïÿÿÿÿÿ
+O	java:S106œ"9Replace this use of System.out or System.err by a logger.(°¢Óµ
+G
+java:S1481"+Remove this unused "wdIdAr" local variable.(ÜÆöïÿÿÿÿÿ
+L
+java:S1481ž"0Remove this unused "storenameAr" local variable.(íì÷ÿÿÿÿÿ
+T	java:S106£"9Replace this use of System.out or System.err by a logger.(“¾î‘øÿÿÿÿ
+T	java:S106«"9Replace this use of System.out or System.err by a logger.(µ–óãøÿÿÿÿ
+T	java:S106°"9Replace this use of System.out or System.err by a logger.(õø±çûÿÿÿÿ
+W	java:S125³"<This block of commented-out lines of code should be removed.(ƒÍ˜®øÿÿÿÿ
+?	java:S108¼")Either remove or fill this block of code.(å¥ž‡
+[
+java:S1854É"?Remove this useless assignment to local variable "storenameAr".(íì÷ÿÿÿÿÿ
+V
+java:S1854È":Remove this useless assignment to local variable "wdIdAr".(ÜÆöïÿÿÿÿÿ
+O	java:S106Ç"9Replace this use of System.out or System.err by a logger.(°¢Óµ
+G
+java:S1481È"+Remove this unused "wdIdAr" local variable.(ÜÆöïÿÿÿÿÿ
+L
+java:S1481É"0Remove this unused "storenameAr" local variable.(íì÷ÿÿÿÿÿ
+T	java:S106Î"9Replace this use of System.out or System.err by a logger.(“¾î‘øÿÿÿÿ
+T	java:S106Ö"9Replace this use of System.out or System.err by a logger.(µ–óãøÿÿÿÿ
+T	java:S106Û"9Replace this use of System.out or System.err by a logger.(õø±çûÿÿÿÿ
+W	java:S125Þ"<This block of commented-out lines of code should be removed.(ƒÍ˜®øÿÿÿÿ
+?	java:S108ç")Either remove or fill this block of code.(å¥ž‡
+[
+java:S1854ô"?Remove this useless assignment to local variable "storenameAr".(íì÷ÿÿÿÿÿ
+V
+java:S1854ó":Remove this useless assignment to local variable "wdIdAr".(ÜÆöïÿÿÿÿÿ
+O	java:S106ò"9Replace this use of System.out or System.err by a logger.(°¢Óµ
+G
+java:S1481ó"+Remove this unused "wdIdAr" local variable.(ÜÆöïÿÿÿÿÿ
+L
+java:S1481ô"0Remove this unused "storenameAr" local variable.(íì÷ÿÿÿÿÿ
+T	java:S106ù"9Replace this use of System.out or System.err by a logger.(“¾î‘øÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(µ–óãøÿÿÿÿ
+R	java:S125…"<This block of commented-out lines of code should be removed.(²¨Â
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(¸ìÊÁúÿÿÿÿ
+W	java:S125Œ"<This block of commented-out lines of code should be removed.(þœ«üÿÿÿÿ
+?	java:S108’")Either remove or fill this block of code.(å¥ž‡
+[
+java:S1854Ÿ"?Remove this useless assignment to local variable "storenameAr".(íì÷ÿÿÿÿÿ
+V
+java:S1854ž":Remove this useless assignment to local variable "wdIdAr".(ÜÆöïÿÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(°¢Óµ
+G
+java:S1481ž"+Remove this unused "wdIdAr" local variable.(ÜÆöïÿÿÿÿÿ
+L
+java:S1481Ÿ"0Remove this unused "storenameAr" local variable.(íì÷ÿÿÿÿÿ
+T	java:S106¤"9Replace this use of System.out or System.err by a logger.(“¾î‘øÿÿÿÿ
+T	java:S106¬"9Replace this use of System.out or System.err by a logger.(µ–óãøÿÿÿÿ
+R	java:S125°"<This block of commented-out lines of code should be removed.(²¨Â
+T	java:S106¶"9Replace this use of System.out or System.err by a logger.(¸“·Éùÿÿÿÿ
+?	java:S108º")Either remove or fill this block of code.(å¥ž‡
+[
+java:S1854Ç"?Remove this useless assignment to local variable "storenameAr".(íì÷ÿÿÿÿÿ
+V
+java:S1854Æ":Remove this useless assignment to local variable "wdIdAr".(ÜÆöïÿÿÿÿÿ
+O	java:S106Å"9Replace this use of System.out or System.err by a logger.(°¢Óµ
+G
+java:S1481Æ"+Remove this unused "wdIdAr" local variable.(ÜÆöïÿÿÿÿÿ
+L
+java:S1481Ç"0Remove this unused "storenameAr" local variable.(íì÷ÿÿÿÿÿ
+T	java:S106Ì"9Replace this use of System.out or System.err by a logger.(“¾î‘øÿÿÿÿ
+T	java:S106Ô"9Replace this use of System.out or System.err by a logger.(µ–óãøÿÿÿÿ
+T	java:S106Ú"9Replace this use of System.out or System.err by a logger.(ïˆûÚûÿÿÿÿ
+?	java:S108Ý")Either remove or fill this block of code.(å¥ž‡
+W	java:S125î"<This block of commented-out lines of code should be removed.(üç‰ôÿÿÿÿÿ
+T	java:S106‡"9Replace this use of System.out or System.err by a logger.(… è±ûÿÿÿÿ
+T	java:S106Ž"9Replace this use of System.out or System.err by a logger.(©šŸÌùÿÿÿÿ
+T	java:S106–"9Replace this use of System.out or System.err by a logger.(ÝÖèûÿÿÿÿ
+T	java:S106£"9Replace this use of System.out or System.err by a logger.(Ùòž¯ÿÿÿÿÿ
+W	java:S125¢"<This block of commented-out lines of code should be removed.(ªò»½ùÿÿÿÿ
+O	java:S106¤"9Replace this use of System.out or System.err by a logger.(µØôí
+?	java:S108«")Either remove or fill this block of code.(å¥ž‡
+E
+java:S1172µ".Remove this unused method parameter "wdcodes".(úüê€
+\
+java:S1117¶"@Rename "spinnerMonth" which hides the field declared at line 64.(ì“ÇÆøÿÿÿÿ
+
+java:S1186Î"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×þÿÿÿÿ
+N	java:S106Ä"9Replace this use of System.out or System.err by a logger.(‰ã”8
+W	java:S125Ã"<This block of commented-out lines of code should be removed.(à›®½ûÿÿÿÿ
+R	java:S125É"<This block of commented-out lines of code should be removed.(ÅÜÆ
+[
+java:S1854Ù"?Remove this useless assignment to local variable "storenameAr".(íì÷ÿÿÿÿÿ
+V
+java:S1854Ø":Remove this useless assignment to local variable "wdIdAr".(ÜÆöïÿÿÿÿÿ
+O	java:S106×"9Replace this use of System.out or System.err by a logger.(øäÞò
+G
+java:S1481Ø"+Remove this unused "wdIdAr" local variable.(ÜÆöïÿÿÿÿÿ
+L
+java:S1481Ù"0Remove this unused "storenameAr" local variable.(íì÷ÿÿÿÿÿ
+O	java:S106à"9Replace this use of System.out or System.err by a logger.(©äóœ
+T	java:S106è"9Replace this use of System.out or System.err by a logger.(µ–óãøÿÿÿÿ
+T	java:S106í"9Replace this use of System.out or System.err by a logger.(õø±çûÿÿÿÿ
+W	java:S125ð"<This block of commented-out lines of code should be removed.(ƒÍ˜®øÿÿÿÿ
+?	java:S108ù")Either remove or fill this block of code.(å¥ž‡
+K
+java:S1068@"0Remove this unused "spinnerMonth" private field.(”žÌÕøÿÿÿÿ
