@@ -453,8 +453,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         txtToolbartext.setText("Home");
         imgICBack.setVisibility(View.GONE);
 
-        showFragment(HomeFragments.newInstance(this), HomeFragments.TAG);
-
+        //showFragment(HomeFragments.newInstance(this), HomeFragments.TAG);
+        showFragment(SamriddhiDashoboard.newInstance(this), SamriddhiDashoboard.TAG);
     }
     private void setupAttendanceFragment() {
         txtToolbartext.setText("Attendance");

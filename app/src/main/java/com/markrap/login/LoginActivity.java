@@ -100,6 +100,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             @Override
             public void getRespone(String dta, ArrayList<Object> respons) {
                 try {
+                    System.out.println("Login===="+AppConstants.apiUlr+"login"+ m);
+
                     System.out.println("Login===="+dta);
                     JSONObject obj = new JSONObject(dta);
                     if (obj.getInt("result")>0)

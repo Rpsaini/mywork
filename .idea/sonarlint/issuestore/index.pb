@@ -39,12 +39,8 @@ n
 >app/src/main/java/com/markrap/communication/ServerHandler.java,c/b/cba82b07626491621fd0eb81997c57f70f9f3bd4
 w
 Gapp/src/main/java/com/markrap/adapter/SamriddhiDEtailsDataAdadpter.java,9/d/9d99cf88ec6d27e2fd07829e48ab3009c53868d0
-j
-:app/src/main/java/com/markrap/fragments/HomeFragments.java,d/2/d2845fdf11ca1017e5503665204f3049a98f9d4e
 k
 ;app/src/main/java/com/markrap/fragments/ChangePassword.java,4/4/442189d011ba0f97a9014c212db95c52b84cb178
-p
-@app/src/main/java/com/markrap/fragments/SamriddhiDashoboard.java,5/8/589e082734381db09e2d4e95a99d59fa1de12470
 j
 :app/src/main/java/com/markrap/adapter/StockistAdapter.java,3/c/3cd5a7c1a3ca9dda51e26943a334f2fdc2e0bce1
 o
@@ -67,11 +63,7 @@ d
 4app/src/main/java/com/markrap/base/BaseActivity.java,0/c/0ccdeac7032cfe09ffeeeb911053def68aed33ef
 o
 ?app/src/main/java/com/markrap/dashboard/outlet/ViewOutLets.java,d/9/d9a4b8b9ca9b38ad8d8fb3aa129546edb7199f0e
-f
-6app/src/main/java/com/markrap/login/LoginActivity.java,e/8/e86db368f8cba4f0820a6340d8d3b3a6e43e09ad
-ã
-[app/src/main/java/com/markrap/dashboard/samradhii_dashboard/SamraddhiActionaleActivity.java,d/3/d37d095a9fc5c740d4e5f2ce3a253c90a60c07c3
-g
-7app/src/main/java/com/markrap/utility/AppConstants.java,5/6/561d77d3e944769a9cbfbd9d8121632c4e070d95
 è
 _app/src/main/java/com/markrap/dashboard/samradhii_dashboard/SamraddhiActionDetailsActivity.java,0/2/0267cdca0f694ed4fd4bdf3cccb0be1aa9a66367
+g
+7app/src/main/java/com/markrap/utility/AppConstants.java,5/6/561d77d3e944769a9cbfbd9d8121632c4e070d95

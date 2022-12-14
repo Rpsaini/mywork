@@ -184,6 +184,7 @@
 
 
             <fontspackageForTextView.Regular
+                android:visibility="gone"
                 android:id="@+id/btn_samriddhiDashboards"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
