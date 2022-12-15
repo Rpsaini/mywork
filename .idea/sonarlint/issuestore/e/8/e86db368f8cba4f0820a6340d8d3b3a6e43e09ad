@@ -1,0 +1,9 @@
+
+j	java:S116"URename this field "verify_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òêÏ¿
+r	java:S116"]Rename this field "tv_forgot_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òêÏ¿
+F
+java:S1659"0Declare "tv_forgot_password" on a separate line.(òêÏ¿
+Q	java:S125S"<This block of commented-out lines of code should be removed.(™ŸËÄ
+S	java:S106g"9Replace this use of System.out or System.err by a logger.(¯µ¶ºşÿÿÿÿ
+S	java:S106i"9Replace this use of System.out or System.err by a logger.(¥ÔÄÆıÿÿÿÿ
+Q	java:S125r"<This block of commented-out lines of code should be removed.(¦İã¡

@@ -65,5 +65,5 @@ o
 ?app/src/main/java/com/markrap/dashboard/outlet/ViewOutLets.java,d/9/d9a4b8b9ca9b38ad8d8fb3aa129546edb7199f0e
 è
 _app/src/main/java/com/markrap/dashboard/samradhii_dashboard/SamraddhiActionDetailsActivity.java,0/2/0267cdca0f694ed4fd4bdf3cccb0be1aa9a66367
-g
-7app/src/main/java/com/markrap/utility/AppConstants.java,5/6/561d77d3e944769a9cbfbd9d8121632c4e070d95
+f
+6app/src/main/java/com/markrap/login/LoginActivity.java,e/8/e86db368f8cba4f0820a6340d8d3b3a6e43e09ad
