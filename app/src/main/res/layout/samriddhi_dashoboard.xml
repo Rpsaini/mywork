@@ -354,7 +354,7 @@
                         android:ellipsize="end"
                         android:gravity="right"
                         android:maxLines="1"
-                        android:text="60%"
+                        android:text="0%"
 
                         android:textColor="@color/color_black" />
                 </LinearLayout>
@@ -402,7 +402,7 @@
                         android:ellipsize="end"
                         android:gravity="right"
                         android:maxLines="1"
-                        android:text="60%"
+                        android:text="0%"
 
                         android:textColor="@color/color_black" />
                 </LinearLayout>
@@ -450,7 +450,7 @@
                         android:ellipsize="end"
                         android:gravity="right"
                         android:maxLines="1"
-                        android:text="60%"
+                        android:text="0%"
 
                         android:textColor="@color/color_black" />
                 </LinearLayout>
@@ -499,7 +499,7 @@
                         android:ellipsize="end"
                         android:gravity="right"
                         android:maxLines="1"
-                        android:text="60%"
+                        android:text="0%"
 
                         android:textColor="@color/color_black" />
                 </LinearLayout>
@@ -546,7 +546,7 @@
                         android:ellipsize="end"
                         android:gravity="right"
                         android:maxLines="1"
-                        android:text="60%"
+                        android:text="0%"
 
                         android:textColor="@color/color_black" />
                 </LinearLayout>
@@ -593,7 +593,7 @@
                         android:ellipsize="end"
                         android:gravity="right"
                         android:maxLines="1"
-                        android:text="60%"
+                        android:text="0%"
 
                         android:textColor="@color/color_black" />
                 </LinearLayout>

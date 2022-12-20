@@ -35,8 +35,6 @@ g
 7app/src/main/java/com/markrap/fragments/MyOrderFrg.java,d/a/daf1d73c34edf02117eafc5d87a1417c1d08a830
 r
 Bapp/src/main/java/com/markrap/dashboard/outlet/SearchStockist.java,e/8/e835974c631324cc8a96f1d919ca6262e3b64571
-n
->app/src/main/java/com/markrap/communication/ServerHandler.java,c/b/cba82b07626491621fd0eb81997c57f70f9f3bd4
 w
 Gapp/src/main/java/com/markrap/adapter/SamriddhiDEtailsDataAdadpter.java,9/d/9d99cf88ec6d27e2fd07829e48ab3009c53868d0
 k
@@ -63,7 +61,13 @@ d
 4app/src/main/java/com/markrap/base/BaseActivity.java,0/c/0ccdeac7032cfe09ffeeeb911053def68aed33ef
 o
 ?app/src/main/java/com/markrap/dashboard/outlet/ViewOutLets.java,d/9/d9a4b8b9ca9b38ad8d8fb3aa129546edb7199f0e
-
-_app/src/main/java/com/markrap/dashboard/samradhii_dashboard/SamraddhiActionDetailsActivity.java,0/2/0267cdca0f694ed4fd4bdf3cccb0be1aa9a66367
 f
 6app/src/main/java/com/markrap/login/LoginActivity.java,e/8/e86db368f8cba4f0820a6340d8d3b3a6e43e09ad
+g
+7app/src/main/java/com/markrap/utility/AppConstants.java,5/6/561d77d3e944769a9cbfbd9d8121632c4e070d95
+i
+9app/src/main/java/com/markrap/dashboard/MainActivity.java,4/6/46dd45861fbf1336f187a76cd791533695161a6f
+j
+:app/src/main/java/com/markrap/fragments/HomeFragments.java,d/2/d2845fdf11ca1017e5503665204f3049a98f9d4e
+n
+>app/src/main/java/com/markrap/communication/ServerHandler.java,c/b/cba82b07626491621fd0eb81997c57f70f9f3bd4

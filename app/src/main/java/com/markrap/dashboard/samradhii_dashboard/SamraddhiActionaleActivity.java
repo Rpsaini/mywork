@@ -63,7 +63,7 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
     private RecyclerView samraddhiiRecyclerView;
     private Spinner spinnerMonth;
     private SamraddhiActionaleActivity samraddhiActionaleActivity;
-    private Spinner spinnerWDCode,txtMonth;
+    private Spinner spinnerWDCode, txtMonth;
     private ImageView back_btn;
     private SamriddhiActionAdadpter samriddhiActionAdadpter;
     private TextView txtTillDatesss;
@@ -78,10 +78,12 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
         tillDay = bundle.getString("day");
 
         init();
+        getSamriddhiEntryDashboardData();
 
         if (bundle != null) {
             if (allData.equalsIgnoreCase("")) {
                 getSamriddhiActionable(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
+
                 getWDCodesValues(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
 
             }
@@ -107,6 +109,8 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
     @Override
     protected void onResume() {
         super.onResume();
+        getSamriddhiEntryDashboardData();
+
         getSamriddhiActionable(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
 
         getWDCodesValues(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
@@ -120,14 +124,14 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
 
     private void init() {
         txtTillDatesss = (TextView) findViewById(R.id.txtTillDatesss);
-        txtTillDatesss.setText(tillDay);
+     //  txtTillDatesss.setText( PrefHelper.getInstance().getSharedValue("days"));
         txtAllFilter = (TextView) findViewById(R.id.txtAllFilter);
         txtUnbilledFilter = (TextView) findViewById(R.id.txtUnbilledFilter);
         txtBuildButNotThresholdActive = (TextView) findViewById(R.id.txtBuildButNotThresholdActive);
         txtThreshholdActivebutTargetNot = (TextView) findViewById(R.id.txtThreshholdActivebutTargetNot);
         spinnerWDCode = (Spinner) findViewById(R.id.spinnerWDCode);
         txtMonth = (Spinner) findViewById(R.id.txtMonth);
-      //  txtMonth.setText(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
+        //  txtMonth.setText(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
         ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, new String[]{PrefHelper.getInstance().getSharedValue("selectedItemStr")});
         txtMonth.setAdapter(aa);
         txtTillDate = (TextView) findViewById(R.id.txtTillDate);
@@ -160,7 +164,7 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
         Map<String, String> headerMap = new HashMap<>();
         m.put("user_id", getLoginData("id"));
         m.put("date", entryDates);
-        System.out.println("@@getSamriddhiActionable" + AppConstants.apiUlr + "smriddhi_actionable/" + m);
+        System.out.println("@@getSamriddhiActionable___43" + AppConstants.apiUlr + "smriddhi_actionable/" + m);
 
 
         new ServerHandler().sendToServer(this, AppConstants.apiUlr + "smriddhi_actionable/", m, 0, headerMap, 20000, R.layout.loader_dialog, new CallBack() {
@@ -454,7 +458,7 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
                     getSamriddhiActionableWDCode(PrefHelper.getInstance().getSharedValue("selectedItemStr"), spinSelectWDCode);
 
                 } else {
-                   // Toast.makeText(getApplicationContext(), "Please select value" + position, Toast.LENGTH_SHORT).show();
+                    // Toast.makeText(getApplicationContext(), "Please select value" + position, Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -508,6 +512,155 @@ public class SamraddhiActionaleActivity extends BaseActivity implements View.OnC
                     e.printStackTrace();
                 }
 
+            }
+        });
+    }
+
+    private void setFilterData(ArrayList<String> wdArray, ArrayList<String> nameAr) {
+        System.out.println("@@SetFilterData_SamvithiAcionble");
+        Spinner spinnerMonth = findViewById(R.id.txtMonth);
+
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),
+                android.R.layout.simple_spinner_dropdown_item, wdArray);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerMonth.setAdapter(adapter);
+
+
+        spinnerMonth.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                String nameArR = nameAr.get(position).toString();
+                String selectedItemStr = spinnerMonth.getSelectedItem().toString();
+                String dayGet = spinnerMonth.getSelectedItem().toString();
+                PrefHelper.getInstance().storeSharedValue("selectedItemStr", String.valueOf(selectedItemStr));
+
+                txtTillDatesss.setText(nameArR);
+                System.out.println("@@@Day"+nameArR);
+                PrefHelper.getInstance().storeSharedValue("days", nameArR);
+
+                // JSONArray filterArray = new JSONArray();
+                getSamriddhiDashboardDataNewOne(selectedItemStr);
+                //     if(position>0) {
+            }
+
+
+            //   } // to close the onItemSelected
+
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+    }
+
+    private void getSamriddhiEntryDashboardData() {
+
+        ArrayList<String> wdIdAr = new ArrayList<>();
+        ArrayList<String> storenameAr = new ArrayList<>();
+        LinkedHashMap<String, String> m = new LinkedHashMap<>();
+        Map<String, String> headerMap = new HashMap<>();
+        m.put("user_id", getLoginData("id"));
+        new ServerHandler().sendToServer(getApplicationContext(), AppConstants.apiUlr + "entrydates/", m, 0, headerMap, 20000, R.layout.loader_dialog, new CallBack() {
+
+            @Override
+            public void getRespone(String dta, ArrayList<Object> respons) {
+                try {
+                    Date res = null;
+                    System.out.println("getSamriddhiDahboardData====" + dta);
+                    JSONObject obj = new JSONObject(dta);
+                    if (obj.getInt("result") > 0) {
+                        JSONArray dataAr = obj.getJSONArray("data");
+                        //  JSONObject jsonObject = dataAr.getJSONObject(0);
+                        //String enterdates=jsonObject.getString("enterdates");
+                        //System.out.println("@@enterdates====" + enterdates);
+                        //  wdIdAr.add("Search by Entry Dates");
+                        for (int x = 0; x < dataAr.length(); x++) {
+                            JSONObject dataObje = dataAr.getJSONObject(x);
+
+                            if (!wdIdAr.contains(dataObje.getString("enterdates"))) {
+
+                                wdIdAr.add(dataObje.getString("enterdates"));
+                                storenameAr.add(dataObje.getString("day"));
+                                System.out.println("--11enterdates====" + wdIdAr.toString());
+                                System.out.println("--11enterdates__1====" + storenameAr.toString());
+                            }
+                            setFilterData(wdIdAr, storenameAr);
+
+                            //storenameAr.add(dataObje.getString("store_name"));
+
+
+                        }
+                        //   showTask(obj.getJSONArray("data"));
+
+                    } else {
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+    }
+
+    private void getSamriddhiDashboardDataNewOne(String entryDates) {
+        System.out.println("@@NEwOneActionSpinner" + entryDates);
+        ArrayList<String> wdIdAr = new ArrayList<>();
+        ArrayList<String> storenameAr = new ArrayList<>();
+        LinkedHashMap<String, String> m = new LinkedHashMap<>();
+        Map<String, String> headerMap = new HashMap<>();
+        m.put("user_id", getLoginData("id"));
+
+        m.put("date", entryDates);
+        //+mainActivity.getLoginData("id")
+        System.out.println("@@NEwOneActionSpinner" + AppConstants.apiUlr + "smriddhi_dashboard/" + m);
+
+
+        new ServerHandler().sendToServer(getApplicationContext(), AppConstants.apiUlr + "smriddhi_dashboard/", m, 0, headerMap, 20000, R.layout.loader_dialog, new CallBack() {
+
+            @Override
+            public void getRespone(String dta, ArrayList<Object> respons) {
+             /*   try {
+
+                    System.out.println("getSamriddhiDahboardData====" + dta);
+                    JSONObject obj = new JSONObject(dta);
+                    if (obj.getInt("result") > 0) {
+                        JSONObject dataAr = obj.getJSONObject("data");
+
+
+
+                    } else {
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+*/
+                try {
+                    System.out.println("getSamriddhiActionable====" + dta);
+                    JSONObject obj = new JSONObject(dta);
+                    if (obj.getInt("result") > 0) {
+                     //   JSONObject dataAr = obj.getJSONObject("data");
+//                        JSONArray dataArAll = dataAr.getJSONArray("all");
+                  //      System.out.println("@@getSamriddhiActionable====" + dataArAll);
+                        System.out.println("@@NEwOneActionSpinner__3" + AppConstants.apiUlr + "smriddhi_dashboard/" + m);
+
+                        getSamriddhiActionable(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
+
+                       /* JSONArray unbilled = dataAr.getJSONArray("unbilled");
+                        System.out.println("@@unbilled====" + unbilled);
+
+                        JSONArray billedbutthresholdnotachieved = dataAr.getJSONArray("billed but threshold not achieved");
+                        System.out.println("@@billedbutthresholdnotachieved====" + billedbutthresholdnotachieved);
+
+                        JSONArray thresholdachbuttarnotachieved = dataAr.getJSONArray("threshold ach but tar not achieved");
+                        System.out.println("@@thresholdachbuttarnotachieved====" + thresholdachbuttarnotachieved);
+*/
+                    } else {
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
     }

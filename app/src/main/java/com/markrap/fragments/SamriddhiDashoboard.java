@@ -17,6 +17,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -51,7 +52,8 @@ public class SamriddhiDashoboard extends Fragment {
     private View rootView;
     private SeekBar seekBarBilling, seekbarThreshhold, seekBarBusinessTarget, seekBarRange, seekkBarFPOne, seekBarFBTwo;
     private MainActivity mainActivity;
-private TextView tempTxt;
+    private TextView tempTxt;
+
     public static Fragment newInstance(Context context) {
         return Fragment.instantiate(context,
                 SamriddhiDashoboard.class.getName());
@@ -82,7 +84,7 @@ private TextView tempTxt;
     }
 
     private void initView() {
-        tempTxt=(TextView)rootView.findViewById(R.id.tempTxt);
+        tempTxt = (TextView) rootView.findViewById(R.id.tempTxt);
         spinnerMonth = (Spinner) rootView.findViewById(R.id.spinnerMonth);
         txtTillDate = (TextView) rootView.findViewById(R.id.txtTillDate);
         txtActionable = (TextView) rootView.findViewById(R.id.txtActionable);
@@ -135,31 +137,37 @@ private TextView tempTxt;
             public void getRespone(String dta, ArrayList<Object> respons) {
                 try {
                     Date res = null;
-                    System.out.println("getSamriddhiDahboardData====" + dta);
+                    System.out.println("getSamriddhiDahboardData====2222" + dta);
                     JSONObject obj = new JSONObject(dta);
                     if (obj.getInt("result") > 0) {
                         JSONArray dataAr = obj.getJSONArray("data");
-                        //  JSONObject jsonObject = dataAr.getJSONObject(0);
-                        //String enterdates=jsonObject.getString("enterdates");
-                        //System.out.println("@@enterdates====" + enterdates);
-                        //  wdIdAr.add("Search by Entry Dates");
-                        for (int x = 0; x < dataAr.length(); x++) {
-                            JSONObject dataObje = dataAr.getJSONObject(x);
+                        System.out.println("getSamriddhiDahboardData====222222" + dataAr.length());
+                        if (dataAr.length() == 0) {
+                            Toast.makeText(getActivity(), "No Data Found!", Toast.LENGTH_SHORT).show();
+                        } else {
+                            //  JSONObject jsonObject = dataAr.getJSONObject(0);
+                            //String enterdates=jsonObject.getString("enterdates");
+                            //System.out.println("@@enterdates====" + enterdates);
+                            //  wdIdAr.add("Search by Entry Dates");
+                            for (int x = 0; x < dataAr.length(); x++) {
+                                JSONObject dataObje = dataAr.getJSONObject(x);
 
-                            if (!wdIdAr.contains(dataObje.getString("enterdates"))) {
+                                if (!wdIdAr.contains(dataObje.getString("enterdates"))) {
 
-                                  wdIdAr.add(dataObje.getString("enterdates"));
-                                storenameAr.add(dataObje.getString("day"));
-                                System.out.println("@@enterdates====" + wdIdAr.toString());
-                                System.out.println("@@enterdates====" + storenameAr.toString());
+                                    wdIdAr.add(dataObje.getString("enterdates"));
+                                    storenameAr.add(dataObje.getString("day"));
+                                    System.out.println("@@enterdates====" + wdIdAr.toString());
+                                    System.out.println("@@enterdates====" + storenameAr.toString());
+                                }
+                                setFilterData(wdIdAr, storenameAr);
+
+                                //storenameAr.add(dataObje.getString("store_name"));
+
+
                             }
-                            setFilterData(wdIdAr, storenameAr);
-
-                            //storenameAr.add(dataObje.getString("store_name"));
-
-
+                            //   showTask(obj.getJSONArray("data"));
                         }
-                        //   showTask(obj.getJSONArray("data"));
+
 
                     } else {
                     }
@@ -184,7 +192,7 @@ private TextView tempTxt;
         spinnerMonth.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-String nameArR=nameAr.get(position).toString();
+                String nameArR = nameAr.get(position).toString();
                 String selectedItemStr = spinnerMonth.getSelectedItem().toString();
                 String dayGet = spinnerMonth.getSelectedItem().toString();
                 PrefHelper.getInstance().storeSharedValue("selectedItemStr", String.valueOf(selectedItemStr));
@@ -227,7 +235,7 @@ String nameArR=nameAr.get(position).toString();
             public void getRespone(String dta, ArrayList<Object> respons) {
                 try {
 
-                    System.out.println("getSamriddhiDahboardData====" + dta);
+                    System.out.println("getSamriddhiDahboardData====111" + dta);
                     JSONObject obj = new JSONObject(dta);
                     if (obj.getInt("result") > 0) {
                         JSONObject dataAr = obj.getJSONObject("data");

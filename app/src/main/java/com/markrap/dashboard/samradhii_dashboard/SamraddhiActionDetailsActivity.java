@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -32,6 +33,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -58,6 +60,8 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
         PrefHelper.getInstance().getSharedValue("days");
 
         init();
+        getSamriddhiEntryDashboardData();
+
         setupSamriddhiStockiestDetails(getIntent().getStringExtra(AppConstants.stockiest_id), PrefHelper.getInstance().getSharedValue("selectedItemStr"));
     }
 
@@ -76,6 +80,8 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
     @Override
     protected void onResume() {
         super.onResume();
+        getSamriddhiEntryDashboardData();
+
     }
 
     @Override
@@ -115,7 +121,7 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
         EtUnnatiMTDINvoice = (EditText) findViewById(R.id.EtUnnatiMTDINvoice);
         //   EtUnnatiMTDINvoice.setText("No Data Found!.");
 
-        txtTillDate.setText(PrefHelper.getInstance().getSharedValue("days"));
+      //  txtTillDate.setText(PrefHelper.getInstance().getSharedValue("days"));
         month = (Spinner) findViewById(R.id.month);
 
         ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, new String[]{PrefHelper.getInstance().getSharedValue("selectedItemStr")});
@@ -305,4 +311,145 @@ public class SamraddhiActionDetailsActivity extends BaseActivity implements View
         }
 
     }
+
+
+    private void setFilterData(ArrayList<String> wdArray, ArrayList<String> nameAr) {
+        System.out.println("@@SetFilterData_SamvithiAcionble");
+        Spinner spinnerMonth = findViewById(R.id.month);
+
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),
+                android.R.layout.simple_spinner_dropdown_item, wdArray);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerMonth.setAdapter(adapter);
+
+
+        spinnerMonth.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                String nameArR = nameAr.get(position).toString();
+                String selectedItemStr = spinnerMonth.getSelectedItem().toString();
+                String dayGet = spinnerMonth.getSelectedItem().toString();
+                PrefHelper.getInstance().storeSharedValue("selectedItemStr", String.valueOf(selectedItemStr));
+
+                txtTillDate.setText(nameArR);
+                System.out.println("@@@Day"+nameArR);
+              //  PrefHelper.getInstance().storeSharedValue("days", nameArR);
+
+                // JSONArray filterArray = new JSONArray();
+                //getSamriddhiDashboardDataNewOne(selectedItemStr);
+                //     if(position>0) {
+            }
+
+
+            //   } // to close the onItemSelected
+
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+    }
+    private void getSamriddhiDashboardDataNewOne(String entryDates) {
+        System.out.println("@@NEwOneActionSpinner" + entryDates);
+        ArrayList<String> wdIdAr = new ArrayList<>();
+        ArrayList<String> storenameAr = new ArrayList<>();
+        LinkedHashMap<String, String> m = new LinkedHashMap<>();
+        Map<String, String> headerMap = new HashMap<>();
+        m.put("user_id", getLoginData("id"));
+
+        m.put("date", entryDates);
+        //+mainActivity.getLoginData("id")
+        System.out.println("@@NEwOneActionSpinner" + AppConstants.apiUlr + "smriddhi_dashboard/" + m);
+
+
+        new ServerHandler().sendToServer(getApplicationContext(), AppConstants.apiUlr + "smriddhi_dashboard/", m, 0, headerMap, 20000, R.layout.loader_dialog, new CallBack() {
+
+            @Override
+            public void getRespone(String dta, ArrayList<Object> respons) {
+             /*   try {
+
+                    System.out.println("getSamriddhiDahboardData====" + dta);
+                    JSONObject obj = new JSONObject(dta);
+                    if (obj.getInt("result") > 0) {
+                        JSONObject dataAr = obj.getJSONObject("data");
+
+
+
+                    } else {
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+*/
+                try {
+                    System.out.println("getSamriddhiActionable====" + dta);
+                    JSONObject obj = new JSONObject(dta);
+                    if (obj.getInt("result") > 0) {
+                        //   JSONObject dataAr = obj.getJSONObject("data");
+//                        JSONArray dataArAll = dataAr.getJSONArray("all");
+                        //      System.out.println("@@getSamriddhiActionable====" + dataArAll);
+                        System.out.println("@@NEwOneActionSpinner__3" + AppConstants.apiUlr + "smriddhi_dashboard/" + m);
+
+                       // getSamriddhiActionable(PrefHelper.getInstance().getSharedValue("selectedItemStr"));
+
+
+                    } else {
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+    private void getSamriddhiEntryDashboardData() {
+
+        ArrayList<String> wdIdAr = new ArrayList<>();
+        ArrayList<String> storenameAr = new ArrayList<>();
+        LinkedHashMap<String, String> m = new LinkedHashMap<>();
+        Map<String, String> headerMap = new HashMap<>();
+        m.put("user_id", getLoginData("id"));
+        new ServerHandler().sendToServer(getApplicationContext(), AppConstants.apiUlr + "entrydates/", m, 0, headerMap, 20000, R.layout.loader_dialog, new CallBack() {
+
+            @Override
+            public void getRespone(String dta, ArrayList<Object> respons) {
+                try {
+                    Date res = null;
+                    System.out.println("getSamriddhiDahboardData====" + dta);
+                    JSONObject obj = new JSONObject(dta);
+                    if (obj.getInt("result") > 0) {
+                        JSONArray dataAr = obj.getJSONArray("data");
+                        //  JSONObject jsonObject = dataAr.getJSONObject(0);
+                        //String enterdates=jsonObject.getString("enterdates");
+                        //System.out.println("@@enterdates====" + enterdates);
+                        //  wdIdAr.add("Search by Entry Dates");
+                        for (int x = 0; x < dataAr.length(); x++) {
+                            JSONObject dataObje = dataAr.getJSONObject(x);
+
+                            if (!wdIdAr.contains(dataObje.getString("enterdates"))) {
+
+                                wdIdAr.add(dataObje.getString("enterdates"));
+                                storenameAr.add(dataObje.getString("day"));
+                                System.out.println("--11enterdates====" + wdIdAr.toString());
+                                System.out.println("--11enterdates__1====" + storenameAr.toString());
+                            }
+                            setFilterData(wdIdAr, storenameAr);
+
+                            //storenameAr.add(dataObje.getString("store_name"));
+
+
+                        }
+                        //   showTask(obj.getJSONArray("data"));
+
+                    } else {
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+    }
+
 }

@@ -65,10 +65,10 @@
 
                 android:layout_height="40dp"
                 android:layout_centerInParent="true"
+
                 android:layout_gravity="top"
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/txtMonthss"
-
                 android:background="@drawable/spinner_background"
                 android:gravity="center"></Spinner>
 
